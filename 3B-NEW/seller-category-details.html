@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+
+	<title>3B | Dashboard</title>
+	
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+	<link rel="stylesheet" type="text/css" href="assets/base/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/base/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/plugins/datepicker/bootstrap-datepicker.css">
+	<link rel="stylesheet" type="text/css" href="assets/plugins/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/base/base.min.css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=vietnamese" rel="stylesheet">
+
+</head>
+<body class="hold-transition sidebar-mini">
+
+	<!-- BEGIN WRAPPER -->
+	<div class="wrapper">
+		<!-- BEGIN HEADER -->
+		<header class="main-header">
+
+			<a href="index.html" class="logo">
+				<span class="logo-mini"><b>3</b>B</span>
+				<span class="logo-lg"><b>Black</b>Best Buy</span>
+			</a>
+
+			<nav class="navbar navbar-static-top">
+				<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+					<span class="sr-only">Toggle navigation</span>
+				</a>
+				<div class="navbar-custom-menu">
+					<ul class="nav navbar-nav">
+						<li><a href="buyer-profile.html">Kênh người mua</a></li>
+						<!-- BEGIN USER DROPDOWN -->
+						<li class="dropdown user user-menu">
+							<!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span class="hidden-xs">Frank Jr.</span>
+							</a> -->
+							<!-- BEGIN DROPDOWN -->
+							<ul class="dropdown-menu">
+								<li class="user-header">
+									<p>
+										Frank Jr. - Web Developer
+										<small>Member since Nov. 2012</small>
+									</p>
+								</li>
+								<li class="user-body">
+									<div class="row">
+										<div class="col-xs-4 text-center">
+											<a href="#">Followers</a>
+										</div>
+										<div class="col-xs-4 text-center">
+											<a href="#">Sales</a>
+										</div>
+										<div class="col-xs-4 text-center">
+											<a href="#">Friends</a>
+										</div>
+									</div>
+								</li>
+								<li class="user-footer">
+									<div class="pull-left">
+										<a href="#" class="btn btn-default btn-flat">Profile</a>
+									</div>
+									<div class="pull-right">
+										<a href="#" class="btn btn-default btn-flat">Sign out</a>
+									</div>
+								</li>
+							</ul>
+							<!-- /END DROPDOWN -->
+						</li>
+						<!-- /END USER DROPDOWN -->
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- /END HEADER -->
+
+		<!-- BEGIN MAIN NAVIGATION -->
+		<aside class="main-sidebar">
+			<!-- BEGIN SIDEBAR -->
+			<section class="sidebar">
+				<div class="user-panel">
+					<div class="pull-left image">
+						<img src="assets/images/test-ava-photo.jpg" class="img-circle" alt="User Image">
+					</div>
+					<div class="pull-left info">
+						<p>Frank Jr.</p>
+						<a href="#"><img class="icons-svg" src="assets/images/svg/edit.svg"> Edit Profile</a>
+					</div>
+				</div>
+
+				<ul class="sidebar-menu" data-widget="tree">
+					<!-- BEGIN MENU MY ACCOUNT -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/store.svg"> <span>Shop</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-profile.html"><span>Hồ sơ shop</span></a>
+							</li>
+							<li>
+								<a href="seller-vanchuyen.html"><span>Cài đặt vận chuyển</span></a>
+							</li>
+							<li>
+								<a href="profile-address-seller.html"><span>Địa chỉ</span></a>
+							</li>
+							<li>
+								<a href="seller-danhgia.html"><span>Đánh giá shop</span></a>
+							</li>
+							<li>
+								<a href="seller-hoidap.html"><span>Hỏi đáp khách hàng</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU MY ACCOUNT -->
+
+					<!-- BEGIN MENU ORDER -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/order.svg"> <span>Đơn bán</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-orderall.html"><span>Tất cả</span></a>
+							</li>
+							<li>
+								<a href="seller-muale.html"><span>Mua lẻ</span></a>
+							</li>
+							<li>
+								<a href="seller-muaghep.html"><span>Mua ghép</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU ORDER -->
+
+					<!-- BEGIN MENU PRODUCTS -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/product.svg"> <span>SẢN PHẨM</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-product-list.html"><span>Tất cả</span></a>
+							</li>
+							<li>
+								<a href="seller-productchoduyet.html"><span>Chờ duyệt</span></a>
+							</li>
+							<li>
+								<a href="seller-productdaduyet.html"><span>Đã duyệt</span></a>
+							</li>
+							<li>
+								<a href="seller-productdakhoa.html"><span>Đã khóa</span></a>
+							</li>
+							<li>
+								<a href="seller-productdaan.html"><span>Đã ẩn</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU PRODUCTS -->
+
+					<!-- BEGIN MENU CATEGORY -->
+					<li class="header active">
+						<img class="icons-svg" src="assets/images/svg/docs.svg">
+						<a href="seller-category-list.html"><span>QUẢN LÝ DANH MỤC</span></a>
+					</li>
+					<!-- /END MENU CATEGORY -->
+
+					<!-- BEGIN MENU MARKETING -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/megaphone.svg"> <span>QUẢN LÝ MARKETING</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-discount.html"><span>Discount của shop</span></a>
+							</li>
+							<li>
+								<a href="seller-voucher.html"><span>Voucher cuar shop</span></a>
+							</li>
+							<li>
+								<a href="seller-3b.html"><span>CT của Black Best Buy</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU MARKETING -->
+
+					<!-- BEGIN MENU SALE -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/tag.svg"> <span>SALE HÀNG LẺ SIZE</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-sizeall.html"><span>Tất cả</span></a>
+							</li>
+							<li>
+								<a href="seller-sizedangky.html"><span>Đăng ký</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU SALE -->
+
+					<!-- BEGIN MENU REPORT -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/statistics.svg"> <span>THỐNG KÊ</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-reportkey.html"><span>Hiệu quả mua KEYWORDS</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU REPORT -->
+
+					<!-- BEGIN MENU REPORT -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/user.svg"> <span>Account</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-wallet3b.html"><span>Ví 3B</span></a>
+							</li>
+							<li>
+								<a href="profile-changepass.html"><span>Đổi mật khẩu</span></a>
+							</li>
+							<li>
+								<a href="#"><span>Logout</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU REPORT -->
+					
+
+				</ul>
+			</section>
+			<!-- /END SIDEBAR -->
+		</aside>
+		<!-- /END MAIN NAVIGATION -->
+
+		<!-- BEGIN CONTENT WRAPPER -->
+		<div class="content-wrapper">
+			<!-- CONTENT HEADER -->
+			<section class="content-header">
+				<ol class="breadcrumb">
+					<li><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+					<li class="active">Chi tiết danh mục</li>
+				</ol>
+			</section>
+			<!-- /END CONTENT HEADER -->
+
+			<!-- CONTENT -->
+			<section class="content">
+				<div class="box">
+					<form action="#" role="form">
+						<div class="box-header">
+							<h3 class="box-title">
+								Thông hơi Quảng Châu siêu mát cho bé trai và gái <span data-toggle="modal" data-target="#modal-editCategory" class="btn btn-primary btn-xs">Sửa tên</span>
+								<small>Kích hoạt danh mục</small>
+								<button type="button" class="btn btn-sm btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+									<div class="handle"></div>
+								</button>
+							</h3>
+						</div>
+
+						<!-- BEGIN BOX BODY -->
+						<div class="box-body">
+							<div class="row">
+								<div class="col-md-6">
+									<img class="icons-svg" src="assets/images/svg/docs.svg">
+									<strong><span>Danh mục của shop</span> | 3 sản phẩm</strong>
+								</div>
+
+								<div class="col-md-6 margin-b">
+									<a href="seller-category-add-product.html" class="btn btn-flat btn-danger pull-right">
+										<i class="fa fa-plus"></i> Thêm sản phẩm vào danh mục
+									</a>
+									<a href="seller-category-list.html" class="btn btn-default pull-right margin-r-5">Quay lại</a>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="box-product">
+										<img class="icons-svg small" src="assets/images/svg/image-temp.svg">
+
+										<div class="product-meta">
+											<h4>Maria Gonzales</h4>
+											<p><span>đ</span> 55,000</p>
+											<a href="#" class="badge bg-red"><i class="fa fa-trash-o"></i> Xóa</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="box-product">
+										<img class="icons-svg small" src="assets/images/svg/image-temp.svg">
+
+										<div class="product-meta">
+											<h4>Maria Gonzales</h4>
+											<p><span>đ</span> 55,000</p>
+											<a href="#" class="badge bg-red"><i class="fa fa-trash-o"></i> Xóa</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="box-product">
+										<img class="icons-svg small" src="assets/images/svg/image-temp.svg">
+
+										<div class="product-meta">
+											<h4>Maria Gonzales</h4>
+											<p><span>đ</span> 55,000</p>
+											<a href="#" class="badge bg-red"><i class="fa fa-trash-o"></i> Xóa</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- BEGIN PAGINATION -->
+							<ul class="pagination no-margin pull-right">
+								<li><a href="#">«</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">»</a></li>
+							</ul>
+							<!-- /END PAGINATION -->
+						</div>
+						<!-- /END BOX BODY -->
+					</form>
+				</div>
+			</section>
+			<!-- /END CONTENT -->
+			
+		</div>
+		<!-- /END CONTENT WRAPPER -->
+
+	</div>
+	<!-- /END WRAPPER -->
+
+	<!-- BEGIN MODAL EDIT CATEGORY -->
+	<div class="modal fade" id="modal-editCategory" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Sửa tên danh mục</h4>
+				</div>
+
+				<!-- BEGIN FORM -->
+				<div class="modal-body">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-folder"></i></span>
+						<input type="text" class="form-control" value="Thông hơi Quảng Châu siêu mát cho bé trai và gái">
+					</div>
+				</div>
+				<!-- /END FORM -->
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-flat btn-default pull-left btn-close" data-dismiss="modal">Đóng</button>
+					<button type="button" class="btn btn-flat btn-danger">Lưu</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL CATEGORY -->
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/fastclick.js"></script>
+	<script src="assets/js/jquery.slimscroll.min.js"></script>
+	<script src="assets/plugins/datepicker/bootstrap-datepicker.min.js"></script>
+	<script src="assets/plugins/select2/select2.full.min.js"></script>
+	<script src="assets/js/base.min.js"></script>
+</body>
+</html>

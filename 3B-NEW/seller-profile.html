@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+
+	<title>3B | Dashboard</title>
+	
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+	<link rel="stylesheet" type="text/css" href="assets/base/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/base/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/plugins/datepicker/bootstrap-datepicker.css">
+	<link rel="stylesheet" type="text/css" href="assets/plugins/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/base/base.min.css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=vietnamese" rel="stylesheet">
+
+</head>
+<body class="hold-transition sidebar-mini">
+
+	<!-- BEGIN WRAPPER -->
+	<div class="wrapper">
+		<!-- BEGIN HEADER -->
+		<header class="main-header">
+
+			<a href="index.html" class="logo">
+				<span class="logo-mini"><b>3</b>B</span>
+				<span class="logo-lg"><b>Black</b>Best Buy</span>
+			</a>
+
+			<nav class="navbar navbar-static-top">
+				<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+					<span class="sr-only">Toggle navigation</span>
+				</a>
+				<div class="navbar-custom-menu">
+					<ul class="nav navbar-nav">
+						<li><a href="buyer-profile.html">Kênh người mua</a></li>
+						<!-- BEGIN USER DROPDOWN -->
+						<li class="dropdown user user-menu">
+							<!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span class="hidden-xs">Frank Jr.</span>
+							</a> -->
+							<!-- BEGIN DROPDOWN -->
+							<ul class="dropdown-menu">
+								<li class="user-header">
+									<p>
+										Frank Jr. - Web Developer
+										<small>Member since Nov. 2012</small>
+									</p>
+								</li>
+								<li class="user-body">
+									<div class="row">
+										<div class="col-xs-4 text-center">
+											<a href="#">Followers</a>
+										</div>
+										<div class="col-xs-4 text-center">
+											<a href="#">Sales</a>
+										</div>
+										<div class="col-xs-4 text-center">
+											<a href="#">Friends</a>
+										</div>
+									</div>
+								</li>
+								<li class="user-footer">
+									<div class="pull-left">
+										<a href="#" class="btn btn-default btn-flat">Profile</a>
+									</div>
+									<div class="pull-right">
+										<a href="#" class="btn btn-default btn-flat">Sign out</a>
+									</div>
+								</li>
+							</ul>
+							<!-- /END DROPDOWN -->
+						</li>
+						<!-- /END USER DROPDOWN -->
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- /END HEADER -->
+
+		<!-- BEGIN MAIN NAVIGATION -->
+		<aside class="main-sidebar">
+			<!-- BEGIN SIDEBAR -->
+			<section class="sidebar">
+				<div class="user-panel">
+					<div class="pull-left image">
+						<img src="assets/images/test-ava-photo.jpg" class="img-circle" alt="User Image">
+					</div>
+					<div class="pull-left info">
+						<p>Frank Jr.</p>
+						<a href="#"><img class="icons-svg" src="assets/images/svg/edit.svg"> Edit Profile</a>
+					</div>
+				</div>
+
+				<ul class="sidebar-menu" data-widget="tree">
+					<!-- BEGIN MENU MY ACCOUNT -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/store.svg"> <span>Shop</span>
+						<ul class="sub-menu">
+							<li class="active">
+								<a href="seller-profile.html"><span>Hồ sơ shop</span></a>
+							</li>
+							<li>
+								<a href="seller-vanchuyen.html"><span>Cài đặt vận chuyển</span></a>
+							</li>
+							<li>
+								<a href="profile-address-seller.html"><span>Địa chỉ</span></a>
+							</li>
+							<li>
+								<a href="seller-danhgia.html"><span>Đánh giá shop</span></a>
+							</li>
+							<li>
+								<a href="seller-hoidap.html"><span>Hỏi đáp khách hàng</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU MY ACCOUNT -->
+
+					<!-- BEGIN MENU ORDER -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/order.svg"> <span>Đơn bán</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-orderall.html"><span>Tất cả</span></a>
+							</li>
+							<li>
+								<a href="seller-muale.html"><span>Mua lẻ</span></a>
+							</li>
+							<li>
+								<a href="seller-muaghep.html"><span>Mua ghép</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU ORDER -->
+
+					<!-- BEGIN MENU PRODUCTS -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/product.svg"> <span>SẢN PHẨM</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-product-list.html"><span>Tất cả</span></a>
+							</li>
+							<li>
+								<a href="seller-productchoduyet.html"><span>Chờ duyệt</span></a>
+							</li>
+							<li>
+								<a href="seller-productdaduyet.html"><span>Đã duyệt</span></a>
+							</li>
+							<li>
+								<a href="seller-productdakhoa.html"><span>Đã khóa</span></a>
+							</li>
+							<li>
+								<a href="seller-productdaan.html"><span>Đã ẩn</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU PRODUCTS -->
+
+					<!-- BEGIN MENU CATEGORY -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/docs.svg">
+						<a href="seller-category-list.html"><span>QUẢN LÝ DANH MỤC</span></a>
+					</li>
+					<!-- /END MENU CATEGORY -->
+
+					<!-- BEGIN MENU MARKETING -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/megaphone.svg"> <span>QUẢN LÝ MARKETING</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-discount.html"><span>Discount của shop</span></a>
+							</li>
+							<li>
+								<a href="seller-voucher.html"><span>Voucher cuar shop</span></a>
+							</li>
+							<li>
+								<a href="seller-3b.html"><span>CT của Black Best Buy</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU MARKETING -->
+
+					<!-- BEGIN MENU SALE -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/tag.svg"> <span>SALE HÀNG LẺ SIZE</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-sizeall.html"><span>Tất cả</span></a>
+							</li>
+							<li>
+								<a href="seller-sizedangky.html"><span>Đăng ký</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU SALE -->
+
+					<!-- BEGIN MENU REPORT -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/statistics.svg"> <span>THỐNG KÊ</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-reportkey.html"><span>Hiệu quả mua KEYWORDS</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU REPORT -->
+
+					<!-- BEGIN MENU REPORT -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/user.svg"> <span>Account</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-wallet3b.html"><span>Ví 3B</span></a>
+							</li>
+							<li>
+								<a href="profile-changepass.html"><span>Đổi mật khẩu</span></a>
+							</li>
+							<li>
+								<a href="#"><span>Logout</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU REPORT -->
+					
+
+				</ul>
+			</section>
+			<!-- /END SIDEBAR -->
+		</aside>
+		<!-- /END MAIN NAVIGATION -->
+
+		<!-- BEGIN CONTENT WRAPPER -->
+		<div class="content-wrapper">
+			<!-- CONTENT HEADER -->
+			<section class="content-header">
+				<ol class="breadcrumb">
+					<li><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+					<li class="active">Hồ sơ của tôi</li>
+				</ol>
+			</section>
+			<!-- /END CONTENT HEADER -->
+
+			<!-- CONTENT -->
+			<section class="content">
+				<div class="box">
+					<form action="#" role="form">
+						<div class="box-header">
+							<h3 class="box-title">
+								Hồ sơ của tôi
+								<small>Cập nhật hồ thông tin hồ sơ của bạn</small>
+							</h3>
+						</div>
+
+						<div class="box-body">
+							<div class="nav-tabs-custom">
+								<ul class="nav nav-tabs">
+									<li class="active">
+										<a href="#tab_1" data-toggle="tab" aria-expanded="true">Thông tin cơ bản</a>
+									</li>
+									<li>
+										<a href="#tab_2" data-toggle="tab" aria-expanded="false">Performance</a>
+									</li>
+								</ul>
+								<div class="tab-content">
+									<!-- BEGIN TAB BASIC INFO -->
+									<div class="tab-pane active" id="tab_1">
+										
+										<!-- BEGIN FORM -->
+										<form action="#" id="form-seller-info">
+											<div class="row">
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="txtShopName">Tên shop</label>
+														<input type="text" class="form-control" id="txtShopName" placeholder="Tên Shop">
+													</div>
+
+													<div class="form-group">
+														<label for="txtShopName">Mô tả hình ảnh</label>
+														<p>Hình ảnh sẽ hiển thị trong trang hồ sơ shop của bạn <span class="pull-right">0/5 Images</span></p>
+														<a class="btn btn-app">
+															<i class="fa fa-image"></i> Tải ảnh
+														</a>
+														<a class="btn btn-app" data-toggle="modal" data-target="#modal-addlinkvideo">
+															<i class="fa fa-play"></i> Thêm video
+														</a>
+													</div>
+
+													<div class="form-group">
+														<label>Mô tả cửa hàng</label>
+														<textarea class="form-control" rows="3" placeholder="Enter ...">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</textarea>
+													</div>
+													<button type="submit" class="btn btn-danger btn-flat">Lưu</button>
+												</div>
+
+												<div class="col-md-6">
+
+													<div class="box-widget">
+														<div class="box-widget-header" style="background: url('assets/images/test-cover-photo.png') center center;">
+															<!-- BEGIN USER COVER -->
+															<div class="cover-wrapper">
+																<input type="file" name="file" class="upload-input" id="seller-cover">
+																<span><i class="fa fa-camera"></i> Sửa ảnh bìa</span>
+															</div>
+															<!-- /END USER COVER -->
+														</div>
+
+														<div class="ava-wrapper">
+															<img src="assets/images/test-ava-photo.jpg" class="profile-user-img img-responsive img-circle" alt="User profile picture">
+
+															<div class="upload-wrapper">
+																<input type="file" name="file" class="upload-input" id="buyer-avata">
+																<div class="edit-ava">Sửa</div>
+															</div>
+															<a class="btn btn-edit-ava" href="javascript:;">
+																<span><img class="icons-svg" src="assets/images/svg/capture.svg"></span>
+															</a>
+														</div>
+
+														<div class="box-widget-content">
+															<h6>Jr. Shop</h6>
+															<p>09012345678</p>
+
+															<div class="content">
+																<h5>Photo</h5>
+																<ul>
+																	<li><img class="icons-svg" src="assets/images/svg/image-temp.svg"></li>
+																	<li><img class="icons-svg" src="assets/images/svg/image-temp.svg"></li>
+																	<li><img class="icons-svg" src="assets/images/svg/image-temp.svg"></li>
+																	<li><img class="icons-svg" src="assets/images/svg/image-temp.svg"></li>
+																	<li><img class="icons-svg" src="assets/images/svg/image-temp.svg"></li>
+																</ul>
+															</div>
+															<div class="content">
+																<h5>Mô tả</h5>
+																<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
+																<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+										<!-- /END FORM -->
+
+									</div>
+									<!-- /END TAB BASIC INFO -->
+
+									<!-- BEGIN TAB PERFORMANCE -->
+									<div class="tab-pane" id="tab_2">
+
+										<div class="row">
+											<!-- BEGIN PERFOMANCE -->
+											<div class="col-md-6">
+												<div class="row">
+													<div class="col-md-12"><h5>Products</h5></div>
+													<div class="col-md-6">
+														<div class="perfomance-block">
+															<label>Sản phẩm</label>
+															<p>48 <span class="pull-right"><img class="icons-svg" src="assets/images/svg/arrow-up.svg"></span></p>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="perfomance-block">
+															<label>Đánh giá tích cực</label>
+															<p>90% <span class="pull-right"><img class="icons-svg" src="assets/images/svg/arrow-up.svg"></span></p>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="perfomance-block">
+															<label>Tỉ lệ trả lại</label>
+															<p>4.00% <span class="pull-right"><img class="icons-svg" src="assets/images/svg/arrow-down.svg"></span></p>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="perfomance-block">
+															<label>Tốc độ chuẩn bị</label>
+															<p>2 - 3 days </p>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12"><h5>Chat</h5></div>
+													<div class="col-md-6">
+														<div class="perfomance-block">
+															<label>Tỉ lệ phản hồi</label>
+															<p>65% <span class="pull-right"><img class="icons-svg" src="assets/images/svg/arrow-up.svg"></span></p>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="perfomance-block">
+															<label>Thời gian phản hồi</label>
+															<p>trong vài giờ</p>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="perfomance-block">
+															<label>Đánh giá phản hồi</label>
+															<p>76% <span class="pull-right"><img class="icons-svg" src="assets/images/svg/arrow-up.svg"></span></p>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="perfomance-block">
+															<label>Cuộc hội thoại</label>
+															<p>162 <span class="pull-right"><img class="icons-svg" src="assets/images/svg/arrow-up.svg"></span></p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- /END PERFOMANCE -->
+
+											<!-- BEGIN OVERVIEW -->
+											<div class="col-md-6">
+												<div class="box-widget">
+													<div class="box-widget-header" style="background: url('assets/images/test-cover-photo.png') center center;">
+														<!-- BEGIN USER COVER -->
+														<div class="cover-wrapper">
+															<input type="file" name="file" class="upload-input" id="seller-cover">
+															<span><i class="fa fa-camera"></i> Sửa ảnh bìa</span>
+														</div>
+														<!-- /END USER COVER -->
+													</div>
+
+													<div class="ava-wrapper">
+														<img src="assets/images/test-ava-photo.jpg" class="profile-user-img img-responsive img-circle" alt="User profile picture">
+
+														<div class="upload-wrapper">
+															<input type="file" name="file" class="upload-input" id="buyer-avata">
+															<div class="edit-ava">Sửa</div>
+														</div>
+														<a class="btn btn-edit-ava" href="javascript:;">
+															<span><img class="icons-svg" src="assets/images/svg/capture.svg"></span>
+														</a>
+													</div>
+
+													<div class="box-widget-content">
+														<ul class="nav nav-stacked">
+															<li>
+																<div class="stack-block">
+																	<img class="icons-svg" src="assets/images/svg/store.svg"> Xem Store <a href="#"><span class="pull-right"><img class="icons-svg" src="assets/images/svg/screen.svg"></span></a>
+																</div>
+															</li>
+															<li>
+																<div class="stack-block">
+																	<i class="fa fa-commenting-o"></i> Tỉ lệ phản hồi <span class="pull-right badge bg-green">31%</span>
+																</div>
+															</li>
+															<li>
+																<div class="stack-block">
+																	<i class="fa fa-clock-o"></i> Thời gian phản hồi <span class="pull-right badge bg-green">khoảng vài giờ</span>
+																</div>
+															</li>
+															<li>
+																<div class="stack-block">
+																	<i class="fa fa-truck"></i> Chuẩn bị hàng trung bình <span class="pull-right badge bg-green">2 - 3 ngày</span>
+																</div>
+															</li>
+															<li>
+																<div class="stack-block">
+																	<i class="fa fa-star-half-empty"></i> Đánh giá store <span class="pull-right badge bg-green">8.5</span>
+																</div>
+															</li>
+															<li>
+																<div class="stack-block">
+																	<i class="fa fa-cubes"></i> Tỉ lệ thành công đơn hàng <span class="pull-right badge bg-green">4.00%</span>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<!-- /END OVERVIEW -->
+										</div>
+
+									</div>
+									<!-- /END TAB PERFORMANCE -->
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+			<!-- /END CONTENT -->
+			
+		</div>
+		<!-- /END CONTENT WRAPPER -->
+
+	</div>
+	<!-- /END WRAPPER -->
+
+	<!-- BEGIN MODAL VIDEO LINK -->
+	<div class="modal fade" id="modal-addlinkvideo" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Thêm liên kết Youtube</h4>
+				</div>
+
+				<!-- BEGIN FORM ADD VIDEO LINK -->
+				<div class="modal-body">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-play"></i></span>
+						<input type="text" class="form-control" placeholder="Liên kết video">
+					</div>
+				</div>
+				<!-- /END FORM ADD VIDEO LINK -->
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-flat btn-default pull-left btn-close" data-dismiss="modal">Đóng</button>
+					<button type="button" class="btn btn-flat btn-danger">Lưu Video</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL VIDEO LINK -->
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/fastclick.js"></script>
+	<script src="assets/js/jquery.slimscroll.min.js"></script>
+	<script src="assets/plugins/datepicker/bootstrap-datepicker.min.js"></script>
+	<script src="assets/plugins/select2/select2.full.min.js"></script>
+	<script src="assets/js/base.min.js"></script>
+</body>
+</html>
