@@ -107,7 +107,7 @@
 					<li class="header">
 						<img class="icons-svg" src="assets/images/svg/profile.svg"> <span>Tài khoản của tôi</span>
 						<ul class="sub-menu">
-							<li class="active">
+							<li>
 								<a href="buyer-profile.html"><span>Hồ sơ</span></a>
 							</li>
 							<li>
@@ -145,7 +145,7 @@
 					<!-- /END MENU VOUCHER -->
 
 					<!-- BEGIN MENU COIN -->
-					<li class="header">
+					<li class="header active">
 						<img class="icons-svg" src="assets/images/svg/coin.svg">
 						<a href="buyer-3b-coin.html"><span>3B Xu</span></a>
 					</li>
@@ -170,7 +170,7 @@
 			<section class="content-header">
 				<ol class="breadcrumb">
 					<li><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-					<li class="active">Hồ sơ của tôi</li>
+					<li class="active">3B Coin</li>
 				</ol>
 			</section>
 			<!-- /END CONTENT HEADER -->
@@ -181,85 +181,64 @@
 					<form action="#" role="form">
 						<div class="box-header">
 							<h3 class="box-title">
-								Hồ sơ của tôi
-								<small>Cập nhật hồ thông tin hồ sơ của bạn</small>
+								3B Coin
 							</h3>
 						</div>
 
 						<div class="box-body buyer-profile">
 							<div class="row">
 								<!-- BEGIN FORM PROFILE -->
-								<div class="col-md-6 border-right">
-									<div class="form-group">
-										<label for="txtEmail">Email</label>
-										<div class="input-group">
-											<input type="email" class="form-control" id="txtEmail" placeholder="Email">
-											<span class="input-group-addon error"><img class="icons-svg" src="assets/images/svg/error.svg"></span>
-										</div>
-										<label class="error-msg">Please enter email</label>
+								<div class="col-md-3">
+									<img class="pull-left margin-r-5" src="assets/images/svg/3b-coin.svg">
+									<div class="p-info pull-left">
+										<div class="name margin-b3 text-green"><b>500.00</b></div>
+										<div class="size-color margin-b3">3B Xu in your account</div>
 									</div>
-									<div class="form-group">
-										<label for="txtMobile">Số điện thoại</label>
-										<input type="text" class="form-control" id="txtMobile" placeholder="Số điện thoại">
-									</div>
-									<div class="form-group">
-										<label for="txtShopName">Tên shop</label>
-										<input type="text" class="form-control" id="txtShopName" placeholder="Tên Shop">
-									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-md-7"><label for="optGender">Giới tính</label></div>
-											<div class="col-md-5">
-												<label class="radio-button">
-													<input type="radio" name="optionsRadios" id="optionsRadios1" value="nam" /> 
-													<span class="helping-el"></span>
-													<span class="label-text">Nam</span>
-												</label>
-												<label class="radio-button">
-													<input type="radio" name="optionsRadios" id="optionsRadios1" value="nu" /> 
-													<span class="helping-el"></span>
-													<span class="label-text">Nữ</span>
-												</label>
+								</div>
+								<div class="col-md-6">
+									<div class="history">
+										<h3>History</h3>
+										<div class="item">
+											<img class="opbject-fit" src="assets/images/img3.jpg">
+											<div class="info pull-left">
+												<div class="title">Áo phao cho bé trai</div>
+												<div class="info-detail">
+													<span>Tặng xu cho đơn hàng hoàn thành</span>
+													<span class="date">25-08-2019 08:03</span>
+												</div>
 											</div>
+											<div class="point pull-right"><span class="text-red">+100</span></div>
+											<div class="clearfix"></div>
+										</div>
+										<div class="item">
+											<img class="opbject-fit" src="assets/images/img2.jpg">
+											<div class="info pull-left">
+												<div class="title">3B hoàn xu</div>
+												<div class="info-detail">
+													<span>Tặng xu cho đơn hàng hoàn thành</span>
+													<span class="date">25-08-2019 08:03</span>
+												</div>
+											</div>
+											<div class="point pull-right"><span class="text-red">+100</span></div>
+											<div class="clearfix"></div>
+										</div>
+										<div class="item">
+											<img class="opbject-fit" src="assets/images/img2.jpg">
+											<div class="info pull-left">
+												<div class="title">Áo khoác kaki 2 lớp dày dặn...</div>
+												<div class="info-detail">
+													<span>Sử dụng xu để trả đơn hàng</span>
+													<span class="date">25-08-2019 08:03</span>
+												</div>
+											</div>
+											<div class="point pull-right"><span class="text-grey">-100</span></div>
+											<div class="clearfix"></div>
 										</div>
 									</div>
-									<div class="form-group with-addon">
-										<label for="txtDob">Ngày sinh</label>
-										<div class="input-group">
-											<input type="text" class="form-control" id="txtDob" placeholder="Ngày sinh">
-											<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-										</div>
-										
-									</div>
+									<a class="text-red" href="#">Xem tất cả</a>
 								</div>
+								<div class="col-md-3"></div>
 								<!-- /END FORM PROFILE -->
-								
-								<!-- BEGIN AVATAR BUYER -->
-								<div class="col-md-6 text-center">
-
-									<div class="ava-wrapper">
-										<img src="assets/images/test-ava-photo.jpg" class="profile-user-img img-responsive img-circle" alt="User profile picture">
-
-										<div class="upload-wrapper">
-											<input type="file" name="file" class="upload-input" id="buyer-avata">
-											<div class="edit-ava">Sửa</div>
-										</div>
-										<a class="btn btn-edit-ava" href="javascript:;">
-											<span><img class="icons-svg" src="assets/images/svg/capture.svg"></span>
-										</a>
-									</div>
-									
-									<h3 class="profile-username">Frank Jr.</h3>
-									<p class="text-muted">Dung lượng tối đa 1MB / Định dạng .JPEG .PNG</p>
-								</div>
-								<!-- /END AVATAR BUYER -->
-							</div>
-						</div>
-						<div class="box-footer">
-							<div class="row">
-								<div class="col-sm-12">
-									<button type="submit" class="btn btn-danger">Lưu</button>
-								</div>
 							</div>
 						</div>
 					</form>
