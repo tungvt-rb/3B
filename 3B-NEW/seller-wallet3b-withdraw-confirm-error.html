@@ -253,82 +253,28 @@
 			<section class="content">
 				<div class="content-block">
 					<div class="head">
-						<h3>Ví 3B - Withdrawal Detail</h3>
+						<h3>Ví 3B - Withdrawal Confirm</h3>
 					</div>
 					<!-- BEGIN BODY -->
-					<div class="body">
-						<div class="bank-account">
-							<div class="row">
-								<div class="col-md-6">
-									<h4>Ngân hàng <a href="seller-wallet3b-withdraw-bank-linked.html" class="pull-right">Xem tất cả</a></h4>
-									<div class="items">
-										<div class="item active">
-											<img class="object-fit" src="assets/images/banks/vietcombank.png">
-											<span class="name">Vietcombank</span>
-											<span class="numb">0938 *** 433</span>
-										</div>
-										<div class="item">
-											<img class="object-fit" src="assets/images/banks/vietcombank.png">
-											<span class="name">Vietcombank</span>
-											<span class="numb">0938 *** 433</span>
-										</div>
-										<div class="item">
-											<img class="object-fit" src="assets/images/banks/vietcombank.png">
-											<span class="name">Vietcombank</span>
-											<span class="numb">0938 *** 433</span>
-										</div>
-										<div class="item">
-											<img class="object-fit" src="assets/images/banks/vietcombank.png">
-											<span class="name">Vietcombank</span>
-											<span class="numb">0938 *** 433</span>
-										</div>
-										<div class="item">
-											<img class="object-fit" src="assets/images/banks/vietcombank.png">
-											<span class="name">Vietcombank</span>
-											<span class="numb">0938 *** 433</span>
-										</div>
-										<div class="item">
-											<img class="object-fit" src="assets/images/banks/vietcombank.png">
-											<span class="name">Vietcombank</span>
-											<span class="numb">0938 *** 433</span>
-										</div>
-										<div class="item">
-											<img class="object-fit" src="assets/images/banks/vietcombank.png">
-											<span class="name">Vietcombank</span>
-											<span class="numb">0938 *** 433</span>
-										</div>
-									</div>
-
-									<a href="seller-banking-add.html" class="text-red"><i class="fa fa-plus margin-r-5"></i>Thêm ngân hàng</a>
+					<div class="body wallet3b">
+						<div class="row withdraw-detail">
+							<div class="col-md-4">
+								<div class="body-item">
+									<div class="title">Wallet Balance</div>
+									<div class="balance text-black">$500.00</div>
 								</div>
-								<div class="col-md-6">
-									<p>Nhập số tiền cần rút (VND)</p>
-									<div class="input-group">
-										<input type="text" class="form-control" placeholder="100.000">
-									</div>
-									<div class="chk margin-b">
-										<input type="checkbox" name="chk7" id="chk7" class="chk-custom">
-										<label for="chk7" class="chk-custom-label">Số dư cho phép rút(1.345.555 đ)</label>
-									</div>
-									<ul class="list-btn">
-										<li class="active"><button class="btn btn-default">100.000</button></li>
-										<li><button class="btn btn-default">200.000</button></li>
-										<li><button class="btn btn-default">300.000</button></li>
-										<li><button class="btn btn-default">500.000</button></li>
-										<li><button class="btn btn-default">1.000.000</button></li>
-										<li><button class="btn btn-default">3.000.000</button></li>
-									</ul>
-									<div class="fee">
-										<p>Phí rút tiền <span class="pull-right">4,000đ</span></p>
-										<span>Lệnh rút tiền sẽ được thực hiện trong vòng từ 3-5 ngày làm việc(không tính t7, chủ nhật và ngày lễ)</span>
-									</div>									
+
+								<div class="body-item detail">
+									<label>TK Vietcombank (*** 433)</label>
+									<label>Fee <span class="pull-right">4,000 đ</span></label>
+									<label>Actually received <span class="pull-right">130,000 đ</span></label>
 								</div>
 							</div>
 						</div>
 					</div>
 
 					<div class="foot">
-						<a href="seller-wallet3b-withdraw-confirm.html" class="btn btn-flat btn-danger">Next</a>
+						<button type="button" class="btn btn-flat btn-danger" data-toggle="modal" data-target="#withdrawConfirm">Confirm</button>
 					</div>
 				</div>
 			</section>
@@ -339,6 +285,52 @@
 
 	</div>
 	<!-- /END WRAPPER -->
+
+	<div id="withdrawConfirm" class="modal" data-backdrop="static">
+		<div class="modal-dialog custom-modal">
+			<div class="modal-content">
+				<span class="close" data-dismiss="modal"><i class="fa fa-close"></i></span>
+				
+				<h4>Please enter 3B wallet's PIN</h4>
+				<div class="form-group error">
+					<label>Enter PIN</label>
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-qrcode"></i></span>
+						<input type="text" class="form-control" placeholder="3B wallet's PIN">
+					</div>
+					<label class="error-msg">Văn bản lỗi hiển thị</label>
+				</div>
+				
+				<div class="control">
+					<div class="row">
+						<div class="col-md-12">
+							<button type="button" class="btn btn-flat btn-danger" data-toggle="modal" data-target="#withdrawSuccess" data-dismiss="modal">Confirm</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="withdrawSuccess" class="modal" data-backdrop="static">
+		<div class="modal-dialog custom-modal">
+			<div class="modal-content">
+				<!-- <span class="close" data-dismiss="modal"><i class="fa fa-close"></i></span> -->
+				
+				<img src="assets/images/failed.png">
+
+				<h3>Transaction failed</h3>
+				
+				<div class="control">
+					<div class="row">
+						<div class="col-md-12">
+							<a href="seller-wallet3b.html" class="btn btn-danger">Close</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
