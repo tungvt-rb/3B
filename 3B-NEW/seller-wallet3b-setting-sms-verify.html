@@ -254,38 +254,26 @@
 			<section class="content order-detail-block">
 				<div class="content-block">
 					<div class="head">
-						<h3>Ví 3B</h3>
+						<h3>Verify OTP</h3>
 					</div>
 					<!-- BEGIN BODY -->
-					<div class="body wallet3b">
+					<div class="body">
 						<div class="row">
-							<div class="col-md-2">
-								<div class="body-item">
-									<div class="title">Wallet Balance</div>
-									<div class="balance">$500.00</div>
+							<div class="col-md-6">
+								<p class="text-muted">6-digit confirmation code has been sent to phone number <span class="text-black">+ 84xxxxxxx878</span></p>
+								<div class="form-group">
+									<label>Code OTP</label>
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="6 digit">
+									</div>
 								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="body-item">
-									<a href="seller-wallet3b-transaction-history.html">
-										<img src="assets/images/svg/transaction.svg">
-										<div class="name">Transactions</div>
-									</a>
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="body-item">
-									<a href="seller-wallet3b-withdraw.html">
-										<img src="assets/images/svg/atm.svg">
-										<div class="name">Withdraw</div>
-									</a>
-								</div>
+								<p>The code expires in 120 seconds <a href="#">Resend <i class="fa fa-refresh"></i></a></p>
 							</div>
 						</div>
 					</div>
 
 					<div class="foot">
-						<a href="seller-wallet3b-setting.html" class="btn btn-default"><i class="fa fa-gears"></i> Setting</a>
+						<button type="button" class="btn btn-flat btn-danger" data-toggle="modal" data-target="#createPIN">Confirm</button>
 					</div>
 				</div>
 			</section>
@@ -296,6 +284,77 @@
 
 	</div>
 	<!-- /END WRAPPER -->
+
+	<div id="createPIN" class="modal" data-backdrop="static">
+		<div class="modal-dialog custom-modal">
+			<div class="modal-content">
+				<span class="close" data-dismiss="modal"><i class="fa fa-close"></i></span>
+				
+				<h4>Please enter 3B wallet's PIN</h4>
+				<div class="form-group">
+					<label>Enter PIN</label>
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-qrcode"></i></span>
+						<input type="text" class="form-control" placeholder="3B wallet's PIN">
+					</div>
+				</div>
+				
+				<div class="control">
+					<div class="row">
+						<div class="col-md-12">
+							<button type="button" class="btn btn-flat btn-danger" data-toggle="modal" data-target="#confirmPIN" data-dismiss="modal">Confirm</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="confirmPIN" class="modal" data-backdrop="static">
+		<div class="modal-dialog custom-modal">
+			<div class="modal-content">
+				<span class="close" data-dismiss="modal"><i class="fa fa-close"></i></span>
+				
+				<h4>Confirm 3B wallet's PIN</h4>
+				<div class="form-group">
+					<label>Enter PIN</label>
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-qrcode"></i></span>
+						<input type="text" class="form-control" placeholder="3B wallet's PIN">
+					</div>
+				</div>
+				
+				<div class="control">
+					<div class="row">
+						<div class="col-md-12">
+							<button type="button" class="btn btn-flat btn-danger" data-toggle="modal" data-target="#createSuccess" data-dismiss="modal">Confirm</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="createSuccess" class="modal" data-backdrop="static">
+		<div class="modal-dialog custom-modal">
+			<div class="modal-content">
+				<!-- <span class="close" data-dismiss="modal"><i class="fa fa-close"></i></span> -->
+				
+				<img src="assets/images/success.png">
+
+				<h3>Successful transaction</h3>
+				<p>This Transaction will takes 3-5 days to process</p>
+				
+				<div class="control">
+					<div class="row">
+						<div class="col-md-12">
+							<a href="seller-wallet3b-setting-change-pin.html" class="btn btn-danger">Close</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
