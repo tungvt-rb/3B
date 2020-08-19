@@ -276,16 +276,41 @@
 		<div class="row">
 			<div class="col-md-9">
 				<!-- BEGIN ADDRESS SHIPPING -->
-				<div class="address-shipping">
+				<div class="address-shipping change">
 					<h4 class="pull-left">Shipping Address</h4>
 					<div class="control pull-right">
-						<a href="shopping-cart-checkout-change-address.html" class="txt-green"><img class="icons-svg" src="assets/images/svg/edit.svg">Change</a>
+						<a href="#" class="txt-red" data-toggle="modal" data-target="#addAddress">Add Address</a>
 					</div>
 					<div class="clearfix"></div>
 
 					<div class="item">
 						<!-- BEGIN ADDRESS HEADER -->
 						<div class="address-header">
+							<label class="radio-button">
+								<input type="radio" name="optionsRadios" value="nam" checked="checked" /> 
+								<span class="helping-el"></span>
+							</label>
+							<h6>Huong Phu Thi <b class="txt-red">(Default)</b> <span>Shiping address</span></h6>
+						</div>
+						<!-- /END ADDRESS HEADER -->
+
+						<!-- BEGIN ADDRESS BODY -->
+						<div class="address-body">
+							<ul>
+								<li><img class="icons-svg" src="assets/images/svg/telephone.svg"> +84 090 123 456</li>
+								<li><img class="icons-svg" src="assets/images/svg/placeholder.svg"> Số 1, tên đường, phố, quận...</li>
+							</ul>
+						</div>
+						<!-- /END ADDRESS BODY -->
+					</div>
+
+					<div class="item">
+						<!-- BEGIN ADDRESS HEADER -->
+						<div class="address-header">
+							<label class="radio-button">
+								<input type="radio" name="optionsRadios" value="nam" /> 
+								<span class="helping-el"></span>
+							</label>
 							<h6>Huong Phu Thi<span>Shiping address</span></h6>
 						</div>
 						<!-- /END ADDRESS HEADER -->
@@ -298,6 +323,34 @@
 							</ul>
 						</div>
 						<!-- /END ADDRESS BODY -->
+					</div>
+
+					<div class="item">
+						<!-- BEGIN ADDRESS HEADER -->
+						<div class="address-header">
+							<label class="radio-button">
+								<input type="radio" name="optionsRadios" value="nam" /> 
+								<span class="helping-el"></span>
+							</label>
+							<h6>Huong Phu Thi<span>Shiping address</span></h6>
+						</div>
+						<!-- /END ADDRESS HEADER -->
+
+						<!-- BEGIN ADDRESS BODY -->
+						<div class="address-body">
+							<ul>
+								<li><img class="icons-svg" src="assets/images/svg/telephone.svg"> +84 090 123 456</li>
+								<li><img class="icons-svg" src="assets/images/svg/placeholder.svg"> Số 1, tên đường, phố, quận...</li>
+							</ul>
+						</div>
+						<!-- /END ADDRESS BODY -->
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<button class="btn btn-danger" data-toggle="modal" data-target="#addAddressSuccess">Save</button>
+							<button class="btn btn-cancel">Cancel</button>
+						</div>
 					</div>
 				</div>
 				<!-- /END ADDRESS SHIPPING -->
@@ -629,19 +682,20 @@
 
 						<ul class="items">
 							<li>
-								<a href="#">
-									<img src="assets/images/airpay-wallet.png">
+								<a href="#" data-toggle="modal" data-target="#checkoutByBank">
+									<img src="assets/images/bank-atm.png">
 									<div class="info">
-										<h5>Airpay Wallet</h5>
+										<h5>Thẻ ATM</h5>
+										<p>(internet banking)</p>
 									</div>
 									<div class="clearfix"></div>
 								</a>
 							</li>
 							<li>
-								<a href="#">
-									<img src="assets/images/moca-wallet.png">
+								<a href="#" data-toggle="modal" data-target="#checkoutByMomo">
+									<img src="assets/images/momo-wallet.png">
 									<div class="info">
-										<h5>Moca Wallet</h5>
+										<h5>Momo Wallet</h5>
 										<p>Số dư không đủ ( 12000 đ)</p>
 									</div>
 									<div class="clearfix"></div>
@@ -657,7 +711,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="#" data-toggle="modal" data-target="#checkoutByFriend">
 									<img src="assets/images/cash-on-delivery-2.png">
 									<div class="info">
 										<h5>Nhờ người thanh toán hộ</h5>
@@ -666,7 +720,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="#" data-toggle="modal" data-target="#checkoutByWallet3B">
 									<img src="assets/images/3b-wallet.png">
 									<div class="info">
 										<h5>3B Wallet</h5>
@@ -708,8 +762,14 @@
 						<label class="pull-right txt-red">$23232</label>
 						<div class="clearfix"></div>
 					</div>
-					<a href="#" class="btn btn-danger">Order</a>
+					<button class="btn btn-danger" data-toggle="modal" data-target="#checkoutSuccess">Order</button>
 				</div>
+
+				<!-- SHOW POPUP CHECKOUT FAIL FOR TEST REMOVE IT!!! -->
+				<div class="checkout">
+					<button class="btn btn-danger" data-toggle="modal" data-target="#checkoutFail">Check out fail</button>
+				</div>
+				<!-- SHOW POPUP CHECKOUT FAIL FOR TEST REMOVE IT!!! -->
 			</div>
 		</div>
 	</div>
@@ -795,6 +855,7 @@
 	</footer>
 	<!-- /END FOOTER -->
 
+	<!-- BEGIN MODAL VOUCHER -->
 	<div id="voucherModal" class="modal vouchermodal" data-backdrop="static">
 		<div class="modal-dialog custom-modal">
 			<div class="modal-content">
@@ -864,6 +925,325 @@
 			</div>
 		</div>
 	</div>
+	<!-- /END MODAL VOUCHER -->
+
+	<!-- BEGIN MODAL ADD ADDRESS -->
+	<div id="addAddress" class="modal" data-backdrop="static">
+		<div class="modal-dialog custom-modal">
+			<div class="modal-content">
+				<span class="close" data-dismiss="modal"><img src="assets/images/svg/x-circle.svg"></span>
+
+				<div class="modal-form">
+					<div class="form-group">
+						<label>Your Name</label>
+						<input type="text" class="form-control input-lg" placeholder="Your Name">
+					</div>
+					<div class="form-group">
+						<label>Phone number</label>
+						<input type="text" class="form-control input-lg" placeholder="+84">
+					</div>
+					<div class="form-group">
+						<label>City</label>
+						<div class="custom-slb">
+							<select>
+								<option value="0">Select City</option>
+								<option value="1" selected>Ha Noi</option>
+								<option value="2">Ho Chi Minh</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label>Country/ District</label>
+						<div class="custom-slb">
+							<select>
+								<option value="0">Select Country</option>
+								<option value="1" selected>Viet Name</option>
+								<option value="2">Phap</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label>Commune</label>
+						<div class="custom-slb">
+							<select>
+								<option value="0">Select Commune</option>
+								<option value="1" selected>Somethings...</option>
+								<option value="2">more..</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label>Address Detail</label>
+						<input type="text" class="form-control input-lg" placeholder="Address details">
+					</div>
+					<div class="form-group">
+						<label>Set as Shipping address</label>
+						<button type="button" class="btn btn-sm btn-toggle pull-right active" data-toggle="button" aria-pressed="true" autocomplete="off">
+							<div class="handle"></div>
+						</button>
+					</div>
+					<button class="btn btn-danger pull-right">Save</button>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL ADD ADDRESS -->
+
+	<!-- BEGIN MODAL ADD ADDRESS SUCCESS -->
+	<div id="addAddressSuccess" class="modal" data-backdrop="static">
+		<div class="modal-dialog custom-modal">
+			<div class="modal-content">
+				<span class="close" data-dismiss="modal"><img src="assets/images/svg/x-circle.svg"></span>
+				
+				<img src="assets/images/complete-add-address.png">
+
+				<h3>Successful submission!</h3>
+				<p class="nopadding">
+					Thank for your shopping in 3B with ID shopping: <span class="txt-red">2u8434</span>
+				</p>
+
+				<div class="control">
+					<a href="#" class="btn btn-danger">Back to shopping</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL ADD ADDRESS SUCCESS -->
+
+	<!-- BEGIN MODAL CHECKOUT SUCCESS -->
+	<div id="checkoutSuccess" class="modal" data-backdrop="static">
+		<div class="modal-dialog custom-modal">
+			<div class="modal-content">
+				<span class="close" data-dismiss="modal"><img src="assets/images/svg/x-circle.svg"></span>
+				
+				<img src="assets/images/cart-add-success.png">
+
+				<h3>Completed!</h3>
+				<p class="nopadding">
+					You will be contacted quickly by shipper to get the goods!
+				</p>
+
+				<div class="control">
+					<a href="#" class="btn btn-danger">Continuce Shopping</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL CHECKOUT SUCCESS -->
+
+	<!-- BEGIN MODAL CHECKOUT FAIL -->
+	<div id="checkoutFail" class="modal" data-backdrop="static">
+		<div class="modal-dialog custom-modal">
+			<div class="modal-content">
+				<span class="close" data-dismiss="modal"><img src="assets/images/svg/x-circle.svg"></span>
+				
+				<img src="assets/images/checkout-fail.png">
+
+				<h3>Failed!</h3>
+				<p class="nopadding">
+					You will be contacted quickly by shipper to get the goods!
+				</p>
+
+				<div class="control">
+					<a href="#" class="btn btn-danger">Continuce Shopping</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL CHECKOUT FAIL -->
+
+	<!-- BEGIN MODAL CHECKOUT BY FRIENDS -->
+	<div id="checkoutByFriend" class="modal" data-backdrop="static">
+		<div class="modal-dialog custom-modal">
+			<div class="modal-content">
+				<span class="close" data-dismiss="modal"><img src="assets/images/svg/x-circle.svg"></span>
+
+				<div class="modal-head">
+					<h4>Saved list</h4>
+					<ul class="list-friend">
+						<li>
+							<span class="ava">T</span>
+							<span class="name">VU TRANG</span>
+						</li>
+						<li>
+							<span class="ava"><img src="assets/images/store-logo-32.png"></span>
+							<span class="name">FRANK Jr.</span>
+						</li>
+						<li>
+							<span class="ava">T</span>
+							<span class="name">VU TRANG</span>
+						</li>
+						<li>
+							<span class="ava"><img src="assets/images/store-logo-32.png"></span>
+							<span class="name">FRANK Jr.</span>
+						</li>
+						<li>
+							<span class="ava">T</span>
+							<span class="name">VU TRANG</span>
+						</li>
+						<li>
+							<span class="ava"><img src="assets/images/store-logo-32.png"></span>
+							<span class="name">FRANK Jr.</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="modal-form">
+					<div class="form-group">
+						<label>Tài khoản người thanh toán hộ trên 3B</label>
+						<input type="text" class="form-control input-lg" placeholder="Your Friends">
+					</div>
+					<div class="form-group">
+						<label>Messenger</label>
+						<input type="text" class="form-control input-lg" placeholder="Message">
+					</div>
+
+					<div class="chk">
+						<input type="checkbox" name="chk1" id="chk1" class="chk-custom">
+						<label for="chk1" class="chk-custom-label">Save</label>
+					</div>
+
+					<button class="btn btn-danger pull-right">Send</button>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL CHECKOUT BY FRIENDS -->
+
+	<!-- BEGIN MODAL CHECKOUT BY MOMO -->
+	<div id="checkoutByMomo" class="modal" data-backdrop="static">
+		<div class="modal-dialog custom-modal large">
+			<div class="modal-content">
+				<span class="close" data-dismiss="modal"><img src="assets/images/svg/x-circle.svg"></span>
+
+				<div class="modal-head">
+					<h4>Momo - Mã QR Code</h4>
+				</div>
+
+				<div class="row qr-code">
+					<div class="col-md-5">
+						<img src="assets/images/qr-code.jpg">
+						<p>Thời gian quét mã QR thanh toán còn <span class="txt-red">245</span> giây</p>
+					</div>
+					<div class="col-md-7 text-left">
+						<h4>Thực hiện theo hướng dẫn sau để thanh toán</h4>
+						<p>Bước 1: Mở ứng dụng MoMo để thanh toán</p>
+						<p>Bước 2: Chọn "Thanh toán" và quét mã QR code tại hướng dẫn này</p>
+						<p>Bước 3: Hoàn thanh các bước thanh toán theo hướng dẫn</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL CHECKOUT BY MOMO -->
+
+	<!-- BEGIN MODAL CHECKOUT BY BANK -->
+	<div id="checkoutByBank" class="modal" data-backdrop="static">
+		<div class="modal-dialog custom-modal large">
+			<div class="modal-content">
+				<span class="close" data-dismiss="modal"><img src="assets/images/svg/x-circle.svg"></span>
+
+				<div class="modal-head">
+					<h4>Select Bank</h4>
+				</div>
+
+				<h4 class="text-left">Recently</h4>
+				<ul class="list-item">
+					<li>
+						<a href="#">
+							<div class="body-item">
+								<img class="object-fit" src="assets/images/banks/vietcombank.png">
+								<div class="name">Vietcombank</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="body-item">
+								<img class="object-fit" src="assets/images/banks/bidv.png">
+								<div class="name">BIDV</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+
+				<h4 class="text-left">All banks</h4>
+				<ul class="list-item">
+					<li>
+						<a href="#">
+							<div class="body-item">
+								<img class="object-fit" src="assets/images/banks/vietcombank.png">
+								<div class="name">Vietcombank</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="body-item">
+								<img class="object-fit" src="assets/images/banks/bidv.png">
+								<div class="name">BIDV</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="body-item">
+								<img class="object-fit" src="assets/images/banks/mb.png">
+								<div class="name">MB</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="body-item">
+								<img class="object-fit" src="assets/images/banks/msb.png">
+								<div class="name">MSB</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="body-item">
+								<img class="object-fit" src="assets/images/banks/vietinbank.png">
+								<div class="name">VIetinbank</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL CHECKOUT BY BANK -->
+
+	<!-- BEGIN MODAL CHECKOUT BY WALLET 3B -->
+	<div id="checkoutByWallet3B" class="modal" data-backdrop="static">
+		<div class="modal-dialog custom-modal">
+			<div class="modal-content">
+				<span class="close" data-dismiss="modal"><i class="fa fa-close"></i></span>
+				
+				<div class="modal-head">
+					<h4 class="text-left">Please enter 3B wallet's PIN</h4>
+				</div>
+				<div class="form-group text-left">
+					<label>Enter PIN</label>
+					<input type="text" class="form-control input-lg" placeholder="3B wallet's PIN">
+				</div>
+				
+				<div class="control">
+					<div class="row">
+						<div class="col-md-12">
+							<button type="button" class="btn btn-flat btn-danger" data-toggle="modal" data-target="#withdrawSuccess" data-dismiss="modal">Confirm</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL CHECKOUT BY WALLET 3B -->
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
