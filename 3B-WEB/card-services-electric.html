@@ -276,32 +276,63 @@
 			<div class="col-md-10 content-centered">
 				<!-- BEGIN CARD SERVICES -->
 				<div class="card-services">
-					<div class="row">
-						<div class="col-md-4">
-							<div class="item">
-								<a href="card-services-mobile-code.html">
-									<img src="assets/images/svg/hand-graving.svg">
-									<span>Nạp thẻ điện thoại</span>
-								</a>
+
+					<div class="body">
+						<h4>Thanh toán tiền điện</h4>
+
+						<div class="row">
+							<div class="col-md-12">
+								<p class="warning"><img src="assets/images/svg/bell.svg"> Enter the code 20%  when phone recharge, pay via Airpay, Zalo</p>
 							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="item">
-								<a href="card-services-electric.html">
-									<img src="assets/images/svg/plug.svg">
-									<span>Thanh toán tiền điện</span>
-								</a>
+							<div class="col-md-12">
+									<h4>Select the card value</h4>
+									<ul class="list-card">
+										<li>
+											<a href="#" data-toggle="modal" data-target="#checkAccountID">
+												<div class="ava">
+													<img class="object-fit" src="assets/images/evn.png">
+												</div>
+												<span class="name">EVN Hà Nội</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#checkAccountID">
+												<div class="ava">
+													<img class="object-fit" src="assets/images/img30.jpg">
+												</div>
+												<span class="name">EVN Hồ Chí Minh</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#checkAccountID">
+												<div class="ava">
+													<img class="object-fit" src="assets/images/img29.jpg">
+												</div>
+												<span class="name">EVN Miền Nam</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#checkAccountID">
+												<div class="ava">
+													<img class="object-fit" src="assets/images/evn.png">
+												</div>
+												<span class="name">EVN Miền Bắc</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#checkAccountID">
+												<div class="ava">
+													<img class="object-fit" src="assets/images/evn.png">
+												</div>
+												<span class="name">EVN Miền Trung</span>
+											</a>
+										</li>
+									</ul>
 							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="item">
-								<a href="#">
-									<img src="assets/images/svg/card.svg">
-									<span>Nạp thẻ Game</span>
-								</a>
-							</div>
+							<div class="clearfix"></div>
 						</div>
 					</div>
+
 				</div>
 				<!-- END CARD SERVICES -->
 			</div>
@@ -388,6 +419,43 @@
 		</div>
 	</footer>
 	<!-- /END FOOTER -->
+
+	<!-- BEGIN MODAL CHECKOUT BY WALLET 3B -->
+	<div id="checkAccountID" class="modal" data-backdrop="static">
+		<div class="modal-dialog custom-modal">
+			<div class="modal-content">
+				<span class="close" data-dismiss="modal"><i class="fa fa-close"></i></span>
+				
+				<div class="modal-head">
+					<h4 class="text-left">Thanh toán tiền điện</h4>
+				</div>
+
+				<ul class="list-card">
+					<li>
+						<div class="ava">
+							<img class="object-fit" src="assets/images/evn.png">
+						</div>
+						<span class="name">EVN Hà Nội</span>
+					</li>
+				</ul>
+
+				<div class="form-group text-left error">
+					<label>ID account</label>
+					<input type="text" class="form-control input-lg" placeholder="PD 23129324900">
+					<label class="error-msg">Văn bản hiển thị lỗi</label>
+				</div>
+				
+				<div class="control">
+					<div class="row">
+						<div class="col-md-12">
+							<a href="card-services-electric-bill.html" class="btn btn-flat btn-danger">Kiểm tra hoá đơn</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL CHECKOUT BY WALLET 3B -->
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>

@@ -1065,6 +1065,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 }
 .custom-modal .modal-content .list-item li a:hover .body-item {border-color: #2F80ED;}
 
+
 .card-services {padding: 30px 0 60px;}
 .card-services .item {background: #FFFFFF;border-radius: 18px;text-align: center;padding: 20px;}
 .card-services .item img {margin-bottom: 20px}
@@ -1075,11 +1076,17 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 .card-services .body .warning img {margin-right: 10px;}
 .card-services .body h4 {font-size: 15px;margin-bottom: 15px;}
 .card-services .body .list-card {display: table;margin-bottom: 20px;}
-.card-services .body .list-card li {display: inline-block;padding: 15px;border-radius: 6px;border: 1px solid var(--platium);margin:0 18px 10px 0;}
+.card-services .body .list-card li {display: inline-block;padding: 15px;border-radius: 6px;border: 1px solid var(--platium);margin:0 18px 10px 0;text-align: center;}
 .card-services .body .list-card li:last-child {margin-right: 0;}
 .card-services .body .list-card li:hover, .card-services .body .list-card li.active {border-color: var(--sea-green);}
+.card-services .body .list-card .ava img {width:54px;height: 44px;object-fit: cover;margin-bottom: 8px;}
+.custom-modal .list-card .ava img {margin-bottom: 8px;}
+.card-services .body .list-card span.name {font-size: 16px;line-height: 20px;}
 .card-services .body .list-card.value:hover {cursor: pointer;}
 .card-services .body .list-card.value span {display: block;text-align: center;font-size: 15px;color: var(--old-silver);}
 .card-services .body .list-card.value span:first-child {font-size: 20px;font-weight: 500;margin-bottom: 8px;color: var(--dark)}
 .card-services .body .list-card.value li.active {background: var(--sea-green);}
 .card-services .body .list-card.value li.active span {color: #FFFFFF;}
+.payment-detail.total {text-align: center;}
+.payment-detail.total p {margin-bottom: 5px;}
+.payment-detail.total span {display: block;font-size: 34px;line-height: 41px;}
