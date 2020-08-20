@@ -1064,3 +1064,22 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
     transition: all 0.3s ease-in-out;
 }
 .custom-modal .modal-content .list-item li a:hover .body-item {border-color: #2F80ED;}
+
+.card-services {padding: 30px 0 60px;}
+.card-services .item {background: #FFFFFF;border-radius: 18px;text-align: center;padding: 20px;}
+.card-services .item img {margin-bottom: 20px}
+.card-services .item span {display: block;font-size: 14px;}
+.card-services .store-nav {padding: 0;}
+.card-services .body {background: #FFFFFF;padding: 20px;}
+.card-services .body .warning {background: var(--neon-carrot);padding: 16px;margin-bottom: 20px;font-size: 14px;line-height: 18px;color: #FFFFFF;}
+.card-services .body .warning img {margin-right: 10px;}
+.card-services .body h4 {font-size: 15px;margin-bottom: 15px;}
+.card-services .body .list-card {display: table;margin-bottom: 20px;}
+.card-services .body .list-card li {display: inline-block;padding: 15px;border-radius: 6px;border: 1px solid var(--platium);margin:0 18px 10px 0;}
+.card-services .body .list-card li:last-child {margin-right: 0;}
+.card-services .body .list-card li:hover, .card-services .body .list-card li.active {border-color: var(--sea-green);}
+.card-services .body .list-card.value:hover {cursor: pointer;}
+.card-services .body .list-card.value span {display: block;text-align: center;font-size: 15px;color: var(--old-silver);}
+.card-services .body .list-card.value span:first-child {font-size: 20px;font-weight: 500;margin-bottom: 8px;color: var(--dark)}
+.card-services .body .list-card.value li.active {background: var(--sea-green);}
+.card-services .body .list-card.value li.active span {color: #FFFFFF;}
