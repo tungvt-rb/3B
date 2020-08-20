@@ -299,7 +299,7 @@
 										</div>
 									</div>
 
-									<a href="seller-banking-add.html" class="text-red"><i class="fa fa-plus margin-r-5"></i>Thêm ngân hàng</a>
+									<a href="#" class="text-red" data-toggle="modal" data-target="#confirmPIN"><i class="fa fa-plus margin-r-5"></i>Thêm ngân hàng</a>
 								</div>
 								<div class="col-md-6">
 									<p>Nhập số tiền cần rút (VND)</p>
@@ -339,6 +339,32 @@
 
 	</div>
 	<!-- /END WRAPPER -->
+
+	<div id="confirmPIN" class="modal" data-backdrop="static">
+		<div class="modal-dialog custom-modal">
+			<div class="modal-content">
+				<span class="close" data-dismiss="modal"><i class="fa fa-close"></i></span>
+				
+				<h4>Verify OTP</h4>
+				<div class="text-muted text-left margin-b">6-digit confirmation code has been sent to phone number <span class="text-black">+ 84xxxxxxx878</span></div>
+				<div class="form-group">
+					<label>Code OTP</label>
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="6 digit">
+					</div>
+				</div>
+				<div class="text-left margin-b">The code expires in 120 seconds <a href="#">Resend <i class="fa fa-refresh"></i></a></div>
+				
+				<div class="control">
+					<div class="row">
+						<div class="col-md-12">
+							<a href="seller-banking-add.html" class="btn btn-flat btn-danger">Confirm</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
