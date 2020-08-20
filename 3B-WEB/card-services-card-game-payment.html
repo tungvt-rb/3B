@@ -276,32 +276,36 @@
 			<div class="col-md-10 content-centered">
 				<!-- BEGIN CARD SERVICES -->
 				<div class="card-services">
-					<div class="row">
-						<div class="col-md-4">
-							<div class="item">
-								<a href="card-services-mobile-code.html">
-									<img src="assets/images/svg/hand-graving.svg">
-									<span>Nạp thẻ điện thoại</span>
-								</a>
+
+					<div class="body">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="select-payment">
+									<div class="payment-detail">
+										<p>Service <span class="pull-right"><b>Nạp thẻ game</b></span></p>
+									</div>
+
+									<h4>Payment Method</h4>
+									<ul class="items">
+										<li>
+											<div class="info">
+												<h5>Thẻ ATM Nội địa</h5>
+												<p>(TechComBank)</p>
+											</div>
+											<div class="clearfix"></div>
+										</li>
+									</ul>
+
+									<p>Total: <span class="txt-red"><b>200.000đ</b></span></p>
+
+									<a href="#" class="btn btn-danger" data-toggle="modal" data-target="#checkoutSuccess">CHECKOUT</a>
+									<a href="#" class="btn btn-danger" data-toggle="modal" data-target="#checkoutFail">CHECKOUT FAIL</a>
+								</div>
 							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="item">
-								<a href="card-services-electric.html">
-									<img src="assets/images/svg/plug.svg">
-									<span>Thanh toán tiền điện</span>
-								</a>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="item">
-								<a href="card-services-card-game.html">
-									<img src="assets/images/svg/card.svg">
-									<span>Nạp thẻ Game</span>
-								</a>
-							</div>
+							<div class="clearfix"></div>
 						</div>
 					</div>
+
 				</div>
 				<!-- END CARD SERVICES -->
 			</div>
@@ -388,6 +392,46 @@
 		</div>
 	</footer>
 	<!-- /END FOOTER -->
+
+	<!-- BEGIN MODAL CHECKOUT SUCCESS -->
+	<div id="checkoutSuccess" class="modal" data-backdrop="static">
+		<div class="modal-dialog custom-modal">
+			<div class="modal-content">
+				<span class="close" data-dismiss="modal"><img src="assets/images/svg/x-circle.svg"></span>
+				
+				<img src="assets/images/cart-add-success.png">
+
+				<p class="nopadding">
+					Nạp thẻ thành công
+				</p>
+
+				<div class="control">
+					<a href="card-services.html" class="btn btn-danger">Close</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL CHECKOUT SUCCESS -->
+
+	<!-- BEGIN MODAL CHECKOUT FAIL -->
+	<div id="checkoutFail" class="modal" data-backdrop="static">
+		<div class="modal-dialog custom-modal">
+			<div class="modal-content">
+				<span class="close" data-dismiss="modal"><img src="assets/images/svg/x-circle.svg"></span>
+				
+				<img src="assets/images/checkout-fail.png">
+
+				<p class="nopadding">
+					Transaction failed
+				</p>
+
+				<div class="control">
+					<a href="card-services.html" class="btn btn-danger">Close</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL CHECKOUT FAIL -->
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
