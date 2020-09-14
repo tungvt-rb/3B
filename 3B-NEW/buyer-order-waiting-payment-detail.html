@@ -170,26 +170,23 @@
 			<section class="content-header">
 				<ol class="breadcrumb">
 					<li><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-					<li class="active">Đơn mua</li>
+					<li class="active">Hồ sơ của tôi</li>
 				</ol>
 			</section>
 			<!-- /END CONTENT HEADER -->
 
 			<!-- CONTENT -->
-			<section class="content">
-				<div class="buyer-order">
-					<div class="filter">
-						<ul>
-							<li><a href="buyer-order-waiting-payment.html">Waiting payment</a></li>
-							<li class="active"><a href="buyer-order-pairing.html">Pairing</a></li>
-							<li><a href="buyer-order-waiting-confirm.html">Waiting confirm</a></li>
-							<li><a href="buyer-order-waiting-ship.html">Wait ship</a></li>
-							<li><a href="buyer-order-shipping.html">Shipping</a></li>
-							<li><a href="buyer-order-delivered.html">Delivered</a></li>
-							<li><a href="#">To recieve</a></li>
-							<li><a href="buyer-order-canceled.html">Canceled</a></li>
-							<li><a href="buyer-order-return.html">Return / Refund</a></li>
-						</ul>
+			<section class="content order-detail-block">
+				<div class="order-block-item addr margin-b">
+					<h3 class="title">Shipping Address</h3>
+					<div class="ship-addr">
+						<h4>Huong Phu Thi <a href="#" class="pull-right"><img src="assets/images/svg/copy-2.svg"></a></h4>
+						<div class="address-body">
+							<ul>
+								<li><img class="icons-svg" src="assets/images/svg/phone.svg"> +84 090 123 456</li>
+								<li><img class="icons-svg" src="assets/images/svg/place.svg"> Số 1, tên đường, phố, quận...</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 
@@ -201,14 +198,6 @@
 							<!-- BEGIN HEAD -->
 							<div class="head">
 								<h3><img class="logo" src="assets/images/store-logo-sm.png">Shop name with long text</h3>
-								<div class="shop-info">
-									<div class="info"><span>Đã ghép: <span class="text-green">1</span></span> | <span>Còn thiếu: <span class="text-green">1</span></span></div>
-									<div class="time text-red">09:12:59</div>
-								</div>
-
-								<ul class="status">
-									<li class="pairing"><span>Pairing</span></li>
-								</ul>
 							</div>
 							<!-- BEGIN BODY -->
 							<div class="body">
@@ -220,7 +209,33 @@
 											<div class="p-info pull-left">
 												<div class="name margin-b3">Korean Style Coat - High Quality Product </div>
 												<div class="size-color margin-b3">Size : M <span class="sep">|</span> Color: Green</div>
-												<div class="method">Buy method: <span class="text-green">Group</span> <span class="sep">|</span> Status: <span class="text-green">Waiting grafted</span></div>
+												<div class="method">Buy method: <span class="text-green">Group</span></div>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="price pull-right">
+												<span>$146,99</span>
+												<span class="sale">$180,00</span>
+											</div>
+
+											<div class="p-quality pull-right">
+												<span>X1</span>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</div>
+								<!-- /END PRODUCT ITEM -->
+								<!-- BEGIN PRODUCT ITEM -->
+								<div class="p-item">
+									<div class="row">
+										<div class="col-md-6">
+											<img class="pull-left p-image" src="assets/images/img28.png">
+											<div class="p-info pull-left">
+												<div class="name margin-b3">Korean Style Coat - High Quality Product </div>
+												<div class="size-color margin-b3">Size : M <span class="sep">|</span> Color: Green</div>
+												<div class="method">Buy method: <span class="text-green">Group</span></div>
 											</div>
 										</div>
 
@@ -241,31 +256,33 @@
 							</div>
 
 							<div class="total-items">
-								<div class="row">
-									<div class="col-md-4">
-										<div class="total">Total items: <span>1</span></div>
+								<div class="order-block-item margin-b no-padding">
+									<div class="row">
+										<div class="col-md-6 border-right">
+											<h3 class="title no-padding">Shipping Method</h3>
+											<div class="ship-info">
+												<h5>Giao hàng tiết kiệm <span>25,000đ</span></h5>
+												<p class="text-muted">Day Receive 7 Sep -  9 Sep</p>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<h3 class="title no-padding">Messenger</h3>
+											<div class="payment-info">
+												<p class="text-muted">Giao hàng trong giờ hành chính</p>
+											</div>
+										</div>
 									</div>
-									<div class="col-md-4">
-										<div class="total">Order time: <span>23-09-2019  17: 30</span></div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-8">
+										<a href="#"><img src="assets/images/svg/store.svg"> View shop</a>
 									</div>
 									<div class="col-md-4">
 										<div class="total pull-right">Total Price: <span class="text-red">$2345</span></div>
 									</div>
 									<div class="clearfix"></div>
 								</div>
-							</div>
-
-							<!-- BEGIN FOOT -->
-							<div class="foot">
-								<div class="warning pull-left">
-									<img src="assets/images/svg/warning.svg" class="pull-left margin-r-5">
-									<p>If there is no suitable order to combine the order by 21-09-2019  17:00, the shipping method will automatically switch to Standard Delivery.</p>
-								</div>
-								<div class="pull-right">
-									<span>Grafting List: </span>
-									<a href="buyer-order-grafting-list.html" class="btn btn-danger">View detail</a>
-								</div>
-								<div class="clearfix"></div>
 							</div>
 						</div>
 						<!-- /END SHOP ITEM -->
@@ -275,14 +292,6 @@
 							<!-- BEGIN HEAD -->
 							<div class="head">
 								<h3><img class="logo" src="assets/images/store-logo-sm.png">Shop name with long text</h3>
-								<div class="shop-info">
-									<div class="info"><span>Đã ghép: <span class="text-green">1</span></span> | <span>Còn thiếu: <span class="text-green">1</span></span></div>
-									<div class="time text-red">09:12:59</div>
-								</div>
-
-								<ul class="status">
-									<li class="pairing"><span>Pairing</span></li>
-								</ul>
 							</div>
 							<!-- BEGIN BODY -->
 							<div class="body">
@@ -294,7 +303,33 @@
 											<div class="p-info pull-left">
 												<div class="name margin-b3">Korean Style Coat - High Quality Product </div>
 												<div class="size-color margin-b3">Size : M <span class="sep">|</span> Color: Green</div>
-												<div class="method">Buy method: <span class="text-green">Group</span> <span class="sep">|</span> Status: <span class="text-green">Waiting grafted</span></div>
+												<div class="method">Buy method: <span class="text-green">Group</span></div>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="price pull-right">
+												<span>$146,99</span>
+												<span class="sale">$180,00</span>
+											</div>
+
+											<div class="p-quality pull-right">
+												<span>X1</span>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</div>
+								<!-- /END PRODUCT ITEM -->
+								<!-- BEGIN PRODUCT ITEM -->
+								<div class="p-item">
+									<div class="row">
+										<div class="col-md-6">
+											<img class="pull-left p-image" src="assets/images/img28.png">
+											<div class="p-info pull-left">
+												<div class="name margin-b3">Korean Style Coat - High Quality Product </div>
+												<div class="size-color margin-b3">Size : M <span class="sep">|</span> Color: Green</div>
+												<div class="method">Buy method: <span class="text-green">Group</span></div>
 											</div>
 										</div>
 
@@ -315,12 +350,27 @@
 							</div>
 
 							<div class="total-items">
-								<div class="row">
-									<div class="col-md-4">
-										<div class="total">Total items: <span>1</span></div>
+								<div class="order-block-item margin-b no-padding">
+									<div class="row">
+										<div class="col-md-6 border-right">
+											<h3 class="title no-padding">Shipping Method</h3>
+											<div class="ship-info">
+												<h5>Giao hàng tiết kiệm <span>25,000đ</span></h5>
+												<p class="text-muted">Day Receive 7 Sep -  9 Sep</p>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<h3 class="title no-padding">Messenger</h3>
+											<div class="payment-info">
+												<p class="text-muted">Giao hàng trong giờ hành chính</p>
+											</div>
+										</div>
 									</div>
-									<div class="col-md-4">
-										<div class="total">Order time: <span>23-09-2019  17: 30</span></div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-8">
+										<a href="#"><img src="assets/images/svg/store.svg"> View shop</a>
 									</div>
 									<div class="col-md-4">
 										<div class="total pull-right">Total Price: <span class="text-red">$2345</span></div>
@@ -328,23 +378,35 @@
 									<div class="clearfix"></div>
 								</div>
 							</div>
-
-							<!-- BEGIN FOOT -->
-							<div class="foot">
-								<div class="warning pull-left">
-									<img src="assets/images/svg/warning.svg" class="pull-left margin-r-5">
-									<p>If there is no suitable order to combine the order by 21-09-2019  17:00, the shipping method will automatically switch to Standard Delivery.</p>
-								</div>
-								<div class="pull-right">
-									<span>Grafting List: </span>
-									<a href="buyer-order-grafting-list.html" class="btn btn-danger">View detail</a>
-								</div>
-								<div class="clearfix"></div>
-							</div>
 						</div>
 						<!-- /END SHOP ITEM -->
 					</div>
 					<!-- /END CART LIST -->
+				</div>
+
+				<div class="order-block-item margin-b">
+					<h3 class="title">Payment Method</h3>
+					<div class="row">
+						<div class="col-md-6">
+							<h5 class="no-margin"><img class="logo pull-left margin-r-5" src="assets/images/svg/wallet-2.svg"> 3B Wallet</h5>
+							<p class="text-muted">Số dư 120000 đ</p>
+							<div class="clearfix"></div>
+							<div class="price-item clearfix">
+								<div class="pull-left"><b>Total:</b></div>
+								<div class="pull-right"><b><span class="text-red">$303.00</span></b></div>
+							</div>
+							<div class="price-item clearfix">
+								<div class="pull-left">You got:</div>
+								<div class="pull-right"><b>+100 Coin</b></div>
+							</div>
+						</div>
+
+						<div class="col-md-4 order-control">
+							<div class="col-md-6 margin-b"><a href="#" class="btn btn-transparent no-bg">Cancel Order</a></div>
+							<div class="col-md-6 margin-b"><a href="#" class="btn btn-danger">Thanh toán ngay</a></div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
 				</div>
 			</section>
 			<!-- /END CONTENT -->
@@ -474,6 +536,188 @@
 		</div>
 	</div>
 	<!-- /END MODAL VIEW RATING -->
+
+	<!-- BEGIN MODAL SHIPPING INFOMATION -->
+	<div class="modal" id="modalShippingInfo" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- BEGIN FORM -->
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+
+				<div class="modal-tracking">
+					<div class="head">
+						<h4>Shipping Infomation</h4>
+					</div>
+					<div class="body">
+						<div class="track-info">
+							<div class="track-name"><img src="assets/images/svg/delivery-truck-4.svg"> Viettel Post</div>
+							<div class="track-code">
+								<span class="pull-left">Tracking Number: EHUAR4K5T</span>
+								<a href="#" class="pull-right"><img src="assets/images/svg/copy.svg"></a>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+
+						<div class="track">
+							<h3>Logistics Tracking</h3>
+							<ul>
+								<li class="current">
+									<div class="status">Successful Delivery</div>
+									<div class="time">25-09-2019  10:30</div>
+								</li>
+								<li>
+									<div class="status">Shipping to Buyer</div>
+									<div class="time">25-09-2019  10:30</div>
+								</li>
+								<li>
+									<div class="status">Warehousing</div>
+									<div class="time">25-09-2019  10:30</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="foot">
+						
+					</div>
+				</div>
+
+				<!-- /END FORM -->
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL SHIPPING INFOMATION -->
+
+	<!-- BEGIN MODAL CANCEL ORDER -->
+	<div class="modal" id="modalCancelOrder" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- BEGIN FORM -->
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+
+				<div class="modal-tracking">
+					<div class="head">
+						<h4>Cancel Order</h4>
+					</div>
+					<div class="body">
+						<p>Select reason</p>
+						<ul class="list-chk">
+							<li>
+								<div class="chk">
+									<input type="checkbox" name="chk1" id="chk1" class="chk-custom">
+									<label for="chk1" class="chk-custom-label">Thời gian giao hàng dự kiến muộn</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk">
+									<input type="checkbox" name="chk2" id="chk2" class="chk-custom">
+									<label for="chk2" class="chk-custom-label">Thời gian giao hàng dự kiến muộn</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk">
+									<input type="checkbox" name="chk3" id="chk3" class="chk-custom">
+									<label for="chk3" class="chk-custom-label">Thời gian giao hàng dự kiến muộn</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk">
+									<input type="checkbox" name="chk4" id="chk4" class="chk-custom">
+									<label for="chk4" class="chk-custom-label">Thời gian giao hàng dự kiến muộn</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="foot">
+						<a href="#" class="btn btn-danger pull-right">Send request</a>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+
+				<!-- /END FORM -->
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL CANCEL ORDER -->
+
+	<!-- BEGIN MODAL CANCEL ORDER -->
+	<div class="modal" id="modalReturn" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- BEGIN FORM -->
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+
+				<div class="modal-tracking">
+					<div class="head">
+						<h4>Return Infomation</h4>
+					</div>
+					<div class="body">
+						<p>Choose reason </p>
+						<ul class="list-chk margin-b">
+							<li>
+								<div class="chk">
+									<input type="checkbox" name="chk1" id="chk1" class="chk-custom">
+									<label for="chk1" class="chk-custom-label">Tôi đã gửi hàng cho người mua và có bằng chứng gửi hàng</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk">
+									<input type="checkbox" name="chk2" id="chk2" class="chk-custom">
+									<label for="chk2" class="chk-custom-label">Tôi đã giao hàng đúng sản phẩm mà người mua đặt</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk">
+									<input type="checkbox" name="chk3" id="chk3" class="chk-custom">
+									<label for="chk3" class="chk-custom-label">Tôi đã giao sản phẩm trong trạng thái hoàn toàn nguyên vẹn</label>
+								</div>
+							</li>
+						</ul>
+
+						<p>Tải lên bằng chứng trả hàng</p>
+						<ul class="list-images-reason">
+							<li>
+								<img class="icons-svg" src="assets/images/img1.jpg">
+							</li>
+							<li>
+								<img class="icons-svg" src="assets/images/img2.jpg">
+							</li>
+							<li>
+								<img class="icons-svg" src="assets/images/img3.jpg">
+							</li>
+							<li>
+								<button class="btn btn-app"><i class="fa fa-plus"></i></button>
+							</li>
+						</ul>
+						<div class="form-group">
+							<textarea class="form-control" rows="3" placeholder="Ghi chú"></textarea>
+						</div>
+						<div class="form-group">
+							<input class="form-control" placeholder="Your Emal">
+						</div>
+					</div>
+
+					<div class="foot">
+						<a href="#" class="btn btn-danger pull-right">Complete</a>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+
+				<!-- /END FORM -->
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL CANCEL ORDER -->
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
