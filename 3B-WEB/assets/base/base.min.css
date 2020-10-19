@@ -47,7 +47,7 @@
 *,html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,label,fieldset,input,p,blockquote,th,td {margin:0;padding:0;}
 
 /* genaral */
-body {font-family:var(--fontfamily-main);color:var(--dark);margin:0;height:100%;font-size:var(--fontsize-default);line-height:18px;background:#E5E5E5;}
+body {font-family:var(--fontfamily-main);color:var(--dark);margin:0;height:100%;font-size:var(--fontsize-default);line-height:18px;background:#F6F8F8;}
 h1, h2, h3, h4, h5, h6 {font-family:var(--fontfamily-main);font-weight:500;}
 h1 {font-size:34px;}
 h2 {font-size:28px;}
@@ -103,7 +103,7 @@ p {line-height:24px;margin-bottom:15px;}
 .instagram {background:#D62976;}
 .twitter {background:#55ACEE;}
 .linkedin {background:#007AB9;}
-.content-centered {float:none;margin:0 auto;}
+.content-centered {float:none !important;margin:0 auto;}
 
 .btn-perspective {position:relative;}
 .btn-perspective:before {content:'';opacity:0;border:2px solid var(--permanent-geranium);border-radius:4px;
@@ -288,7 +288,10 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 
 .tab-content {padding:20px 0;}
 .nav-tabs {border-color:var(--gray);}
-.nav-tabs>li>a {padding:14px;font-size:calc(var(--fontsize-m) + 1px);font-weight:500;line-height:20px;color:var(--gray);}
+.nav-tabs>li>a {padding:14px;font-size:calc(var(--fontsize-m) + 1px);font-weight:500;line-height:20px;color:var(--old-silver);border:none;}
+.nav-tabs>li>a:hover, .nav-tabs>li>a:focus,
+.nav-tabs>li:hover, .nav-tabs>li:focus {border:none;outline:none;}
+
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:hover,
 .nav-tabs>li.active>a:focus {background:transparent;color:var(--permanent-geranium);border:none;border-bottom:2px solid var(--permanent-geranium);}
@@ -348,7 +351,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 .product-item a:hover h4 {color:var(--permanent-geranium);}
 .product-item .product-info .price {font-size:20px;line-height:28px;color:var(--permanent-geranium);}
 .product-item .product-sold {padding:5px 0 20px;}
-.product-item .product-sold .sold {font-size:var(--fontsize-xs);line-height:16px;color:#000000;}
+.product-item .product-sold .sold {font-size:var(--fontsize-xs);line-height:16px;color:var(--dark-liver);}
 .product-item .rating-sold {margin-bottom:10px;}
 .product-item .rating-sold .rating {border-right:1px solid var(--platium);padding-right:20px;}
 .product-item .rating-sold .rating .score {line-height:24px;}
@@ -462,10 +465,9 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 }
 .vouchermodal .nav-tabs-custom>.nav-tabs>li {border-bottom:3px solid transparent;margin-bottom:-2px;margin-right:5px;}
 .vouchermodal .nav-tabs-custom>.nav-tabs>li.active {border-bottom-color:var(--permanent-geranium);}
-.vouchermodal .nav-tabs-custom>.nav-tabs>li>a, .nav-tabs-custom>.nav-tabs>li>a:hover {background:transparent;margin:0;border:none;}
+.vouchermodal .nav-tabs-custom>.nav-tabs>li>a {background:transparent;margin:0;border:none;}
 .vouchermodal .nav-tabs-custom>.nav-tabs>li>a {color:var(--dark);border-radius:0;font-size:15px;line-height:20px;}
-.vouchermodal .nav-tabs-custom>.nav-tabs>li.active>a, .nav-tabs-custom>.nav-tabs>li.active:hover>a {color:var(--permanent-geranium);background-color:#FFFFFF;}
-.vouchermodal .nav-tabs-custom>.nav-tabs>li.active>a {border:none;}
+.vouchermodal .nav-tabs-custom>.nav-tabs>li.active>a {color:var(--permanent-geranium);background-color:#FFFFFF;border:none;}
 
 .vouchermodal .voucher-3b {padding:20px;border:1px solid var(--platium);margin-bottom:20px;position:relative;border-radius:8px;}
 .vouchermodal .voucher-3b:last-child {margin-bottom:0;}
@@ -984,7 +986,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 .head-title a {position:absolute;right:0;top:3px;color:var(--permanent-geranium);font-weight:500;line-height:22px;margin-right:10px;}
 .head-title.flash-title h3 {color:var(--permanent-geranium);}
 .flash-title .flash-time {float:left;}
-.flash-title .flash-time span {padding:6px 9px;color:#FFFFFF;font-size:20px;line-height:28px;font-weight:500;background:var(--dark);border-radius:3px;}
+.flash-time span {padding:6px 9px;color:#FFFFFF;font-size:20px;line-height:28px;font-weight:500;background:var(--dark);border-radius:3px;}
 
 .footer {background:#FFFFFF;}
 .main-footer {padding:45px 0 120px;font-size:var(--fontsize-m);line-height:18px;}
@@ -1090,3 +1092,28 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 .payment-detail.total {text-align: center;}
 .payment-detail.total p {margin-bottom: 5px;}
 .payment-detail.total span {display: block;font-size: 34px;line-height: 41px;}
+
+/* phase 6 */
+.flash-sale {}
+.flash-sale h3 {color:var(--permanent-geranium);font-size: 24px;line-height: 22px;font-weight: 500;text-align: center;padding: 24px 0;}
+.flash-sale .flash-time {float: right;}
+.flash-sale .nav-tabs-custom {padding: 32px 0;}
+.flash-sale .product-item {background: #FFFFFF;}
+.flash-sale .product-item .product-info {padding: 8px 20px 20px;}
+.flash-sale .product-item .p-image {width: 100%;height: 192px;object-fit: cover;border-radius: 8px;}
+.flash-sale .product-item .product-sold .progress {width: 60%;}
+.flash-sale .product-item .product-sold .sold {line-height: 10px;}
+.flash-sale .product-item .product-meta span {display: block;}
+.flash-sale.upcoming .product-item .sale-label {background: var(--green-crayola);color: #FFFFFF;}
+.flash-sale.upcoming .product-item .product-meta span:first-child {color: var(--green-crayola);}
+.flash-sale.upcoming .product-item .product-meta .btn-danger {background: transparent;color: var(--permanent-geranium) !important;}
+.nav-flash-sale {background: var(--sunset-orange);display: table;width: 100%;}
+.nav-flash-sale li {display: inline-block;width:25%;}
+.nav-flash-sale a {font-size: 24px;color: var(--anti-flash-white);text-align: center;line-height: 22px;padding: 15px 38px;background: var(--sunset-orange);display: block;}
+.nav-flash-sale a:hover, .nav-flash-sale a.active {background: var(--permanent-geranium);}
+.nav-flash-sale a span {display: block;font-size: 14px;line-height: 18px;}
+
+@media screen and (max-width:480px) {
+	.nav-flash-sale li {width: 100%;}
+	.flash-sale .flash-time {float: none;}
+}
