@@ -316,3 +316,7 @@
 .return-u > p {line-height: 50px;margin-right: 8px;}
 .return-u .u-info h4 {line-height: 50px;}
 .return-u .u-info img {margin-bottom: 0;margin-right: 8px;width: 50px;height: 50px;}
+.name-store img {width: 30px;height: 30px;margin-right: 8px;border-radius: 50%;}
+.name-store h4 {line-height: 30px;font-size: 14px;}
+.p-order img {width: 50px;height: 50px;margin-right: 8px;}
+.p-order h4 {font-size: 15px;}
