@@ -319,6 +319,6 @@
 .name-store img {width: 30px;height: 30px;margin-right: 8px;border-radius: 50%;}
 .name-store h4 {line-height: 30px;font-size: 14px;}
 .p-order img {width: 50px;height: 50px;margin-right: 8px;}
-.p-order h4 {font-size: 15px;}
+.p-order h4 {font-size: 15px;font-weight: normal;}
 .table-responsive.withdraw {overflow: auto;overflow-x: auto;}
 .table-responsive.withdraw>.table tr th, .table-responsive.withdraw>.table tr td {white-space: nowrap !important;}
