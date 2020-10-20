@@ -615,10 +615,73 @@
 	</footer>
 	<!-- /END FOOTER -->
 
+	<!-- BEGIN CHAT BOX -->
+	<div class="chatbox-holder">
+		<div class="chatbox-top">
+			<img src="assets/images/svg/chat-white.svg">
+			<span>Chat</span>
+		</div>
+		<div class="chatbox">
+			<div class="nav-tabs-custom">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#all_chat" data-toggle="tab" aria-expanded="true">All</a>
+					</li>
+					<li>
+						<a href="#unread_chat" data-toggle="tab" aria-expanded="false">Unread</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<!-- BEGIN TAB -->
+					<div class="tab-pane active" id="all_chat">
+						<aside>
+							<header>
+								<input type="text" class="form-control" placeholder="Search">
+							</header>
+							<ul>
+								<li>
+									<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_01.jpg" alt="">
+									<div>
+										<h2>Prénom Nom</h2>
+										<h3>
+											<span class="status orange"></span>
+											offline
+										</h3>
+									</div>
+								</li>
+								<li>
+									<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_02.jpg" alt="">
+									<div>
+										<h2>Prénom Nom</h2>
+										<h3>
+											<span class="status green"></span>
+											online
+										</h3>
+									</div>
+								</li>
+							</ul>
+						</aside>
+						<main>
+							<p>content chat</p>
+						</main>
+					</div>
+					<!-- /END TAB -->
+
+					<!-- BEGIN TAB -->
+					<div class="tab-pane" id="unread_chat">
+						<p>No chat</p>
+					</div>
+					<!-- /END TAB -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /END CHAT BOX -->
+
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/plugins/select2/select2.full.min.js"></script>
 	<script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-	<script src="assets/js/base.min.js"></script>
+	<script src="assets/js/base.js"></script>
 </body>
 </html>

@@ -97,6 +97,13 @@
 			});
 		}
 
+		var chatbox_toggle = $('.chatbox-top');
+		if (chatbox_toggle.length) {
+			$(chatbox_toggle).click(function() {
+				$(this).closest('.chatbox-holder').toggleClass('chatbox-on');
+			});
+		}
+
 		var x, i, j, selElmnt, a, b, c;
 		/* Look for any elements with the class "custom-select": */
 		x = document.getElementsByClassName("custom-slb");

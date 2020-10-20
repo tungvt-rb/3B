@@ -1113,7 +1113,80 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 .nav-flash-sale a:hover, .nav-flash-sale a.active {background: var(--permanent-geranium);}
 .nav-flash-sale a span {display: block;font-size: 14px;line-height: 18px;}
 
+.chatbox-holder {position: fixed;right: 25px;bottom: 0;
+	box-shadow: 3px 6px 10px rgba(12, 12, 12, 0.15);
+	/*display: flex;align-items: flex-end;*/
+}
+.chatbox-top {position: relative;/*bottom: 0;right: 25px;*/background: var(--permanent-geranium);padding: 10px 25px;cursor: pointer;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+}
+.chatbox-top span {font-size: 14px;line-height: 16px;color: #FFFFFF;}
+.chatbox {width: 715px;height: 615px;margin: 0;display: none;/*flex-flow: column;*/background: #FFFFFF;
+	position: relative;
+	/*bottom: 0;
+	right: 25px;*/
+	transition: .1s ease-out;
+	/*animation: flip-scale-down-dialog 0.5s linear both;*/
+}
+.chatbox-holder.chatbox-on .chatbox {display: block;}
+.chatbox .tab-content>.active {display: table;}
+.chatbox aside {width: 260px;display: inline-block;font-size: 15px;vertical-align: top;padding: 20px;}
+.chatbox aside header {padding: 0 0 20px;}
+.chatbox aside input {width: 100%;padding: 11px 16px;height: 40px;line-height: 25px;
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_search.png);
+	background-repeat: no-repeat;
+	background-position: 170px;
+	background-size: 40px;
+}
+.chatbox aside input::placeholder {color: var(--old-silver);}
+.chatbox aside ul {padding-left: 0;margin: 0;list-style-type: none;height: 225px;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.chatbox aside ul:hover {overflow-y: scroll;}
+.chatbox aside li {padding: 10px 0;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+/*.chatbox aside li:hover {background-color: #5e616a;}*/
+
+.chatbox main {width: 455px;display: inline-block;font-size: 15px;vertical-align: top;}
+
+.chatbox aside ul::-webkit-scrollbar {
+    width: 10px;
+    height: 30px;
+}
+.chatbox aside ul::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 30px;
+}
+.chatbox aside ul::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#ddd,#7a7a8c 1px,#b1b1b1 0,#d7dade);
+    border-radius: 6px;
+}
+
 @media screen and (max-width:480px) {
 	.nav-flash-sale li {width: 100%;}
 	.flash-sale .flash-time {float: none;}
+}
+
+@media screen and (max-width:1440px) {
+	.chatbox {height: 375px;}
+}
+
+@keyframes flip-scale-down-dialog {
+	0% {
+		transform: scale(1) /*rotate3d(-1, 1, 0, 0deg)*/;
+	}
+	50% {
+		transform: scale(0.4) /*rotate3d(-1, 1, 0, -90deg)*/;
+	}
+	100% {
+		transform: scale(1) /*rotate3d(-1, 1, 0, -180deg)*/;
+	}
 }
