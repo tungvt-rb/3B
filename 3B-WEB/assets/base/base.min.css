@@ -1159,7 +1159,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 .chatbox aside li:hover, .chatbox aside li.active {background: var(--anti-flash-white);cursor: pointer;}
 .chatbox aside li .contact {padding: 15px 0;border-bottom: 1px solid var(--anti-flash-white);}
 .chatbox aside .ava {position: relative;float: left;margin-right: 12px;}
-.chatbox aside .ava img {border-radius: 50%;width: 40px;height: 40px;}
+.chatbox aside .ava img {border-radius: 50%;width: 40px;height: 40px;object-fit: cover;}
 .chatbox aside .ava span {position: absolute;display: block;top: -5px;right: -8px;background: var(--permanent-geranium);
 	border: 2px solid #FFFFFF;border-radius: 50%;color: #FFFFFF;font-size: 11px;line-height: 20px;width: 22px;height: 22px;text-align: center;
 }
@@ -1172,7 +1172,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 
 .chatbox main {width: 455px;display: inline-block;font-size: 15px;vertical-align: top;padding: 20px 0;position: relative;}
 .chatbox main header {padding: 0 20px 20px;border-bottom: 1px solid var(--anti-flash-white);}
-.chatbox main header img {width: 40px;height: 40px;margin-right: 12px;border-radius: 4px;}
+.chatbox main header img {width: 40px;height: 40px;margin-right: 12px;border-radius: 4px;object-fit: cover;}
 .chatbox main header .name {font-size: 16px;line-height: 20px;font-weight: 500;}
 .chatbox main header .price span {display: inline-block;}
 .chatbox main header .price .txt-red {font-size: 15px;line-height: 20px;font-weight: 500;}
@@ -1182,7 +1182,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 .chatbox main .content-chat ul {overflow-y: auto;height: 345px;padding-right: 20px;}
 .chatbox main .content-chat ul li.me {text-align: right;}
 .chatbox main .content-chat ul li.you {text-align: left;}
-.chatbox main .content-chat ul li.you .ava img {width: 20px;height: 20px;border-radius: 50%;margin-right: 12px;}
+.chatbox main .content-chat ul li.you .ava img {width: 20px;height: 20px;border-radius: 50%;margin-right: 12px;object-fit: cover;}
 .chatbox main .content-chat ul li .message {max-width: 80%;display: inline-block;border-radius: 8px;padding: 10px 20px;margin-bottom: 16px;
 	box-shadow: 0px 2px 4px rgba(210, 210, 210, 0.5);position: relative;
 }
