@@ -1263,6 +1263,12 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 .green {background-color: #58B666 !important;}
 .orange {background-color: #FF725D !important;}
 
+.flash-sale-bar {padding: 8px 15px;background: var(--permanent-geranium);}
+.flash-sale-bar h3 {margin: 0 !important;color: var(--anti-flash-white);font-size: 18px;}
+.flash-sale-bar h3 img {margin-bottom: 0;}
+.flash-sale-bar .flash-time {color: #FFFFFF;}
+.flash-sale-bar .flash-time span {font-size: 14px;line-height: 30px;}
+
 @media screen and (max-width:480px) {
 	.nav-flash-sale li {width: 100%;}
 	.flash-sale .flash-time {float: none;}
