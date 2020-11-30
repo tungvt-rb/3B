@@ -326,3 +326,6 @@
 .p-order h4 {font-size: 15px;font-weight: normal;}
 .table-responsive.withdraw {overflow: auto;overflow-x: auto;}
 .table-responsive.withdraw>.table tr th, .table-responsive.withdraw>.table tr td {white-space: nowrap !important;}
+
+/* break word */
+.break-word-cat {white-space: normal;display: block;line-height: 15px;float: left;}
