@@ -1273,6 +1273,29 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 
 .sidebar.place .select-items {width: 100%;box-shadow: 0px 1px 6px 1px rgba(6, 41, 66, .1);}
 
+.sidebar.all-category ul li a h5 {height: 40px;padding: 0;}
+.sidebar.all-category ul li a h5 i {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.custom-wrap-text {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2; /* number of lines to show */
+	-webkit-box-orient: vertical;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	float: left;
+	width: 68%;
+}
+
 @media screen and (max-width:480px) {
 	.nav-flash-sale li {width: 100%;}
 	.flash-sale .flash-time {float: none;}
