@@ -1297,7 +1297,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 }
 
 .menu-container > li.icon {width: auto;vertical-align: text-bottom;}
-.menu-container > li {width: 16%;}
+.menu-container > li {width: 15%;}
 .menu-container > li > a {position: relative;}
 .menu-container > li > a > i {position: absolute;right: 0;top: 50%;margin-top: -8px;}
 .menu-container li .menu-sub .sub-items .title {position: relative;}
