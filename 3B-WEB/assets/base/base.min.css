@@ -1285,7 +1285,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
-	-webkit-line-clamp: 2; /* number of lines to show */
+	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 	position: relative;
 	top: 50%;
@@ -1296,11 +1296,29 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 	width: 68%;
 }
 
+.menu-container > li.icon {width: auto;vertical-align: text-bottom;}
+.menu-container > li {width: 16%;}
+.menu-container > li > a {position: relative;}
+.menu-container > li > a > i {position: absolute;right: 0;top: 50%;margin-top: -8px;}
+.menu-container li .menu-sub .sub-items .title {position: relative;}
+.menu-container li .menu-sub .sub-items .title i {position: absolute;right: 0;top: 50%;margin-top: -8px;}
+.menu-container li .menu-sub .sub-items .title .custom-wrap-1line {padding-right: 10px;}
+
+.custom-wrap-1line {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
 @media screen and (max-width:480px) {
 	.nav-flash-sale li {width: 100%;}
 	.flash-sale .flash-time {float: none;}
 
 	.chatbox {}
+
+	.menu-container > li {width: 100%;}
 }
 
 @media screen and (max-width:1440px) {
