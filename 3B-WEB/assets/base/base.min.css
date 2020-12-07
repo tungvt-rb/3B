@@ -1315,6 +1315,12 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 	-webkit-box-orient: vertical;
 }
 
+@-moz-document url-prefix() {
+	.nav-flash-sale {display: block;}
+	.nav-flash-sale li:first-child {margin-left: 0;}
+	.nav-flash-sale li, .chatbox main {margin-left: -4px;}
+}
+
 @media screen and (max-width:480px) {
 	.nav-flash-sale li {width: 100%;}
 	.flash-sale .flash-time {float: none;}
@@ -1327,7 +1333,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 @media screen and (max-width:1440px) {
 	.chatbox {height: 475px;}
 	.chatbox aside ul {height: 340px;}
-	.chatbox main .content-chat ul {height: 205px;}
+	.chatbox main .content-chat ul {height: 220px;}
 }
 
 @keyframes flip-scale-down-dialog {
