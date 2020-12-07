@@ -1215,11 +1215,14 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 
 .chatbox main {width: 455px;display: inline-block;font-size: 15px;vertical-align: top;padding: 20px 0;position: relative;}
 .chatbox main header {padding: 0 20px 20px;border-bottom: 1px solid var(--anti-flash-white);}
-.chatbox main header img {width: 40px;height: 40px;margin-right: 12px;border-radius: 4px;object-fit: cover;}
-.chatbox main header .name {font-size: 16px;line-height: 20px;font-weight: 500;}
-.chatbox main header .price span {display: inline-block;}
-.chatbox main header .price .txt-red {font-size: 15px;line-height: 20px;font-weight: 500;}
-.chatbox main header .price .sale {font-size: 12px;line-height: 16px;text-decoration: line-through;color: var(--gray);}
+.chatbox main .content-chat ul li .sent-product {padding: 8px;background: #FFFFFF;}
+.chatbox main .content-chat ul li .sent-product img {width: 40px;height: 40px;margin-right: 10px;border-radius: 4px;object-fit: cover;}
+.chatbox main .content-chat ul li .sent-product .p-info {width: 80%;text-align: left;}
+.chatbox main .content-chat ul li .sent-product .name {font-size: 13px;line-height: 20px;font-weight: 500;}
+.chatbox main .content-chat ul li.me .sent-product .name {color: var(--dark-liver);}
+.chatbox main .content-chat ul li .sent-product .price span {display: inline-block;}
+.chatbox main .content-chat ul li .sent-product .price .txt-red {font-size: 15px;line-height: 20px;font-weight: 500;}
+.chatbox main .content-chat ul li .sent-product .price .sale {font-size: 12px;line-height: 16px;text-decoration: line-through;color: var(--gray);}
 
 .chatbox main .content-chat {padding: 16px 20px 0;}
 .chatbox main .content-chat ul {overflow-y: auto;height: 345px;padding-right: 20px;}
