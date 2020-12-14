@@ -1209,6 +1209,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 .chatbox aside .ava .status {width:12px;height:12px;top: auto;bottom: 0;right: 0;}
 .chatbox aside .messenger {float: left;}
 .chatbox aside .messenger .name {font-size: 15px;line-height: 20px;margin: 0 0 4px;}
+.chatbox aside .messenger .name .status {display: block;font-size: 12px;font-weight: normal;color: var(--gray);}
 .chatbox aside .messenger .msg {font-size: 14px; line-height: 18px;margin: 0;color: var(--gray);margin-bottom: 8px;}
 .chatbox aside .messenger .msg.unread {color: var(--dark);}
 .chatbox aside .messenger .shopname {color: var(--bleu-de-france);background: rgba(47, 128, 237, .1);padding: 5px 8px;font-size: 12px;line-height: 16px;border-radius: 6px;}
