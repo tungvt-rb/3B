@@ -1215,7 +1215,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 .chatbox aside .messenger .shopname {color: var(--bleu-de-france);background: rgba(47, 128, 237, .1);padding: 5px 8px;font-size: 12px;line-height: 16px;border-radius: 6px;}
 
 .chatbox main {width: 455px;display: inline-block;font-size: 15px;vertical-align: top;padding: 20px 0;position: relative;}
-.chatbox main header {padding: 0 20px 10px;border-bottom: 1px solid var(--anti-flash-white);}
+.chatbox main header {padding: 0 20px 20px;border-bottom: 1px solid var(--anti-flash-white);}
 .chatbox main header img {width: 40px;height: 40px;margin-right: 12px;border-radius: 4px;object-fit: cover;}
 .chatbox main header .name {font-size: 16px;line-height: 20px;font-weight: 500;}
 .chatbox main header .price span {display: inline-block;}
