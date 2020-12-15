@@ -1200,22 +1200,27 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 }
 .chatbox aside li:last-child {border-bottom: 0;}
 .chatbox aside li:hover, .chatbox aside li.active {background: var(--anti-flash-white);cursor: pointer;}
-.chatbox aside li .contact {padding: 15px 0;border-bottom: 1px solid var(--anti-flash-white);}
-.chatbox aside .ava {position: relative;float: left;margin-right: 12px;}
-.chatbox aside .ava img {border-radius: 50%;width: 40px;height: 40px;object-fit: cover;}
-.chatbox aside .ava span {position: absolute;display: block;top: -5px;right: -8px;background: var(--permanent-geranium);
+.chatbox aside li .contact  {padding: 15px 0;border-bottom: 1px solid var(--anti-flash-white);}
+.chatbox aside .ava, .chatbox main .contact .ava {position: relative;float: left;margin-right: 12px;}
+.chatbox aside .ava img, .chatbox main .contact .ava img {border-radius: 50%;width: 40px;height: 40px;object-fit: cover;}
+.chatbox aside .ava span, .chatbox main .contact .ava span {position: absolute;display: block;top: -5px;right: -8px;background: var(--permanent-geranium);
 	border: 2px solid #FFFFFF;border-radius: 50%;color: #FFFFFF;font-size: 11px;line-height: 20px;width: 22px;height: 22px;text-align: center;
 }
 .chatbox aside .ava .status {width:12px;height:12px;top: auto;bottom: 0;right: 0;}
 .chatbox aside .messenger {float: left;}
-.chatbox aside .messenger .name {font-size: 15px;line-height: 20px;margin: 0 0 4px;}
-.chatbox aside .messenger .name .status {display: block;font-size: 12px;font-weight: normal;color: var(--gray);}
+.chatbox aside .messenger .name, .chatbox main .contact .messenger .name {font-size: 15px;line-height: 20px;margin: 0;}
+.chatbox main .contact .messenger .name .status {display: block;font-size: 12px;font-weight: normal;color: var(--gray);}
 .chatbox aside .messenger .msg {font-size: 14px; line-height: 18px;margin: 0;color: var(--gray);margin-bottom: 8px;}
 .chatbox aside .messenger .msg.unread {color: var(--dark);}
 .chatbox aside .messenger .shopname {color: var(--bleu-de-france);background: rgba(47, 128, 237, .1);padding: 5px 8px;font-size: 12px;line-height: 16px;border-radius: 6px;}
 
 .chatbox main {width: 455px;display: inline-block;font-size: 15px;vertical-align: top;padding: 20px 0;position: relative;}
-.chatbox main header {padding: 0 20px 20px;border-bottom: 1px solid var(--anti-flash-white);}
+.chatbox main header {padding: 0 20px 10px;border-bottom: 1px solid var(--anti-flash-white);}
+.chatbox main header img {width: 40px;height: 40px;margin-right: 12px;border-radius: 4px;object-fit: cover;}
+.chatbox main header .name {font-size: 16px;line-height: 20px;font-weight: 500;}
+.chatbox main header .price span {display: inline-block;}
+.chatbox main header .price .txt-red {font-size: 15px;line-height: 20px;font-weight: 500;}
+.chatbox main header .price .sale {font-size: 12px;line-height: 16px;text-decoration: line-through;color: var(--gray);}
 .chatbox main .content-chat ul li .sent-product {padding: 8px;background: #FFFFFF;}
 .chatbox main .content-chat ul li .sent-product img {width: 40px;height: 40px;margin-right: 10px;border-radius: 4px;object-fit: cover;}
 .chatbox main .content-chat ul li .sent-product .p-info {width: 80%;text-align: left;}
@@ -1230,7 +1235,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 .chatbox main .content-chat ul li.me {text-align: right;}
 .chatbox main .content-chat ul li.you {text-align: left;}
 .chatbox main .content-chat ul li.you .ava img {width: 20px;height: 20px;border-radius: 50%;margin-right: 12px;object-fit: cover;}
-.chatbox main .content-chat ul li .message {max-width: 80%;display: inline-block;border-radius: 8px;padding: 10px 20px;margin-bottom: 16px;
+.chatbox main .content-chat ul li .message {max-width: 80%;display: inline-block;border-radius: 8px;padding: 10px 20px;margin-bottom: 5px;
 	box-shadow: 0px 2px 4px rgba(210, 210, 210, 0.5);position: relative;
 }
 .chatbox main .content-chat ul li.me .message {background: var(--permanent-geranium);color: #FFFFFF;}
@@ -1238,12 +1243,13 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 .chatbox main .content-chat ul li .seen {position: absolute;bottom: 0;}
 .chatbox main .content-chat ul li.me .seen {left: -20px;}
 .chatbox main .content-chat ul li.you .seen {right: -20px;}
-.chatbox main .content-chat ul li.time {text-align: center;color: var(--old-silver);margin-bottom: 16px;}
+.chatbox main .content-chat .time {font-size: 12px;color: var(--old-silver);margin-bottom: 16px;display: block;font-style: italic;}
+.chatbox main .content-chat ul li.you .time {margin-left: 30px;}
 
 .chatbox main footer {position: relative;bottom: 0;padding: 20px 0 0;width: 100%;}
 .chatbox main footer ul {display: table;width: 100%;padding: 0 20px;}
-.chatbox main footer ul li {display: inline-block;margin-bottom: 12px;}
-.chatbox main footer ul li span {display: block;background: var(--anti-flash-white);padding: 5px 10px;font-size: 14px;line-height: 18px;border-radius: 4px;margin-right: 14px;}
+.chatbox main footer ul li {display: inline-block;margin-bottom: 6px;}
+.chatbox main footer ul li span {display: block;background: var(--anti-flash-white);padding: 5px 10px;font-size: 14px;line-height: 18px;border-radius: 4px;margin-right: 8px;}
 .chatbox main footer ul li span:hover {cursor: pointer;}
 .chatbox main footer ul li:last-child span {margin-right: 0;}
 .chatbox main footer .send {padding: 12px 20px;line-height: 32px;border-top:1px solid var(--anti-flash-white);}
@@ -1334,7 +1340,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 @media screen and (max-width:1440px) {
 	.chatbox {height: 475px;}
 	.chatbox aside ul {height: 340px;}
-	.chatbox main .content-chat ul {height: 220px;}
+	.chatbox main .content-chat ul {height: 210px;}
 }
 
 @keyframes flip-scale-down-dialog {
