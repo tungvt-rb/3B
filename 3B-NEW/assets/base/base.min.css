@@ -329,3 +329,44 @@
 
 /* break word */
 .break-word-cat {white-space: normal;display: block;line-height: 15px;float: left;}
+
+/* small custom phase 6 */
+.flash-sale-percent, .flash-sale-amount {position: relative;}
+.flash-sale-percent .chk-custom-label {margin: 6px 0;}
+.flash-sale-percent .pull-right {width: 80%;}
+.flash-sale-percent .input-group-btn .btn, .flash-sale-amount .input-group-btn .btn {
+	background:#fafafa;border: 1px solid var(--color-formcontrol-border);
+}
+.flash-sale-percent .input-group-btn .btn:active, 
+.flash-sale-percent .input-group-btn .btn:focus,
+.flash-sale-amount .input-group-btn .btn:active,
+.flash-sale-amount .input-group-btn .btn:focus {
+	outline: none;box-shadow: none;
+}
+.flash-sale-amount .input-group-btn .btn, .flash-sale-percent .input-group-btn .btn {
+	font-size: 13px;line-height: 22px;color: #969696;
+}
+/* error message for admin flash sale*/
+.flash-sale-amount .error .notification, .flash-sale-percent .error .notification {position: absolute;left: 0;bottom: 40px;width: 100%;font-size: 13px;padding: 4px;
+	border: 1px solid var(--color-main);color: var(--color-main);background: #ffcece;z-index: 3;border-radius: 4px;
+}
+.flash-sale-amount .error .notification {top: 40px;bottom: auto}
+.flash-sale-percent .error .notification::after, .flash-sale-amount .error .notification::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: var(--color-main) transparent transparent transparent;
+}
+.flash-sale-amount .error .notification::after {
+	top: auto;
+	bottom: 100%;
+	left: 60%;
+	border-color: transparent transparent var(--color-main) transparent;
+}
+.flash-sale-amount .error .notification div, .flash-sale-percent .error .notification div {padding: 0 5px;}
+.flash-sale-percent .error .notification .close {line-height: 4px;}
+.flash-sale-percent .error .notification .close i {font-size: 11px;}
