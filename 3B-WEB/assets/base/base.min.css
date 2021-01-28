@@ -1350,9 +1350,17 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
     .flash-sale .nav-tabs>li a {width: max-content;}
     .flash-sale .nav-tabs>li:last-child {position: absolute;right: 0;top: 20px;}
     .flash-sale .nav-tabs li:hover .menu-sub {right: 0;left: auto;}
+
+    .flash-title h3 {line-height: 32px;}
+    .flash-title .flash-time {float: right;}
+    .flash-title.head-title a:before {content: " ";display: block;height: 0;clear: both;visibility: hidden;}
+    .flash-title.head-title a {float: right;position: relative;top: auto;right: auto;margin: 15px 0 0;}
+
+    
     .nav-tabs.nav-tabs-view-mobile {width: 100%;overflow-x: scroll;display: block;}
     .nav-tabs.nav-tabs-view-mobile>li {display: table-cell;float: none;}
     .nav-tabs.nav-tabs-view-mobile>li a {width: max-content;}
+
 }
 
 @media screen and (max-width:768px) {
