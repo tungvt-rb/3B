@@ -334,6 +334,7 @@
 .flash-sale-percent, .flash-sale-amount {position: relative;}
 .flash-sale-percent .chk-custom-label {margin: 6px 0;}
 .flash-sale-percent .pull-right {width: 80%;}
+.flash-sale-percent .pull-left {width: 20%;}
 .flash-sale-percent .input-group-btn .btn, .flash-sale-amount .input-group-btn .btn {
 	background:#fafafa;border: 1px solid var(--color-formcontrol-border);
 }
