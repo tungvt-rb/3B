@@ -371,3 +371,20 @@
 .flash-sale-amount .error .notification div, .flash-sale-percent .error .notification div {padding: 0 5px;}
 .flash-sale-percent .error .notification .close {line-height: 4px;}
 .flash-sale-percent .error .notification .close i {font-size: 11px;}
+
+/* phase 6 - style table admin discount regist add amount */
+.flash-sale-amount > .btn {width: 100%;margin-bottom: 15px;}
+.table-amount {border: 1px solid var(--color-list-border);margin-bottom: 30px;}
+.table-amount thead th, .table-amount tbody th {font-weight: 500;padding: 8px;text-align:center;}
+.table-amount thead th, .table-amount tbody th {border-bottom: 1px solid var(--color-list-border);}
+.table-amount tbody th {border-right: 1px solid var(--color-list-border);}
+.table-amount tbody td {padding: 8px;border-bottom: 1px solid var(--color-list-border);}
+.table-amount tbody td .input-group, .table-amount tbody td .form-group {margin-bottom: 0;}
+.table-amount tbody td .input-group.small .form-control {padding: 6px 8px;color: var(--color-main-link);}
+.table-amount tbody td .input-group.small .btn {padding: 6px 8px;}
+#saveFlashSaleAmount .modal-dialog {width: 1000px;}
+@media screen and (max-width:768px) {
+	#saveFlashSaleAmount .modal-dialog {width: auto;}
+	#saveFlashSaleAmount .modal-body {overflow-x: scroll;}
+	#saveFlashSaleAmount .table-amount {width: 800px;}
+}
