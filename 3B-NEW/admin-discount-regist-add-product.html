@@ -645,7 +645,10 @@
 														<span class="input-group-btn">
 															<span class="btn">Số lượng</span>
 														</span>
-														<input type="text" class="form-control">
+														<input type="number" class="form-control" name="quantity" min="1" max="5">
+														<span class="input-group-btn">
+															<button type="button" class="btn btn-flat btn-default" data-toggle="modal" data-target="#saveFlashSaleAmount"><i class="fa fa-plus"></i></button>
+														</span>
 													</div>
 												</div>
 											</div>
@@ -677,7 +680,17 @@
 											</div>
 											
 											<div class="flash-sale-amount">
-												<button type="button" class="btn btn-flat btn-default" data-toggle="modal" data-target="#saveFlashSaleAmount">Nhập số lượng</button>
+												<div class="form-group">
+													<div class="input-group small">
+														<span class="input-group-btn">
+															<span class="btn">Số lượng</span>
+														</span>
+														<input type="number" class="form-control" name="quantity" min="1" max="5">
+														<span class="input-group-btn">
+															<button type="button" class="btn btn-flat btn-default" data-toggle="modal" data-target="#saveFlashSaleAmount"><i class="fa fa-plus"></i></button>
+														</span>
+													</div>
+												</div>
 											</div>
 
 											<label>Thanh lý bộ...</label>
@@ -757,167 +770,149 @@
 							<table class="table-amount">
 								<thead>
 									<tr>
-										<th></th>
-										<th>XS</th>
-										<th>S</th>
-										<th>M</th>
-										<th>L</th>
-										<th>XL</th>
-										<th>XXL</th>
+										<th>Màu sắc</th>
+										<th>Size</th>
+										<th>Số lượng</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<th class="headcol">Red</th>
+										<th rowspan="3">Red</th>
+										<td>L</td>
 										<td>
 											<div class="flash-sale-amount">
 												<div class="form-group">
 													<div class="input-group small">
 														<span class="input-group-btn">
-															<span class="btn">Num.</span>
+															<span class="btn">Số lượng</span>
 														</span>
-														<input type="text" class="form-control">
-													</div>
-												</div>
-											</div>
-										</td>
-										<td>
-											<div class="flash-sale-amount">
-												<div class="form-group">
-													<div class="input-group small">
-														<span class="input-group-btn">
-															<span class="btn">Num.</span>
-														</span>
-														<input type="text" class="form-control">
-													</div>
-												</div>
-											</div>
-										</td>
-										<td>
-											<div class="flash-sale-amount">
-												<div class="form-group">
-													<div class="input-group small">
-														<span class="input-group-btn">
-															<span class="btn">Num.</span>
-														</span>
-														<input type="text" class="form-control">
-													</div>
-												</div>
-											</div>
-										</td>
-										<td>
-											<div class="flash-sale-amount">
-												<div class="form-group">
-													<div class="input-group small">
-														<span class="input-group-btn">
-															<span class="btn">Num.</span>
-														</span>
-														<input type="text" class="form-control">
-													</div>
-												</div>
-											</div>
-										</td>
-										<td>
-											
-										</td>
-										<td>
-											<div class="flash-sale-amount">
-												<div class="form-group">
-													<div class="input-group small">
-														<span class="input-group-btn">
-															<span class="btn">Num.</span>
-														</span>
-														<input type="text" class="form-control">
+														<input type="number" class="form-control" name="quantity" min="1" max="5">
 													</div>
 												</div>
 											</div>
 										</td>
 									</tr>
 									<tr>
-										<th class="headcol">Green</th>
+										<td>M</td>
 										<td>
 											<div class="flash-sale-amount">
 												<div class="form-group">
 													<div class="input-group small">
 														<span class="input-group-btn">
-															<span class="btn">Num.</span>
+															<span class="btn">Số lượng</span>
 														</span>
-														<input type="text" class="form-control">
+														<input type="number" class="form-control" name="quantity" min="1" max="5">
 													</div>
 												</div>
 											</div>
-										</td>
-										<td>
-											<div class="flash-sale-amount">
-												<div class="form-group">
-													<div class="input-group small">
-														<span class="input-group-btn">
-															<span class="btn">Num.</span>
-														</span>
-														<input type="text" class="form-control">
-													</div>
-												</div>
-											</div>
-										</td>
-										<td>
-											<div class="flash-sale-amount">
-												<div class="form-group">
-													<div class="input-group small">
-														<span class="input-group-btn">
-															<span class="btn">Num.</span>
-														</span>
-														<input type="text" class="form-control">
-													</div>
-												</div>
-											</div>
-										</td>
-										<td>
-											
-										</td>
-										<td>
-											<div class="flash-sale-amount">
-												<div class="form-group">
-													<div class="input-group small">
-														<span class="input-group-btn">
-															<span class="btn">Num.</span>
-														</span>
-														<input type="text" class="form-control">
-													</div>
-												</div>
-											</div>
-										</td>
-										<td>
-											
 										</td>
 									</tr>
 									<tr>
-										<th class="headcol">Blue</th>
+										<td>S</td>
 										<td>
 											<div class="flash-sale-amount">
 												<div class="form-group">
 													<div class="input-group small">
 														<span class="input-group-btn">
-															<span class="btn">Num.</span>
+															<span class="btn">Số lượng</span>
 														</span>
-														<input type="text" class="form-control">
+														<input type="number" class="form-control" name="quantity" min="1" max="5">
 													</div>
 												</div>
 											</div>
 										</td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
 									</tr>
 									<tr>
-										<th class="headcol">Yellow</th>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
+										<th rowspan="3">Green</th>
+										<td>L</td>
+										<td>
+											<div class="flash-sale-amount">
+												<div class="form-group">
+													<div class="input-group small">
+														<span class="input-group-btn">
+															<span class="btn">Số lượng</span>
+														</span>
+														<input type="number" class="form-control" name="quantity" min="1" max="5">
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>M</td>
+										<td>
+											<div class="flash-sale-amount">
+												<div class="form-group">
+													<div class="input-group small">
+														<span class="input-group-btn">
+															<span class="btn">Số lượng</span>
+														</span>
+														<input type="number" class="form-control" name="quantity" min="1" max="5">
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>S</td>
+										<td>
+											<div class="flash-sale-amount">
+												<div class="form-group">
+													<div class="input-group small">
+														<span class="input-group-btn">
+															<span class="btn">Số lượng</span>
+														</span>
+														<input type="number" class="form-control" name="quantity" min="1" max="5">
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th rowspan="3">Blue</th>
+										<td>L</td>
+										<td>
+											<div class="flash-sale-amount">
+												<div class="form-group">
+													<div class="input-group small">
+														<span class="input-group-btn">
+															<span class="btn">Số lượng</span>
+														</span>
+														<input type="number" class="form-control" name="quantity" min="1" max="5">
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>M</td>
+										<td>
+											<div class="flash-sale-amount">
+												<div class="form-group">
+													<div class="input-group small">
+														<span class="input-group-btn">
+															<span class="btn">Số lượng</span>
+														</span>
+														<input type="number" class="form-control" name="quantity" min="1" max="5">
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>S</td>
+										<td>
+											<div class="flash-sale-amount">
+												<div class="form-group">
+													<div class="input-group small">
+														<span class="input-group-btn">
+															<span class="btn">Số lượng</span>
+														</span>
+														<input type="number" class="form-control" name="quantity" min="1" max="5">
+													</div>
+												</div>
+											</div>
+										</td>
 									</tr>
 								</tbody>
 							</table>
