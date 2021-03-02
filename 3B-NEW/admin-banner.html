@@ -292,7 +292,7 @@
 					<!-- /END MENU ORDER -->
 
 					<!-- BEGIN MENU BRAND -->
-					<li class="header active">
+					<li class="header">
 						<img class="icons-svg" src="assets/images/svg/tag.svg"> 
 						<a href="admin-brands.html"><span>Quản lý brand</span></a>
 					</li>
@@ -339,7 +339,7 @@
 							<li>
 								<a href="admin-warranty.html"><span>Quản lý bảo hành</span></a>
 							</li>
-							<li>
+							<li class="active">
 								<a href="admin-shipping-unit.html"><span>Quản lý đơn vị vận chuyển</span></a>
 							</li>
 						</ul>
@@ -372,7 +372,7 @@
 			<section class="content-header">
 				<ol class="breadcrumb">
 					<li><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-					<li class="active">Quản lý thương hiệu</li>
+					<li class="active">Quản lý banner</li>
 				</ol>
 			</section>
 			<!-- /END CONTENT HEADER -->
@@ -381,72 +381,106 @@
 			<section class="content">
 				<!-- BEGIN BOX -->
 				<div class="box">
-					<!-- BEGIN FORM -->
 					<form action="#" role="form">
 						<div class="box-header">
 							<h3 class="box-title">
-								Thêm thương hiệu
-								<small>Quản lý thương hiệu</small>
+								Quản lý banner
+								<small>Thêm/Sửa banner</small>
 							</h3>
 						</div>
 						<!-- BEGIN BOX BODY -->
 						<div class="box-body">
 							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<label>Ảnh đại diện</label>
-										<div class="input-group">
-											<button class="btn btn-app">
-												<i class="fa fa-image"></i> Tải ảnh
-											</button>
-										</div>
+								<div class="col-md-8">
+									<!-- BEGIN BUTTON ADD -->
+									<div class="input-group">
+										<a href="admin-banner-add.html" class="btn btn-flat btn-danger pull-left" style="margin-bottom:8px;">
+											<i class="fa fa-plus"></i> Thêm mới banner
+										</a>
 									</div>
-									<div class="form-group">
-										<label>Tên thương hiệu</label>
-										<div class="input-group">
-											<span class="input-group-addon"><i class="fa fa-tag"></i></span>
-											<input type="text" class="form-control" placeholder="Tên thương hiệu">
-										</div>
-									</div>
-									<div class="form-group">
-										<label>Chọn danh mục</label>
-										<div class="input-group">
-											<span class="input-group-addon"><i class="fa fa-folder-o"></i></span>
-											<select class="form-control multislb" multiple="multiple">
-												<option>Thời trang Nam/Nữ</option>
-												<option>Thiết bị điện tử</option>
-												<option>Máy tính & Laptop</option>
-												<option>Máy ảnh / Máy quay</option>
-												<option>Đồng hồ</option>
-												<option>Giày dép Nam/Nữ</option>
-												<option>Thiết bị gia dụng</option>
-											</select>
+									<!-- /END BUTTON ADD -->
 
-										</div>
+									<!-- BEGIN TABLE WARRANTY -->
+									<div class="table-responsive">
+										<table class="table table-hover">
+											<thead>
+												<tr>
+													<th>Ảnh</th>
+													<th>Banner URL</th>
+													<th>Ngày hoạt động</th>
+													<th style="text-align:center;">Thao tác</th>
+													<th style="text-align:right;">Kích hoạt</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<img class="icons-svg small" src="assets/images/svg/image-temp.svg">
+													</td>
+													<td>value...</td>
+													<td>01/03/2021 - 10/03/2021</td>
+													<td style="text-align:center;">
+														<a href="admin-banner-edit.html"><span class="badge bg-blue"><i class="fa fa-edit"></i></span></a>
+														<span class="badge bg-red" data-toggle="modal" data-target="#modal-deleteConfirm"><i class="fa fa-trash-o"></i></span>
+													</td>
+													<td>
+														<button type="button" class="btn btn-sm btn-toggle pull-right" data-toggle="button" aria-pressed="false" autocomplete="off">
+															<div class="handle"></div>
+														</button>
+													</td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
-									<div class="form-group">
-										<div class="chk">
-											<input type="checkbox" name="chk1" id="chk1" class="chk-custom">
-											<label for="chk1" class="chk-custom-label">Thương hiệu uy tín</label>
-										</div>
-									</div>
-									
-									<button type="button" class="btn btn-danger">Lưu</button>
-									<a href="admin-brands.html" class="btn btn-default">Quay lại</a>
+									<!-- /END TABLE WARRANTY -->
+
+									<!-- BEGIN PAGINATION -->
+									<ul class="pagination no-margin pull-right">
+										<li><a href="#">«</a></li>
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">»</a></li>
+									</ul>
+									<!-- /END PAGINATION -->
 								</div>
 							</div>
 						</div>
+						<!-- /END BOX BODY -->
 					</form>
-					<!-- /END FORM -->
 				</div>
 				<!-- /END BOX -->
 			</section>
-			<!-- /END CONTENT -->
+			<!-- /END CONTENT -->			
 		</div>
 		<!-- /END CONTENT WRAPPER -->
-
 	</div>
 	<!-- /END WRAPPER -->
+
+	<!-- BEGIN MODAL CONFIRM DELETE -->
+	<div class="modal fade" id="modal-deleteConfirm" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Xóa banner này</h4>
+				</div>
+
+				<!-- BEGIN FORM -->
+				<div class="modal-body">
+					Bạn muốn xóa banner này?
+				</div>
+				<!-- /END FORM -->
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-flat btn-default pull-left btn-close" data-dismiss="modal">Đóng</button>
+					<button type="button" class="btn btn-flat btn-danger">Xóa</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL CONFIRM DELETE -->
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
@@ -455,11 +489,5 @@
 	<script src="assets/plugins/datepicker/bootstrap-datepicker.min.js"></script>
 	<script src="assets/plugins/select2/select2.full.min.js"></script>
 	<script src="assets/js/base.min.js"></script>
-	<script type="text/javascript">
-		$(function () {
-			//Initialize Select2 Elements
-			$('.multislb').select2();
-		});
-	</script>
 </body>
 </html>

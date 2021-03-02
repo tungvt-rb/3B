@@ -292,7 +292,7 @@
 					<!-- /END MENU ORDER -->
 
 					<!-- BEGIN MENU BRAND -->
-					<li class="header active">
+					<li class="header">
 						<img class="icons-svg" src="assets/images/svg/tag.svg"> 
 						<a href="admin-brands.html"><span>Quản lý brand</span></a>
 					</li>
@@ -339,7 +339,7 @@
 							<li>
 								<a href="admin-warranty.html"><span>Quản lý bảo hành</span></a>
 							</li>
-							<li>
+							<li class="active">
 								<a href="admin-shipping-unit.html"><span>Quản lý đơn vị vận chuyển</span></a>
 							</li>
 						</ul>
@@ -372,7 +372,7 @@
 			<section class="content-header">
 				<ol class="breadcrumb">
 					<li><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-					<li class="active">Quản lý thương hiệu</li>
+					<li class="active">Quản lý khoảng giá rẻ vô địch</li>
 				</ol>
 			</section>
 			<!-- /END CONTENT HEADER -->
@@ -385,8 +385,8 @@
 					<form action="#" role="form">
 						<div class="box-header">
 							<h3 class="box-title">
-								Thêm thương hiệu
-								<small>Quản lý thương hiệu</small>
+								Thêm khoảng giá
+								<small>Quản lý khoảng giá rẻ vô địch</small>
 							</h3>
 						</div>
 						<!-- BEGIN BOX BODY -->
@@ -394,45 +394,37 @@
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<label>Ảnh đại diện</label>
-										<div class="input-group">
-											<button class="btn btn-app">
-												<i class="fa fa-image"></i> Tải ảnh
-											</button>
-										</div>
-									</div>
-									<div class="form-group">
-										<label>Tên thương hiệu</label>
+										<label>Tên hiển thị</label>
 										<div class="input-group">
 											<span class="input-group-addon"><i class="fa fa-tag"></i></span>
-											<input type="text" class="form-control" placeholder="Tên thương hiệu">
+											<input type="text" class="form-control" placeholder="Tên hiển thị">
 										</div>
 									</div>
-									<div class="form-group">
-										<label>Chọn danh mục</label>
-										<div class="input-group">
-											<span class="input-group-addon"><i class="fa fa-folder-o"></i></span>
-											<select class="form-control multislb" multiple="multiple">
-												<option>Thời trang Nam/Nữ</option>
-												<option>Thiết bị điện tử</option>
-												<option>Máy tính & Laptop</option>
-												<option>Máy ảnh / Máy quay</option>
-												<option>Đồng hồ</option>
-												<option>Giày dép Nam/Nữ</option>
-												<option>Thiết bị gia dụng</option>
-											</select>
-
+									<div class="row">
+										<div class="col-md-12"><label>Khoảng giá</label></div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<div class="input-group small">
+													<span class="input-group-btn">
+														<span class="btn">Từ</span>
+													</span>
+													<input type="text" class="form-control">
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<div class="input-group small">
+													<span class="input-group-btn">
+														<span class="btn">đến</span>
+													</span>
+													<input type="text" class="form-control">
+												</div>
+											</div>
 										</div>
 									</div>
-									<div class="form-group">
-										<div class="chk">
-											<input type="checkbox" name="chk1" id="chk1" class="chk-custom">
-											<label for="chk1" class="chk-custom-label">Thương hiệu uy tín</label>
-										</div>
-									</div>
-									
 									<button type="button" class="btn btn-danger">Lưu</button>
-									<a href="admin-brands.html" class="btn btn-default">Quay lại</a>
+									<a href="admin-range-super-cheap.html" class="btn btn-default">Quay lại</a>
 								</div>
 							</div>
 						</div>
@@ -455,11 +447,5 @@
 	<script src="assets/plugins/datepicker/bootstrap-datepicker.min.js"></script>
 	<script src="assets/plugins/select2/select2.full.min.js"></script>
 	<script src="assets/js/base.min.js"></script>
-	<script type="text/javascript">
-		$(function () {
-			//Initialize Select2 Elements
-			$('.multislb').select2();
-		});
-	</script>
 </body>
 </html>
