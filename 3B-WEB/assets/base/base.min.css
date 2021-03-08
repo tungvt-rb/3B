@@ -1453,6 +1453,9 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 .product-item .rating .pull-left .count {color: var(--gray);}
 .product-item .rating .rating-label {background: var(--neon-carrot);border-radius: 6px 0;color: white;font-size: 12px;font-weight: 500;line-height: 16px;text-align: center;padding: 6px 14px;}
 
+h4.custom-title {line-height: 30px;}
+h4.custom-title img {margin-bottom: 5px;}
+
 @media screen and (max-width:480px) {
 	.list-store .store-statistic li {padding: 0 16px;}
 	.list-store .store-products {padding: 0;}
