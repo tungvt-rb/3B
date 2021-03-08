@@ -265,11 +265,11 @@
 			<!-- BEGIN CONTENT -->
 			<section class="content advertising">
 				<!-- BEGIN BOX -->
-				<div class="box">
+				<div class="box block disabled">
 					<form action="#" role="form">
 						<div class="box-header">
 							<h3 class="box-title">
-								Tạo chương trình
+								Thiết lập quảng cáo
 							</h3>
 						</div>
 
@@ -287,6 +287,7 @@
 								<div class="clearfix"></div>
 								
 								<div class="col-md-6">
+
 									<h4>Ngân sách</h4>
 									<div class="account">
 										<label>Số dư tài khoản: <span class="text-red">190.000đ</span></label>
@@ -294,28 +295,28 @@
 									<div class="form-group budget">
 										<div class="opt1">
 											<label class="radio-button">
-												<input type="radio" name="opt_budget" id="optionsRadios1" data-target-none="budget" checked> 
+												<input type="radio" name="opt_budget" id="optionsRadios1" data-target-none="budget" disabled="disabled"> 
 												<span class="helping-el"></span>
 												<span class="label-text">Không giới hạn</span>
 											</label>
 										</div>
 										<div class="opt2">
 											<label class="radio-button">
-												<input type="radio" name="opt_budget" id="optionsRadios2" data-target="budget"> 
+												<input type="radio" name="opt_budget" id="optionsRadios2" data-target="budget" checked disabled="disabled"> 
 												<span class="helping-el"></span>
 												<span class="label-text">Thiết lập giới hạn ngân sách</span>
 											</label>
-											<div class="targetbox target_budget" style="display: none;">
+											<div class="targetbox target_budget">
 												<div class="row">
 													<div class="col-md-5">
 														<div class="input-group">
 															<span class="input-group-addon">đ</span>
-															<input type="text" class="form-control" placeholder="1000">
+															<input type="text" class="form-control" placeholder="1000" disabled="disabled">
 														</div>
 													</div>
 													<div class="col-md-5">
 														<div class="input-group">
-															<select class="form-control slb">
+															<select class="form-control slb" disabled="disabled">
 																<option>Ngân sách hàng ngày</option>
 																<option selected>Tổng ngân sách</option>
 															</select>
@@ -333,18 +334,18 @@
 									<div class="form-group time-period">
 										<div class="opt1">
 											<label class="radio-button">
-												<input type="radio" name="opt_timeperiod" id="optionsRadios3" data-target-none="timeperiod" checked> 
+												<input type="radio" name="opt_timeperiod" id="optionsRadios3" data-target-none="timeperiod" disabled="disabled"> 
 												<span class="helping-el"></span>
 												<span class="label-text">Không giới hạn thời gian</span>
 											</label>
 										</div>
 										<div class="opt2">
 											<label class="radio-button">
-												<input type="radio" name="opt_timeperiod" id="optionsRadios4" data-target="timeperiod"> 
+												<input type="radio" name="opt_timeperiod" id="optionsRadios4" data-target="timeperiod" checked disabled="disabled"> 
 												<span class="helping-el"></span>
 												<span class="label-text">Thiết lập ngày bắt đầu / kết thúc</span>
 											</label>
-											<div class="targetbox target_timeperiod" style="display: none;">
+											<div class="targetbox target_timeperiod">
 
 												<div class="input-daterange">
 													<div class="col-md-6">
@@ -353,7 +354,7 @@
 																<span class="input-group-btn">
 																	<span class="btn">Từ</span>
 																</span>
-																<input type="text" class="input-sm form-control" name="start" />
+																<input type="text" class="input-sm form-control" name="start" disabled="disabled" />
 															</div>
 														</div>
 													</div>
@@ -363,7 +364,7 @@
 																<span class="input-group-btn">
 																	<span class="btn">đến</span>
 																</span>
-																<input type="text" class="input-sm form-control" name="end" />
+																<input type="text" class="input-sm form-control" name="end" disabled="disabled" />
 															</div>
 														</div>
 													</div>
@@ -374,14 +375,47 @@
 										
 									</div>
 								</div>
-							</div>
 
-							<!-- BEGIN PAGINATION -->
-							<div class="pagi">
-								<button type="button" class="btn btn-default">Hủy</button>
-								<a href="seller-advertising-keywords-setting.html" class="btn btn-danger">Tiếp tục</a>
+								<div class="col-md-8">
+									<h4>Thiết lập từ khóa</h4>
+
+									<div class="table-responsive">
+										<!-- BEGIN TABLE PRODUCTS -->
+										<table class="table table-hover">
+											<thead>
+												<tr>
+													<th width="38%">Từ khóa</th>
+													<th>Tỉ lệ tìm kiếm</th>
+													<th>Giá thầu tham khảo</th>
+													<th>Giá đấu thầu</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<div class="p-info">
+															<div class="p-name custom-wrap-line">Lorem isum dolor set amit deportible alquada mit</div>
+														</div>
+													</td>
+													<td>
+														<label>98.99%</label>
+													</td>
+													<td>
+														<label>15.000đ</label>
+													</td>
+													<td>
+														<span>đ</span>
+														<input type="text" class="form-control input-sm" placeholder="1000" value="15000" disabled="disabled">
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<!-- /END TABLE PRODUCTS -->
+									</div>
+								</div>
+								<div class="clearfix"></div>
+
 							</div>
-							<!-- /END PAGINATION -->
 						</div>
 						<!-- /END BOX BODY -->
 					</form>
@@ -402,27 +436,5 @@
 	<script src="assets/plugins/datepicker/bootstrap-datepicker.min.js"></script>
 	<script src="assets/plugins/select2/select2.full.min.js"></script>
 	<script src="assets/js/base.min.js"></script>
-
-	<script type="text/javascript">
-		(function($){
-			$(function(){
-				$('input[type="radio"]').click(function() {
-					var target_none = $(this).attr('data-target-none');
-					var target = $(this).attr('data-target');
-					if (typeof target !== typeof undefined && target !== false) {
-						var targetBox = $(".target_" + target);
-						$(targetBox).show();
-					} else {
-						var targetBox = $(".target_" + target_none);
-						$(targetBox).hide();
-					}
-				});
-
-				$('.input-daterange').datepicker({
-					format: "dd/mm/yyyy"
-				});
-			});
-		})(jQuery);
-	</script>
 </body>
 </html>
