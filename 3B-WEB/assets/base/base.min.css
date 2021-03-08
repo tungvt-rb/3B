@@ -1410,3 +1410,45 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 }
 .custom-modal .modal-content .sortsize li .btn:focus {outline: none;}
 .custom-modal .modal-content .sortsize.brand img {max-width:80px;margin-bottom: 0;}
+
+.list-store {margin-bottom: 30px;}
+.list-store .store-info {display: flex;flex-wrap: wrap;align-items: center;height: 60px;}
+.list-store .store-info .store-ava {height: 60px;width:60px;margin-right: 18px;display: block;border-radius: 50%;overflow: hidden;}
+.list-store .store-info .store-ava img {width: 100%;height: 100%;object-fit: cover;}
+.list-store .store-info .store-meta {}
+.list-store .store-info .store-meta h4 {font-size: 18px;font-weight: 500;}
+.list-store .store-info .store-meta .follower {font-size: 14px;line-height: 18px;font-weight: normal;color: var(--old-silver);}
+.list-store .store-statistic {display: flex;justify-content: center;align-items: center;height: 60px;}
+.list-store .store-statistic li {display: flex;flex-wrap: wrap;padding: 0 24px;}
+.list-store .store-statistic li img {margin-right: 8px;}
+.list-store .store-statistic li h5 {font-size: 15px;font-weight: 500;line-height: 20px;}
+.list-store .store-statistic li h5 span {display: block;font-size: 14px;line-height: 18px;font-weight: normal;color: var(--gray);}
+.list-store .store-control {display: flex;height: 60px;align-items: center;justify-content: flex-end;}
+.list-store .store-control .btn {margin-bottom: 0;}
+.list-store .store-products {margin: 10px 0 0;padding: 0 78px;}
+.list-store .store-products img {max-width: 60px;}
+
+.list-brand {}
+.list-brand a {display: block;background: white;margin-bottom: 20px;border-radius: 10px;border:1px solid var(--platium);padding: 9px 20px;}
+.list-brand a:hover {border-color: var(--permanent-geranium);}
+.list-brand a img {max-width: 80%;max-height: 80px;margin: 0 auto;width: 80%;height:80px;display: block;object-fit: cover;}
+
+.brand-item .product-related {background: none;padding: 0;margin-bottom: 0;}
+.brand-item .product-related .p-image img {width: 100%;height: 220px;object-fit: cover;}
+.brand-item .product-feature .p-image img {width: 100%;height: 180px;object-fit: cover;}
+
+.search-brand {}
+.search-brand .form-control {border-right: none;box-shadow: none;border-color: var(--anti-flash-white);padding: 15px 16px;font-size: 14px;line-height: 18px;color: var(--old-silver);height: auto;}
+.search-brand .form-control:focus {border-color: var(--anti-flash-white);}
+.search-brand .input-group-addon {background: white;border-left: none;border-color: var(--anti-flash-white);padding: 15px 16px;}
+
+.all-brands {padding: 20px 0;}
+.all-brands .item {background: white;text-align: center;padding: 15px;border: 1px solid var(--anti-flash-white);margin-bottom: 20px;}
+.all-brands .item h5 {font-size: 18px;font-weight: 500;line-height: 20px;text-transform: uppercase;}
+.all-brands .item img {width: auto;height: 120px;margin: 10px auto 15px;object-fit: cover;}
+
+@media screen and (max-width:480px) {
+	.list-store .store-statistic li {padding: 0 16px;}
+	.list-store .store-products {padding: 0;}
+	.list-store .store-control {justify-content: flex-start;}
+}
