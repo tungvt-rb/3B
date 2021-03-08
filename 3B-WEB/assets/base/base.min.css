@@ -817,11 +817,13 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 .store-home .promote .item .item-top:after {left:-4px;bottom:-4px;}
 .store-home .promote .item .item-bot:before {top:-4px;right:-4px;}
 
-.store-top-product {position:relative;margin-top: 10px;}
+.store-top-product {position:relative;margin-top: 20px;}
 .store-top-product h4 {font-size:20px;margin-bottom:10px;padding:12px 0;}
 .sort {position:absolute;top:0;right:6px;}
 .sort span {display:inline-block;font-size:var(--fontsize-m);line-height:18px;}
 .sort .form-control, .sort .custom-slb {width:auto;display:inline-block;}
+.sort .btn-default {border-color: var(--anti-flash-white);padding: 10px 18px;transition:all 0.2s ease-in;}
+.sort .btn-default:focus {outline: none;}
 
 .sidebar.about p {font-size:var(--fontsize-m);line-height:20px;}
 .sidebar.statistic ul {}
@@ -1395,3 +1397,16 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 		transform: scale(1) /*rotate3d(-1, 1, 0, -180deg)*/;
 	}
 }
+
+/* phase 7 */
+.custom-modal .modal-content .sortsize {display: table;text-align: left;margin-bottom: 20px;}
+.custom-modal .modal-content .sortsize li {display: inline-block;}
+.custom-modal .modal-content .sortsize li .btn {padding: 8px 20px;margin-right: 6px;margin-bottom: 6px;transition:all 0.2s ease-in;}
+.custom-modal .modal-content .sortsize li .btn:hover,
+.custom-modal .modal-content .sortsize li .btn.active {
+	background: none;border-color: var(--permanent-geranium);
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.custom-modal .modal-content .sortsize li .btn:focus {outline: none;}
+.custom-modal .modal-content .sortsize.brand img {max-width:80px;margin-bottom: 0;}
