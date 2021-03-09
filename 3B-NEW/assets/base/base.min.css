@@ -422,16 +422,19 @@
 .block.disabled .radio-button, .block.disabled .select2-selection {cursor: not-allowed;}
 
 .advertising .select-cat {position: relative;margin-bottom: 20px;}
-.advertising .list-cat-block {padding: 15px;box-shadow: 0 1px 1px rgb(0 0 0 / 10%);position: absolute;left: 0;right: 0;top: 60px;z-index: 99;background: #fff;}
+.advertising .select-cat .list-cat-block {padding: 15px;box-shadow: 0 5px 10px rgb(0 0 0 / 20%);position: absolute;left: 0;right: 0;top: 34px;z-index: 99;background: #fff;display: none;}
+.advertising .select-cat:hover .list-cat-block {display: block;}
 .advertising .list-cat {margin: 0;padding: 0;position: relative;list-style: none;width: 230px;}
-.advertising .list-cat li {/* position: relative; */}
+.advertising .list-cat li {}
 .advertising .list-cat li ul {position: absolute;left: 229px;top: 0;display: block;width: 100%;height: 100%;}
 .advertising .list-cat li:hover ul {display: block;}
 .advertising .list-cat li:hover>ul {visibility: visible;}
 .advertising .list-cat ul {visibility: hidden;}
 * html .list-cat li {float: left;height: 1%;}
 * html .list-cat li a {height: 1%;}
-.advertising .list-cat a {display: block;text-decoration: none;color: #777;background: #fff;padding: 5px;}
-.advertising .list-cat a:hover {color: #E2144A;background: #f9f9f9;}
-.advertising .list-cat li ul a {text-decoration: none;color: #77F;background: #fff;padding: 5px;}
+.advertising .list-cat a {display: block;text-decoration: none;color: #777;background: #fff;padding: 6px 10px;position: relative;}
+.advertising .list-cat a:hover, .advertising .list-cat a.active {color: #E2144A;background: #f9f9f9;}
+.advertising .list-cat a.submenu i {position: absolute;right: 8px;top:50%;margin-top: -9px;}
+/*.advertising .list-cat li ul a {text-decoration: none;color: #77F;background: #fff;padding: 5px;}*/
 .advertising .list-cat li ul a:hover {color: #E2144A;background: #f9f9f9;}
+
