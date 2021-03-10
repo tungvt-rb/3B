@@ -1456,8 +1456,28 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 h4.custom-title {line-height: 30px;}
 h4.custom-title img {margin-bottom: 5px;}
 
+.hot-today {background: white;}
+.hot-today .title {padding: 32px 0;}
+.hot-today .title h3 {color: #EE863B;}
+.hot-today .title .flash-time {color: #EB5355;}
+.hot-today .title .flash-time span {background: #EB5355;color: white;}
+.hot-today .title .flash-time i {color: var(--permanent-geranium);font-size: 22px;font-weight: 500;margin-left: 8px;}
+.hot-today .product-item .product-info .price {color: var(--dark);font-size: 18px;font-weight: 500;line-height: 16px;}
+.hot-today .product-item .sale-label {border-radius: 6px 0px 16px;color: white;font-size: 15px;line-height: 20px;font-weight: 500;
+	background: linear-gradient(102.14deg, #EB5355 0%, #EF8F92 91.73%);
+}
+.hot-today .product-item .product-sold {position: relative;}
+.hot-today .product-item .product-sold .icon-progress {position: absolute;left: 8px;top: -15px;z-index: 99;}
+.hot-today .list-product.homepage .product-item {background: none;}
+.hot-today .progress {height: 24px;background: #EFABAE;border-radius: 99px;position: relative;}
+.hot-today .progress .progress-bar {background: #E95254;border-radius: 99px;}
+.hot-today .progress .sr-only {clip: auto;font-size: 12px;font-weight: normal;line-height: 13px;margin: -6px 0 0;top: 50%;left: 0;width: 100%;height: auto;}
+
 @media screen and (max-width:480px) {
 	.list-store .store-statistic li {padding: 0 16px;}
 	.list-store .store-products {padding: 0;}
 	.list-store .store-control {justify-content: flex-start;}
+
+	.hot-today .list-product.homepage .product-item {width: 100%;}
+	.hot-today .list-product.homepage .product-item .p-image {width: 100%;object-fit: cover;}
 }
