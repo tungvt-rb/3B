@@ -1462,6 +1462,7 @@ h4.custom-title img {margin-bottom: 5px;}
 .hot-today .title .flash-time {color: #EB5355;}
 .hot-today .title .flash-time span {background: #EB5355;color: white;}
 .hot-today .title .flash-time i {color: var(--permanent-geranium);font-size: 22px;font-weight: 500;margin-left: 8px;}
+.hot-today .list-product.homepage .product-item {margin: 0 5px 20px 0;}
 .hot-today .product-item .product-info .price {color: var(--dark);font-size: 18px;font-weight: 500;line-height: 16px;}
 .hot-today .product-item .sale-label {border-radius: 6px 0px 16px;color: white;font-size: 15px;line-height: 20px;font-weight: 500;
 	background: linear-gradient(102.14deg, #EB5355 0%, #EF8F92 91.73%);
