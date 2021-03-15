@@ -438,3 +438,21 @@
 /*.advertising .list-cat li ul a {text-decoration: none;color: #77F;background: #fff;padding: 5px;}*/
 .advertising .list-cat li ul a:hover {color: #E2144A;background: #f9f9f9;}
 
+/*fix listprice*/
+.list-price li {padding: 0;margin-bottom: 10px;}
+.list-price li .head {padding: 12px 12px 30px;text-align: left;color: #FFFFFF;}
+.list-price li .head span {display: block;font-size: 10px;}
+.list-price li .text {padding: 5px;border-top: 1px solid var(--color-main-link);}
+.list-price li:hover .text {border-color: transparent;}
+.list-price li.active {background: var(--color-main);color: #FFF;border-color: transparent;}
+.list-price li.active .text {border-color: transparent;}
+
+.card-bg-orange {background: #ff7a45;}
+.card-bg-blue {background: #63a3fb;}
+.card-bg-cyan {background: #58d5cd;}
+.card-bg-green {background: #abd14a;}
+.card-bg-pink {background: #ff82ba;}
+
+@media screen and (max-width: 480px) {
+	.list-price li {margin-bottom: 10px;}
+}
