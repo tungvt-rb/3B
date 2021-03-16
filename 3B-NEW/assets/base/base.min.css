@@ -452,6 +452,7 @@
 .card-bg-cyan {background: #58d5cd;}
 .card-bg-green {background: #abd14a;}
 .card-bg-pink {background: #ff82ba;}
+.card-bg-red {background: #de4a4a;}
 
 @media screen and (max-width: 480px) {
 	.list-price li {margin-bottom: 10px;}
