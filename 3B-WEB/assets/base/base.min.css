@@ -1031,8 +1031,11 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 
 @media screen and (max-width:960px) {
 	.main-header .menu {padding-right:9px;margin-bottom:10px;}
-	.featured ul {flex-direction:column;}
-	.featured ul li {width:100%;margin:5px 9px;}
+	.featured ul {display: inline-flex;flex-wrap: wrap;justify-content: center;}
+	.featured ul li:first-child {margin-left: 5px;}
+	.featured ul li:last-child {margin-right: 5px;}
+	.featured ul li {width:calc(20% + 10px);margin:5px;}
+	.featured ul li img {display: block;margin: 0 auto 8px;}
 
 	.grid-no-pad .item {width:50%;}
 }
