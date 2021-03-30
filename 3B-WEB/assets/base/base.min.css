@@ -1034,7 +1034,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 	.featured ul {display: inline-flex;flex-wrap: wrap;justify-content: center;}
 	.featured ul li:first-child {margin-left: 5px;}
 	.featured ul li:last-child {margin-right: 5px;}
-	.featured ul li {width:calc(20% + 10px);margin:5px;}
+	.featured ul li {width:calc(20% + 10px);margin:5px;text-align: center;}
 	.featured ul li img {display: block;margin: 0 auto 8px;}
 
 	.grid-no-pad .item {width:50%;}
@@ -1376,6 +1376,11 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
     .nav-tabs.nav-tabs-view-mobile {width: 100%;overflow-x: scroll;display: block;}
     .nav-tabs.nav-tabs-view-mobile>li {display: table-cell;float: none;}
     .nav-tabs.nav-tabs-view-mobile>li a {width: max-content;}
+
+    .banner-slider {display: none;}
+    .main-header {position: sticky;top: 0;z-index: 999;overflow-y: scroll;}
+    .menu-container {width: max-content;border-bottom: 1px solid var(--anti-flash-white);}
+    .menu-container li.icon, .menu-container li {width: max-content;}
 
 }
 
