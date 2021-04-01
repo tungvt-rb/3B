@@ -456,6 +456,13 @@
 
 .input-daterange .input-group.small .form-control {text-align: left;}
 
+.adv-hist-control {display: table;}
+.adv-hist-control li {display: inline-block;}
+.adv-hist-control li:last-child > span {display: inline-block;vertical-align: baseline;}
+.adv-hist-control li:last-child > span.input-daterange {vertical-align: middle;}
+.adv-hist-control li .input-daterange .form-group {display: inline-block;margin: 0;}
+.adv-hist-control li .input-daterange .input-group {margin: 0;}
+
 @media screen and (max-width: 480px) {
 	.list-price li {margin-bottom: 10px;}
 }
