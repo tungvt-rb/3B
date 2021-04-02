@@ -1393,6 +1393,9 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
     .filter-modal .custom-modal .modal-content .sidebar {margin-top: 0;padding: 0;}
     .filter-modal .custom-modal .modal-content .sidebar.sale ul {display: table;}
     .filter-modal .custom-modal .modal-content .sidebar.sale ul li {display: inline-block;padding: 0 10px;}
+
+    .search-box {padding-right: 0;}
+    .flash-time span {padding: 4px 6px;}
 }
 
 @media screen and (max-width:768px) {
