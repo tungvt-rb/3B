@@ -59,14 +59,14 @@
 		<div class="header">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-2">
+					<div class="col-md-2 col-xs-2">
 						<!-- BEGIN LOGO -->
 						<div class="logo">
 							<h1><a href="index.html"><img src="assets/images/logo.png"></a></h1>
 						</div>
 						<!-- /END LOGO -->
 					</div>
-					<div class="col-md-7">
+					<div class="col-md-7 col-xs-10">
 						<!-- BEGIN SEARCH BOX -->
 						<div class="search-box">
 							<div class="input-group margin">
@@ -276,10 +276,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="row">
+					<div class="row column-reverse">
 						<div class="col-md-3">
 							<!-- BEGIN SIDEBAR LIST CATEGORY -->
-							<div class="sidebar list-category">
+							<div class="sidebar list-category hide-on-mobile">
 								<h4>Category</h4>
 								<ul>
 									<li>
@@ -324,7 +324,7 @@
 							<!-- /END SIDEBAR LIST CATEGORY -->
 
 							<!-- BEGIN SIDEBAR PRICE RANGE -->
-							<div class="sidebar price-range">
+							<div class="sidebar price-range hide-on-mobile">
 								<h4>Price Range</h4>
 
 								<div class="row">
@@ -343,7 +343,7 @@
 							<!-- /END SIDEBAR PRICE RANGE -->
 
 							<!-- BEGIN SIDEBAR PLACE -->
-							<div class="sidebar">
+							<div class="sidebar hide-on-mobile">
 								<h4>Place</h4>
 								
 								<select class="form-control slb">
@@ -356,7 +356,7 @@
 							<!-- /END SIDEBAR PLACE -->
 
 							<!-- BEGIN SIDEBAR SALE -->
-							<div class="sidebar sale">
+							<div class="sidebar sale hide-on-mobile">
 								<h4>Sale</h4>
 								<ul>
 									<li>
@@ -401,7 +401,7 @@
 							<!-- /END SIDEBAR SALE -->
 
 							<!-- BEGIN SIDEBAR RATING -->
-							<div class="sidebar rating">
+							<div class="sidebar rating hide-on-mobile">
 								<h4>Rating</h4>
 								<ul class="stars">
 									<li><img src="assets/images/svg/star-1.svg"></li>
@@ -440,8 +440,8 @@
 						</div>
 						<div class="col-md-9">
 							<!-- BEGIN LIST CATEGORIES -->
-							<div class="block">
-								<ul class="lits-categories-tag">
+							<div class="block lits-categories-tag">
+								<ul>
 									<li><a href="#" class="btn-perspective">Fashion</a></li>
 									<li><a href="#" class="btn-perspective">Fashion Men</a></li>
 									<li><a href="#" class="btn-perspective">Fashion Men</a></li>
@@ -453,9 +453,9 @@
 							<!-- /END LIST CATEGORIES -->
 							
 							<!-- BEGIN LIST CATEGORIES -->
-							<div class="block">
+							<div class="block lits-categories">
 								<h3>Shop by Category</h3>
-								<ul class="lits-categories">
+								<ul>
 									<li>
 										<img src="assets/images/img1.png">
 										<span>Clothing</span>
@@ -522,6 +522,10 @@
 											<option value="1" selected>Price &#8593;</option>
 											<option value="2">Price &#8595;</option>
 										</select>
+									</div>
+
+									<div class="filter-btn pull-right">
+										<a href="#" data-toggle="modal" data-target="#filterModal"><img src="assets/images/icons-category/filter.png"></a>
 									</div>
 								</div>
 
@@ -862,6 +866,133 @@
 		</div>
 	</footer>
 	<!-- /END FOOTER -->
+
+	<div id="filterModal" class="modal filter-modal" data-backdrop="static">
+		<div class="modal-dialog custom-modal">
+			<div class="modal-content">
+				<span class="close" data-dismiss="modal"><img src="assets/images/svg/x-circle.svg"></span>
+
+				<!-- BEGIN SIDEBAR RATING -->
+					<div class="sidebar rating">
+						<h4>Rating</h4>
+						<ul class="stars">
+							<li><img src="assets/images/svg/star-1.svg"></li>
+							<li><img src="assets/images/svg/star-1.svg"></li>
+							<li><img src="assets/images/svg/star-1.svg"></li>
+							<li><img src="assets/images/svg/star-1.svg"></li>
+							<li><img src="assets/images/svg/star-2.svg"></li>
+							<li><span>And up</span></li>
+						</ul>
+						<ul class="stars">
+							<li><img src="assets/images/svg/star-1.svg"></li>
+							<li><img src="assets/images/svg/star-1.svg"></li>
+							<li><img src="assets/images/svg/star-1.svg"></li>
+							<li><img src="assets/images/svg/star-2.svg"></li>
+							<li><img src="assets/images/svg/star-2.svg"></li>
+							<li><span>And up</span></li>
+						</ul>
+						<ul class="stars">
+							<li><img src="assets/images/svg/star-1.svg"></li>
+							<li><img src="assets/images/svg/star-1.svg"></li>
+							<li><img src="assets/images/svg/star-2.svg"></li>
+							<li><img src="assets/images/svg/star-2.svg"></li>
+							<li><img src="assets/images/svg/star-2.svg"></li>
+							<li><span>And up</span></li>
+						</ul>
+						<ul class="stars">
+							<li><img src="assets/images/svg/star-1.svg"></li>
+							<li><img src="assets/images/svg/star-2.svg"></li>
+							<li><img src="assets/images/svg/star-2.svg"></li>
+							<li><img src="assets/images/svg/star-2.svg"></li>
+							<li><img src="assets/images/svg/star-2.svg"></li>
+							<li><span>And up</span></li>
+						</ul>
+					</div>
+					<!-- /END SIDEBAR RATING -->
+
+				<!-- BEGIN SIDEBAR SALE -->
+				<div class="sidebar sale">
+					<h4>Sale</h4>
+					<ul>
+						<li>
+							<div class="chk">
+								<input type="checkbox" name="chk13" id="chk13" class="chk-custom" >
+								<label for="chk13" class="chk-custom-label">Sale up to 10%</label>
+							</div>
+						</li>
+						<li>
+							<div class="chk">
+								<input type="checkbox" name="chk14" id="chk14" class="chk-custom" >
+								<label for="chk14" class="chk-custom-label">Sale up to 10%</label>
+							</div>
+						</li>
+						<li>
+							<div class="chk">
+								<input type="checkbox" name="chk15" id="chk15" class="chk-custom" >
+								<label for="chk15" class="chk-custom-label">Sale up to 10%</label>
+							</div>
+						</li>
+						<li>
+							<div class="chk">
+								<input type="checkbox" name="chk16" id="chk16" class="chk-custom" >
+								<label for="chk16" class="chk-custom-label">Sale up to 10%</label>
+							</div>
+						</li>
+						<li>
+							<div class="chk">
+								<input type="checkbox" name="chk17" id="chk17" class="chk-custom" >
+								<label for="chk17" class="chk-custom-label">Sale up to 10%</label>
+							</div>
+						</li>
+						<li>
+							<div class="chk">
+								<input type="checkbox" name="chk18" id="chk18" class="chk-custom" >
+								<label for="chk18" class="chk-custom-label">Sale up to 10%</label>
+							</div>
+						</li>
+					</ul>
+					<a class="loadmore" href="#">Load more</a>
+				</div>
+				<!-- /END SIDEBAR SALE -->
+
+				<!-- BEGIN SIDEBAR PRICE RANGE -->
+				<div class="sidebar price-range">
+					<h4>Price Range</h4>
+
+					<div class="row">
+						<div class="form-group col-md-6">
+							<label>Min</label>
+							<input type="text" class="form-control input-lg" placeholder="$">
+						</div>
+						<div class="form-group col-md-6">
+							<label>Max</label>
+							<input type="text" class="form-control input-lg" placeholder="$">
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<!-- /END SIDEBAR PRICE RANGE -->
+
+				<!-- BEGIN SIDEBAR PLACE -->
+					<div class="sidebar place">
+						<h4>Place</h4>
+						<div class="custom-slb">
+							<select>
+								<option value="0">Hà Nội</option>
+								<option value="1">Hà Nội 2</option>
+								<option value="2">Hồ Chí Minh</option>
+								<option value="3">Đà Nẵng</option>
+							</select>
+						</div>
+					</div>
+					<!-- /END SIDEBAR PLACE -->
+
+				<button class="btn btn-default">Reset</button>
+				<button class="btn btn-danger btn-perspective">Apply</button>
+
+			</div>
+		</div>
+	</div>
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
