@@ -1529,6 +1529,11 @@ h4.custom-title img {margin-bottom: 5px;}
 
 	.search-result .block.lits-categories ul {width: 100%;display: table;}
 	.search-result .block.lits-categories ul li {width: 25%;display: inline-block;margin: 0;padding: 3px;}
+
+	.list-compare-container, .store-statistic-container {overflow-x: scroll;width: 100%;}
+	.list-compare-container .list-compare, .store-statistic-container ul {display: table;width: max-content;}
+	.list-compare-container .list-compare li .product-item {margin: 0 20px 14px;}
+	.search-item .store-info {margin-bottom: 20px;}
 }
 
 .search-result .sidebar {margin-top: 0;}
