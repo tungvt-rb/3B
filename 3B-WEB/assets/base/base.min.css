@@ -338,7 +338,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 	font-size:calc(var(--fontsize-m) + 1px);font-weight:500;line-height:20px;text-align:center;padding:6px 14px;
 }
 .product-item .store-name {}
-.product-item .store-name img {float:left;border-radius:50%;margin-right:6px;}
+.product-item .store-name img {float:left;border-radius:50%;margin-right:6px;width: auto;}
 .product-item .store-name h5 {font-size:var(--fontsize-xs);line-height:20px;color:var(--old-silver);font-weight:normal;}
 .product-item .product-info {}
 .product-item .product-info h4 {font-size:var(--fontsize-m);line-height:18px;margin-bottom:8px;padding:0;}
