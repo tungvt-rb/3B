@@ -1535,11 +1535,13 @@ h4.custom-title img {margin-bottom: 5px;}
 	.list-compare-container .list-compare li .product-item {margin: 0 20px 14px;}
 	.list-compare-container .list-compare li .product-item.meta {margin: 0;}
 	.search-item .store-info {margin-bottom: 20px;}
+
 }
 
 .search-result .sidebar {margin-top: 0;}
 .search-result .block.lits-categories ul li img {border-radius: 10px 10px 0 0;}
 .search-result .block.lits-categories ul li span {border-radius: 0 0 10px 10px;}
+.flash-sale-bar img {width: auto;}
 
 /* fix rating star product detail */
 .product-details-wrap .product-item .rating .rating-label {background: none;padding: 0 0.1em;}
