@@ -1523,7 +1523,7 @@ h4.custom-title img {margin-bottom: 5px;}
 	.product-reviews .store, .product-reviews .feedback {padding: 0;}
 
 	/* fix search results */
-	.search-result .block.lits-categories-tag {overflow-x: scroll;width: 100%;}
+	.search-result .block.lits-categories-tag {overflow-x: scroll;width: 100%;margin-bottom: 0;}
 	.search-result .block.lits-categories-tag ul {display: table;width: max-content;overflow: hidden;margin: 0 0 20px;}
 	.search-result .block.lits-categories-tag ul li {float: none;display: inline-block;}
 
