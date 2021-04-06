@@ -1532,9 +1532,11 @@ h4.custom-title img {margin-bottom: 5px;}
 
 	.list-compare-container, .store-statistic-container {overflow-x: scroll;width: 100%;}
 	.list-compare-container .list-compare, .store-statistic-container ul {display: table;width: max-content;}
-	.list-compare-container .list-compare li .product-item {margin: 0 20px 14px;}
+	.list-compare-container .list-compare li .product-item {margin: 0 20px 6px;}
 	.list-compare-container .list-compare li .product-item.meta {margin: 0;}
 	.search-item .store-info {margin-bottom: 20px;}
+
+	.more-info .control button {height: auto;width: 100%;padding: 15px 10px !important;}
 
 }
 
