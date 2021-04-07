@@ -1547,3 +1547,7 @@ h4.custom-title img {margin-bottom: 5px;}
 
 /* fix rating star product detail */
 .product-details-wrap .product-item .rating .rating-label {background: none;padding: 0 0.1em;}
+
+/* fix style carousel homepage */
+#seleted_stores.owl-carousel .owl-item img {object-fit: cover;}
+#seleted_stores.owl-carousel .owl-next, #seleted_stores.owl-carousel .owl-prev {top: 50%;margin-top: -15px !important;}
