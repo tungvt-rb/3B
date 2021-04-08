@@ -1552,3 +1552,4 @@ h4.custom-title img {margin-bottom: 5px;}
 #seleted_stores.owl-carousel .owl-item img {object-fit: cover;}
 #seleted_stores.owl-carousel .owl-next, #seleted_stores.owl-carousel .owl-prev {top: 50%;margin-top: -15px !important;}
 
+.product-place img {width: auto;}
