@@ -329,7 +329,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 
 .list-product.with-sidebar .product-item {float:left;width:158px}
 .list-product.homepage {}
-.list-product.homepage .product-item {float:left;width:230px;background:#FFFFFF;margin:0 5px 50px 0;}
+.list-product.homepage .product-item {float:left;width:16.3%;background:#FFFFFF;margin:0 5px 50px 0;}
 .list-product.homepage .product-info {padding:0 15px;text-align:center;}
 .product-item {border-radius:8px;overflow:hidden;position:relative;margin:0 13px 30px 0;}
 .product-item:last-child {margin-right:0 !important;}
