@@ -486,3 +486,33 @@
 .seller-banking-account h4 {font-size: 15px;line-height: 19px;margin: 0;}
 .seller-banking-account h4 span {display: inline-block;font-size: 13px;font-weight: normal;}
 .seller-banking-account h3 {font-size: 13px;color: var(--color-main-link);font-weight: normal;margin: 0;}
+
+/* phase 8 */
+.display-flex {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.combo-product-add-block {
+	border: 1px solid var(--color-formcontrol-border);
+	padding: 15px;
+}
+.combo-product-add-block .p-image {
+	height: 64px;
+	width: 64px;
+	object-fit: cover;
+	border-radius: 3px;
+	margin:0 15px 15px 0;
+}
+.combo-product-add-block .badge{
+	font-weight: 400;
+    width: 20px;
+    height: 20px;
+    padding: 4px 4px 0px 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
