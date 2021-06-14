@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/base/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/plugins/datepicker/bootstrap-datepicker.css">
 	<link rel="stylesheet" type="text/css" href="assets/plugins/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/plugins/chart/css/morris.css">
 	<link rel="stylesheet" type="text/css" href="assets/base/base.min.css">
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -549,21 +550,164 @@
 												</ul>
 											</div>
 											<div class="col-md-6">
-												<h4><small>Số sản phẩm đã bán:</small> <span class="text-black">143.000</span></h4>
-												<h4><small>Số đơn hàng:</small> <span class="text-red">900</span></h4>
+												<table class="table">
+													<tbody>
+														<tr>
+															<th><label class="no-margin"><small>Số sản phẩm đã bán:</small></label></th>
+															<td><label class="no-margin"><span class="text-black">143.000</span></label></td>
+														</tr>
+														<tr>
+															<th><label class="no-margin"><small>Số đơn hàng:</small></label></th>
+															<td><label class="no-margin"><span class="text-red">900</span></label></td>
+														</tr>
+														<tr>
+															<th><label class="no-margin"><small>Voucher 3B đã dùng:</small></label></th>
+															<td><label class="no-margin"><span class="text-red">3.000.000</span></label></td>
+														</tr>
+														<tr>
+															<th colspan="2" class="text-center"><label class="no-margin">Doanh thu (1% phí từ doanh thu shop)</label></th>
+														</tr>
+														<tr>
+															<th><label class="no-margin"><small>Đơn hàng hoàn thành:</small></label></th>
+															<td><label class="no-margin"><span class="text-black">1.000.000</span></label></td>
+														</tr>
+														<tr>
+															<th><label class="no-margin"><small>Đơn hàng đã giao:</small></label></th>
+															<td><label class="no-margin"><span class="text-black">4.000.000</span></label></td>
+														</tr>
+														<tr>
+															<th colspan="2" class="text-center"><label class="no-margin">Doanh thu</label></th>
+														</tr>
+														<tr>
+															<th><label class="no-margin"><small>Hiện tại:</small></label></th>
+															<td><label class="no-margin"><span class="text-red">-2.000.000</span></label></td>
+														</tr>
+														<tr>
+															<th><label class="no-margin"><small>Tối đa:</small></label></th>
+															<td><label class="no-margin"><span class="text-red">2.000.000</span></label></td>
+														</tr>
+													</tbody>
+												</table>
 											</div>
 
 											<div class="col-md-6">
-												<h4><small>Số shop đang chạy quảng cáo:</small> <span class="text-black">1090</span></h4>
-												<h4><small>Doanh thu:</small> <span class="text-red">15.000.000</span></h4>
+												<canvas id="chartReport" style="width:100%;max-width:700px"></canvas>
 											</div>
 
 											<div class="clearfix"></div>
 										</div>
 									</div>
 									<!-- END TAB 2 -->
+
+									<!-- BEGIN TAB 3 -->
 									<div class="tab-pane" id="tab_3">
+										<div class="row">
+											<div class="col-md-12">
+												<ul class="adv-hist-control">
+													<li>
+														<div class="form-group">
+															<label class="radio-button">
+																<input type="radio" name="optionsRadios" id="optionsRadios9"> 
+																<span class="helping-el"></span>
+																<span class="label-text">Tuần này</span>
+															</label>
+														</div>
+													</li>
+													<li>
+														<div class="form-group">
+															<label class="radio-button">
+																<input type="radio" name="optionsRadios" id="optionsRadios10"> 
+																<span class="helping-el"></span>
+																<span class="label-text">Tháng này</span>
+															</label>
+														</div>
+													</li>
+													<li>
+														<div class="form-group">
+															<label class="radio-button">
+																<input type="radio" name="optionsRadios" id="optionsRadios11"> 
+																<span class="helping-el"></span>
+																<span class="label-text">Năm nay</span>
+															</label>
+														</div>
+													</li>
+													<li>
+														<span class="form-group">
+															<label class="radio-button">
+																<input type="radio" name="optionsRadios" id="optionsRadios12"> 
+																<span class="helping-el"></span>
+																<span class="label-text">Tùy chọn thời gian</span>
+															</label>
+														</span>
+														<span class="input-daterange">
+															<div class="form-group">
+																<div class="input-group small">
+																	<span class="input-group-btn">
+																		<span class="btn">Từ</span>
+																	</span>
+																	<input type="text" class="input-sm form-control" name="start">
+																</div>
+															</div>
+															<div class="form-group">
+																<div class="input-group small">
+																	<span class="input-group-btn">
+																		<span class="btn">đến</span>
+																	</span>
+																	<input type="text" class="input-sm form-control" name="end">
+																</div>
+															</div>
+														</span>
+													</li>
+												</ul>
+											</div>
+
+											<div class="col-md-5">
+												<table class="table">
+													<tbody>
+														<tr>
+															<th colspan="2" class="text-center"><label class="no-margin">Tổng số tiền voucher đã sử dụng: <span class="text-red">90.000.000</span></label></th>
+														</tr>
+														<tr>
+															<th colspan="2" class="text-center"><label class="no-margin">Số voucher miễn vận chuyển: <span class="text-black">143.000</span></label></th>
+														</tr>
+														<tr>
+															<th><label class="no-margin"><small>Số voucher đã sử dụng:</small></label></th>
+															<td><label class="no-margin"><span class="text-black">234</span></label></td>
+														</tr>
+														<tr>
+															<th><label class="no-margin"><small>Số tiền voucher miễn vận chuyển đã dùng:</small></label></th>
+															<td><label class="no-margin"><span class="text-red">30.000.000</span></label></td>
+														</tr>
+														<tr>
+															<th colspan="2" class="text-center"><label class="no-margin">Số voucher giảm giá theo số tiền: <span class="text-black">143.000</span></label></th>
+														</tr>
+														<tr>
+															<th><label class="no-margin"><small>Số voucher đã sử dụng:</small></label></th>
+															<td><label class="no-margin"><span class="text-black">234</span></label></td>
+														</tr>
+														<tr>
+															<th><label class="no-margin"><small>Số tiền voucher giảm theo số tiền đã dùng:</small></label></th>
+															<td><label class="no-margin"><span class="text-red">30.000.000</span></label></td>
+														</tr>
+														<tr>
+															<th colspan="2" class="text-center"><label class="no-margin">Số voucher giảm giá theo % đơn hàng: <span class="text-black">143.000</span></label></th>
+														</tr>
+														<tr>
+															<th><label class="no-margin"><small>Số voucher đã sử dụng:</small></label></th>
+															<td><label class="no-margin"><span class="text-black">234</span></label></td>
+														</tr>
+														<tr>
+															<th><label class="no-margin"><small>Số tiền voucher giảm theo % đơn hàng đã dùng:</small></label></th>
+															<td><label class="no-margin"><span class="text-red">30.000.000</span></label></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="clearfix"></div>
+
+										</div>
 									</div>
+									<!-- END TAB 3 -->
 								</div>
 							</div>
 						</div>
@@ -609,6 +753,8 @@
 	<script src="assets/js/jquery.slimscroll.min.js"></script>
 	<script src="assets/plugins/datepicker/bootstrap-datepicker.min.js"></script>
 	<script src="assets/plugins/select2/select2.full.min.js"></script>
+	<script src="assets/plugins/chart/chart.js"></script>
+	<!-- <script src="assets/plugins/chart/chartjs-plugin-labels.js"></script> -->
 	<script src="assets/js/base.min.js"></script>
 
 	<script type="text/javascript">
@@ -616,6 +762,60 @@
 			$(function(){
 				$('.input-daterange').datepicker({
 					format: "dd/mm/yyyy"
+				});
+
+				// Chart
+				var xValues = [
+					"Điện máy & Gia Dụng",
+					"Máy Tính & Điện Thoại",
+					"Linh Kiện Điện Tử",
+					"Quần Áo",
+					"Giày Dép",
+					"Phụ Kiện Thời Trang"
+				];
+				var yValues = [55, 23, 24, 0.22, 5.66, 15,];
+				var barColors = [
+					"#b91d47",
+					"#00aba9",
+					"#2b5797",
+					"#e8c3b9",
+					"#d9c3f9",
+					"#1e7145",
+				];
+
+				var chartReport = new Chart("chartReport", {
+					type: "pie",
+					data: {
+						labels: xValues,
+						datasets: [{
+							backgroundColor: barColors,
+							data: yValues
+						}]
+					},
+					options: {
+						title: {
+							display: true,
+							text: "% sản phẩm đã bán của các đơn hàng"
+						},
+						tooltips: {
+							enabled: true,
+							// mode: 'single',
+							callbacks: {
+								label: function (tooltipItems, data) {
+									var i = tooltipItems.index;
+									return data.labels[i] + ": " + Number(data.datasets[0].data[i]).toFixed(2) + "%";
+								}
+							}
+						},
+						scales: {
+							// xAxes: [{
+								ticks: {
+									beginAtZero: true,
+									// stepSize: 3.5
+								},
+							// }]
+						},
+					},
 				});
 			});
 		})(jQuery);
