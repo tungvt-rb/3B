@@ -1400,6 +1400,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 
 @media screen and (max-width:768px) {
 	.flash-sale .flash-time {float: none;}
+	.product-compare {overflow: scroll;}
 }
 
 @media screen and (max-width:1440px) {
@@ -1554,3 +1555,23 @@ h4.custom-title img {margin-bottom: 5px;}
 
 .product-place img {width: auto;}
 .sort .btn-default.active {border-color: var(--permanent-geranium);background: #FFFFFF;box-shadow: none;}
+
+/* phase 8 */
+.combo-product {}
+.combo-product .chk {float: left;}
+.combo-product .chk-custom-label {margin-bottom: 0;}
+.combo-product label {font-weight: normal;}
+.combo-product label span {font-weight: 500;}
+.combo-product .price {font-size: calc(var(--fontsize-m) + 1px);line-height: 38px;font-weight: 500;}
+.combo-product .custom-slb-2 {display: inline-block;}
+.combo-product .custom-slb-2 .icon {margin-top: -10px;}
+.combo-product .custom-slb-2 .options {top: 38px;}
+.combo-product .custom-slb-2 .selected {display: table;width: 100%;}
+.combo-product .custom-slb-2 .option {padding: 5px 18px;display: table;width: 100%;}
+.combo-product .custom-slb-2 span {display: inline-block;width: 50%;padding: 5px;font-size: 15px;line-height: 20px;}
+.combo-product .combo-item.disabled {pointer-events: none;opacity: 0.4;}
+.combo-product-image {margin-bottom: 10px;}
+.combo-product-image h4 {margin-bottom: 0;}
+.combo-product-image ul {display: table;width: 100%;}
+.combo-product-image ul li {display: inline-block;margin-right: 5px;}
+.combo-product-image .p-image {object-fit: cover;max-height: 80px;}
