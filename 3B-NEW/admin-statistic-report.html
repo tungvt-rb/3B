@@ -591,7 +591,7 @@
 											</div>
 
 											<div class="col-md-6">
-												<canvas id="chartReport" style="width:100%;max-width:700px"></canvas>
+												<canvas id="chartReport" style="width:50%;"></canvas>
 											</div>
 
 											<div class="clearfix"></div>
@@ -728,7 +728,7 @@
 	<script src="assets/js/jquery.slimscroll.min.js"></script>
 	<script src="assets/plugins/datepicker/bootstrap-datepicker.min.js"></script>
 	<script src="assets/plugins/select2/select2.full.min.js"></script>
-	<script src="assets/plugins/chart/chart.js"></script>
+	<script src="assets/plugins/chart/chart.min.js"></script>
 	<!-- <script src="assets/plugins/chart/chartjs-plugin-labels.js"></script> -->
 	<script src="assets/js/base.min.js"></script>
 
@@ -781,14 +781,6 @@
 									return data.labels[i] + ": " + Number(data.datasets[0].data[i]).toFixed(2) + "%";
 								}
 							}
-						},
-						scales: {
-							// xAxes: [{
-								ticks: {
-									beginAtZero: true,
-									// stepSize: 3.5
-								},
-							// }]
 						},
 					},
 				});
