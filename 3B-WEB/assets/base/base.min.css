@@ -1557,6 +1557,8 @@ h4.custom-title img {margin-bottom: 5px;}
 .sort .btn-default.active {border-color: var(--permanent-geranium);background: #FFFFFF;box-shadow: none;}
 
 /* phase 8 */
+.img75 {width: 75px;height: 75px;object-fit: cover;}
+.br6 {border-radius: 6px;}
 .combo-product {}
 .combo-product .chk {float: left;}
 .combo-product .chk-custom-label {margin-bottom: 0;}
