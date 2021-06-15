@@ -481,7 +481,6 @@
 											<li><input type="text" class="form-control" placeholder="đ Giá lẻ"></li>
 											<li><input type="text" class="form-control" placeholder="đ Giá ghép đơn"></li>
 											<li><input type="text" class="form-control" placeholder="Kho hàng"></li>
-											<li><input type="text" class="form-control" placeholder="Mã"></li>
 											<li><button type="button" class="btn btn-flat btn-success">Áp dụng cho tất cả</button></li>
 										</ul>
 
@@ -642,6 +641,22 @@
 									<!-- /END BLOCK -->
 
 									<!-- BEGIN BLOCK -->
+									<div id="sku" class="block">
+										<h5 class="form-title">
+											<span><i class="fa fa-image margin-r-5"></i> SKU</span>
+										</h5>
+
+										<div class="form-group">
+											<label>SKU sản phẩm</label>
+											<div class="input-group">
+												<span class="input-group-addon"><i class="fa fa-tag"></i></span>
+												<input type="text" class="form-control" placeholder="Tên sản phẩm">
+											</div>
+										</div>
+									</div>
+									<!-- /END BLOCK -->
+
+									<!-- BEGIN BLOCK -->
 									<div id="shipping" class="block">
 										<h5 class="form-title">
 											<span><i class="fa fa-image margin-r-5"></i> VẬN CHUYỂN</span>
@@ -699,10 +714,30 @@
 												<label>Phí vận chuyển</label>
 											</div>
 											<div class="col-md-9">
+
+												<div class="col-md-6">
+													<div class="form-group">
+														<label class="padding-t-b-8 margin-r-5">Shop tự vận chuyển</label>
+														<button type="button" class="btn btn-sm btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+															<div class="handle"></div>
+														</button>
+														<div><small>(áp dụng với các mặt hàng hoa quả,<br> thực phẩm tươi sống và đông lạnh)</small></div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<label class="padding-t-b-8 margin-r-5">Vận chuyển ngoài</label>
+														<button type="button" class="btn btn-sm btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off">
+															<div class="handle"></div>
+														</button>
+													</div>
+												</div>
+												<div class="clearfix"></div>
+
 												<div class="list-trans-info">
-													<h5>Tự thỏa thuận với người bán</h5>
-													<p>Không có đơn vị vận chuyển nào được kích hoạt cho sản phẩm này. Người mua sẽ chỉ trả qua Shopee tiền sản phẩm.</p>
-													<p>Bạn có thể <a href="#">nhấn tại đây</a> để mở kênh vận chuyển cho sản phẩm của mình</p>
+													<h5>Người bán cần thiết lập bảng giá shop tự vận chuyển trước khi áp dụng phương thức shop tự vận chuyển</h5>
+													<p>Bạn có thể <a href="seller-shipping-policy-kg.html" target="_blank">nhấn tại đây</a> để mở kênh vận chuyển cho sản phẩm của mình</p>
+													<p>File tải lên phải là định dạng .jpeg, .png, .jpg, .gìf và tối đa là 500kb</p>
 												</div>
 
 												<div class="list-trans">
@@ -723,7 +758,7 @@
 													</div>
 												</div>
 
-												<p><i class="fa fa-info-circle"></i> Cài đặt đơn vị vẩn chuyển ở đây chỉ áp dụng cho sản phẩm này</p>
+												<label class="error-msg"><i class="fa fa-info-circle"></i> Cài đặt đơn vị vẩn chuyển ở đây chỉ áp dụng cho sản phẩm này</label>
 											</div>
 										</div>
 									</div>
