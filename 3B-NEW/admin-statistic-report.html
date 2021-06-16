@@ -405,11 +405,13 @@
 									<li>
 										<a href="#tab_3" data-toggle="tab">Voucher</a>
 									</li>
+									<li>
+										<a href="#tab_4" data-toggle="tab">Shop bán chạy nhất</a>
+									</li>
 								</ul>
 								<div class="tab-content">
 									<!-- BEGIN TAB 1 -->
 									<div class="tab-pane active" id="tab_1">
-										
 										<div class="row">
 											<div class="col-md-12">
 												<ul class="adv-hist-control">
@@ -484,7 +486,6 @@
 
 											<div class="clearfix"></div>
 										</div>
-
 									</div>
 									<!-- END TAB 1 -->
 
@@ -708,6 +709,31 @@
 										</div>
 									</div>
 									<!-- END TAB 3 -->
+
+									<!-- BEGIN TAB 4 -->
+									<div class="tab-pane" id="tab_4">
+										<div class="row">
+											<div class="col-md-8">
+												<h4>Top 10 shop bán chạy nhất</h4>
+												<div class="pull-right">
+													<select class="form-control">
+														<option selected="selected">Tháng này</option>
+														<option>Hôm nay</option>
+														<option>Hôm qua</option>
+														<option>Tuần này</option>
+														<option>Tháng trước</option>
+													</select>
+												</div>
+											</div>
+											<div class="clearfix"></div>
+											
+											<div class="col-md-8">
+												<canvas id="chartBestShopSelling" style="width:50%;"></canvas>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+									<!-- END TAB 4 -->
 								</div>
 							</div>
 						</div>
@@ -739,7 +765,7 @@
 					format: "dd/mm/yyyy"
 				});
 
-				// Chart
+				// Chart Order
 				var xValues = [
 					"Điện máy & Gia Dụng",
 					"Máy Tính & Điện Thoại",
@@ -753,7 +779,7 @@
 					"#b91d47",
 					"#00aba9",
 					"#2b5797",
-					"#e8c3b9",
+					"#086909",
 					"#d9c3f9",
 					"#1e7145",
 				];
@@ -781,6 +807,67 @@
 									return data.labels[i] + ": " + Number(data.datasets[0].data[i]).toFixed(2) + "%";
 								}
 							}
+						},
+						plugins: {
+							legend: {
+								position: 'left',
+							},
+						},
+					},
+				});
+
+				// Chart Best Shop Selling
+				var xValuesShopName = [
+					"Shop quần áo",
+					"Shop giầy dép",
+					"Tên của shop",
+					"Gì cũng được",
+					"ok",
+					"gigi"
+				];
+				var yValuesShopValue = [550, 123, 240, 22, 266, 1500];
+				var barColorsShop = [
+					"#b91d47",
+					"#00aba9",
+					"#2b5797",
+					"#086909",
+					"#d9c3f9",
+					"#1e7145",
+				];
+
+				var chartBestShopSelling = new Chart("chartBestShopSelling", {
+					type: "bar",
+					data: {
+						labels: xValuesShopName,
+						datasets: [{
+							axis: 'y',
+							backgroundColor: barColorsShop,
+							data: yValuesShopValue,
+							barThickness: 20,
+						}]
+					},
+					options: {
+						indexAxis: 'y',
+						scales: {
+							xAxes: {
+								display: true,
+								ticks: {
+									// Include a dollar sign in the ticks
+									callback: function(value, index, values) {
+										return value + ' đơn';
+									}
+								},
+							},
+							yAxes: {
+								grid: {
+									display: false
+								},
+							}
+						},
+						plugins: {
+							legend: {
+								display: false
+							},
 						},
 					},
 				});
