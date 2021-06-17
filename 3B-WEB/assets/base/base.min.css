@@ -1577,3 +1577,5 @@ h4.custom-title img {margin-bottom: 5px;}
 .combo-product-image ul {display: table;width: 100%;}
 .combo-product-image ul li {display: inline-block;margin-right: 5px;}
 .combo-product-image .p-image {object-fit: cover;max-height: 80px;}
+.control.disabled button {position: relative;}
+.control.disabled button::after {content: "";background: var(--dark-liver);width: 100%;height: 100%;position: absolute;top: 0;left: 0;opacity: .6;cursor: no-drop;}
