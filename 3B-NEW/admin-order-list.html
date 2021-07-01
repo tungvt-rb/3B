@@ -451,181 +451,202 @@
 
 								</div>
 								<div class="col-md-7">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="fa fa-search"></i></span>
-										<input type="text" id="product-name" name="product-name" class="form-control" placeholder="Tìm theo mã đơn hàng, tên shop, tên sản phẩm, mã vận đơn, tên người mua">
-									</div>
+									<div class="row search-block">
+										<div class="col-md-10">
+											<div class="search-block-wrap">
+												<div class="search-block-default">
+													<input type="text" name="order-code" class="form-control" placeholder="Tìm theo mã đơn hàng">
+													<span><i class="fa fa-caret-down"></i></span>
+												</div>
+												<div class="search-block-item">
+													<input type="text" id="shop-name" name="product-name" class="form-control" placeholder="Theo tên shop">
+													<input type="text" id="product-name" name="product-name" class="form-control" placeholder="Theo tên sản phẩm">
+													<input type="text" id="shipping-code" name="product-name" class="form-control" placeholder="Theo mã vận đơn">
+													<input type="text" id="buyer-name" name="product-name" class="form-control" placeholder="Theo tên người mua">
+												</div>
+											</div>
+										</div>
 
-									<a href="#" class="btn btn-flat btn-danger pull-right" style="margin-bottom:8px;">
-										<i class="fa fa-search"></i> Tìm kiếm
-									</a>
+										<div class="col-md-2">
+											<a href="#" class="btn btn-flat btn-danger">Tìm kiếm</a>
+										</div>
+									</div>
 								</div>
 								<div class="clearfix"></div>
 								
 							</div>
 
-							<div class="row">
-								<div class="col-md-8">
-									<div class="btn-group margin-b">
-										<a href="#" class="btn btn-default active">Tất cả</a>
-										<a href="#" class="btn btn-default">Còn hàng</a>
-										<a href="#" class="btn btn-default">Hết hàng</a>
-										<a href="#" class="btn btn-default">Đã khóa</a>
-										<a href="#" class="btn btn-default">Vi phạm</a>
-										<a href="#" class="btn btn-default">Đã ẩn</a>
-									</div>
-								</div>
-
-								<div class="col-md-4">
-									<div class="btn-group pull-right">
-										<button type="button" class="btn btn-default">Gần đây</button>
-										<button type="button" class="btn btn-default">Bán chạy</button>
-										<button type="button" class="btn btn-default">Giá</button>
-									</div>
-								</div>
-							</div>
-
-							<div class="table-responsive">
-								<!-- BEGIN TABLE PRODUCTS -->
-								<table class="table table-hover">
-									<thead>
-										<tr>
-											<th></th>
-											<th width="230px">Tên sản phẩm</th>
-											<th>Phân loại</th>
-											<th>Giá</th>
-											<th>Khuyến mãi</th>
-											<th>Kho hàng</th>
-											<th>Đã bán</th>
-											<th class="action">Thao tác</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<img class="icons-svg small" src="assets/images/svg/image-temp.svg">
-											</td>
-											<td>
-												Thông hơi Quảng Châu siêu mát cho bé trai và gái <span class="btn btn-default btn-xs">Chờ duyệt</span>
-											</td>
-											<td>
-												<span class="label label-danger">Thời trang Nam/Nữ <i class="fa fa-angle-double-right"></i> Áo <i class="fa fa-angle-double-right"></i> Áo sơ mi</span>
-											</td>
-											<td>
-												110,0000 <span class="sales">120,000</span>
-											</td>
-											<td>
-												<div class="promotion">
-													<span class="text-red">Đang chạy:</span>
-													<a href="#" class="text-blue">3B Flash sale chào hè</a>
-
-													<span>Đang áp dụng:</span>
-													<!-- BEGIN TOOLTIP SALES -->
-													<a href="#" class="text-blue sales-tooltip">
-														Của tôi: Chào hè giảm 20%
-														<table>
-															<tr>
-																<td><strong>Giá gốc</strong></td>
-																<td><span class="sales">120,000</span></td>
-															</tr>
-															<tr>
-																<td><strong>CT đang diễn ra</strong></td>
-																<td>3B Flash Sale chào hè</td>
-															</tr>
-															<tr>
-																<td><strong>Giá khuyến mãi</strong></td>
-																<td>96,000</td>
-															</tr>
-															<tr>
-																<td><strong>Thời gian</strong></td>
-																<td>01/01/2019 - 01/02/2019</td>
-															</tr>
-														</table>
-													</a>
-													<!-- /END TOOLTIP SALES -->
-												</div>
-											</td>
-											<td>120</td>
-											<td>50</td>
-											<td>
-												<div class="btn-group">
-													<button type="button" class="btn btn-success btn-xs">Thao tác</button>
-													<button type="button" class="btn btn-success btn-xs dropdown-toggle" data-toggle="dropdown">
-														<span class="caret"></span>
-														<span class="sr-only">Toggle Dropdown</span>
-													</button>
-													<ul class="dropdown-menu" role="menu">
-														<li><a href="seller-products-form-edit.html">Sửa</a></li>
-														<li><a href="#">Ẩn</a></li>
-														<li><a href="#">Mua từ khóa</a></li>
-													</ul>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<img class="icons-svg small" src="assets/images/svg/image-temp.svg">
-											</td>
-											<td>
-												Thông hơi Quảng Châu siêu mát cho bé trai và gái <span class="btn btn-default btn-xs">Đã ẩn</span>
-											</td>
-											<td>
-												<span class="label label-danger">Phụ kiện <i class="fa fa-angle-double-right"></i> Trẻ em
-											</td>
-											<td>
-												110,0000 <span class="sales">120,000</span>
-											</td>
-											<td>
-												<div class="promotion">
-													<span class="text-red">Đang chạy:</span>
-													<a href="#" class="text-blue">3B Flash sale chào hè</a>
-												</div>
-											</td>
-											<td>120</td>
-											<td>50</td>
-											<td>
-												<div class="btn-group">
-													<button type="button" class="btn btn-success btn-xs">Thao tác</button>
-													<button type="button" class="btn btn-success btn-xs dropdown-toggle" data-toggle="dropdown">
-														<span class="caret"></span>
-														<span class="sr-only">Toggle Dropdown</span>
-													</button>
-													<ul class="dropdown-menu" role="menu">
-														<li><a href="seller-products-form-edit.html">Sửa</a></li>
-														<li><a href="#">Ẩn</a></li>
-														<li><a href="#">Mua từ khóa</a></li>
-													</ul>
-												</div>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-								<!-- /END TABLE PRODUCTS -->
-							</div>
-
-							<!-- BEGIN PAGINATION -->
-							<div class="pagi pull-right">
-								<div class="row">
-									<div class="col-md-10">
-										<ul class="pagination no-margin pull-right">
-											<li><a href="#">«</a></li>
-											<li><a href="#">1</a></li>
-											<li><a href="#">2</a></li>
-											<li><a href="#">3</a></li>
-											<li><a href="#">»</a></li>
+							<!-- CONTENT -->
+							<section class="content">
+								<div class="buyer-order">
+									<div class="filter">
+										<ul>
+											<li class="active"><a href="admin-order-list.html">Pairing</a></li>
+											<li><a href="admin-order-list-waiting.html">Waiting confirm</a></li>
+											<li><a href="admin-order-list-waiting-ship.html">Wait ship</a></li>
+											<li><a href="admin-order-list-shipping.html">Shipping</a></li>
+											<li><a href="admin-order-list-delivered.html">Delivered</a></li>
+											<li><a href="admin-order-list-canceled.html">Canceled</a></li>
+											<li><a href="admin-order-list-return.html">Return / Refund</a></li>
 										</ul>
 									</div>
-									<div class="col-md-2">
-										<div class="input-group small">
-											<span class="input-group-btn">
-												<button type="button" class="btn btn-green btn-flat">Đi tới trang</button>
-											</span>
-											<input type="text" class="form-control">
-										</div>
-									</div>
 								</div>
-							</div>
-							<!-- /END PAGINATION -->
+
+								<div class="cart-block">
+									<!-- BEGIN CART LIST -->
+									<div class="cart-list">
+										<!-- BEGIN SHOP ITEM -->
+										<div class="cart-shop-item">
+											<!-- BEGIN HEAD -->
+											<div class="head">
+												<h3><img class="logo" src="assets/images/store-logo-sm.png">Shop name with long text</h3>
+												<div class="shop-info">
+													<div class="info"><span>Đã ghép: <span class="text-green">1</span></span> | <span>Còn thiếu: <span class="text-green">1</span></span></div>
+													<div class="time text-red">09:12:59</div>
+												</div>
+
+												<ul class="status">
+													<li class="pairing"><span>Pairing</span></li>
+												</ul>
+											</div>
+											<!-- BEGIN BODY -->
+											<div class="body">
+												<!-- BEGIN PRODUCT ITEM -->
+												<div class="p-item">
+													<div class="row">
+														<div class="col-md-6">
+															<img class="pull-left p-image" src="assets/images/img28.png">
+															<div class="p-info pull-left">
+																<div class="name margin-b3">Korean Style Coat - High Quality Product </div>
+																<div class="size-color margin-b3">Size : M <span class="sep">|</span> Color: Green</div>
+																<div class="method">Buy method: <span class="text-green">Group</span> <span class="sep">|</span> Status: <span class="text-green">Waiting grafted</span></div>
+															</div>
+														</div>
+
+														<div class="col-md-6">
+															<div class="price pull-right">
+																<span>$146,99</span>
+																<span class="sale">$180,00</span>
+															</div>
+
+															<div class="p-quality pull-right">
+																<span>X1</span>
+															</div>
+															<div class="clearfix"></div>
+														</div>
+													</div>
+												</div>
+												<!-- /END PRODUCT ITEM -->
+											</div>
+
+											<div class="total-items">
+												<div class="row">
+													<div class="col-md-4">
+														<div class="total">Total items: <span>1</span></div>
+													</div>
+													<div class="col-md-4">
+														<div class="total">Order time: <span>23-09-2019  17: 30</span></div>
+													</div>
+													<div class="col-md-4">
+														<div class="total pull-right">Total Price: <span class="text-red">$2345</span></div>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+											</div>
+
+											<!-- BEGIN FOOT -->
+											<div class="foot">
+												<div class="warning pull-left">
+													<img src="assets/images/svg/warning.svg" class="pull-left margin-r-5">
+													<p>If there is no suitable order to combine the order by 21-09-2019  17:00, the shipping method will automatically switch to Standard Delivery.</p>
+												</div>
+												<div class="pull-right">
+													<span>Grafting List: </span>
+													<a href="seller-order-grafting-list.html" class="btn btn-danger">View detail</a>
+												</div>
+												<div class="clearfix"></div>
+											</div>
+										</div>
+										<!-- /END SHOP ITEM -->
+
+										<!-- BEGIN SHOP ITEM -->
+										<div class="cart-shop-item">
+											<!-- BEGIN HEAD -->
+											<div class="head">
+												<h3><img class="logo" src="assets/images/store-logo-sm.png">Shop name with long text</h3>
+												<div class="shop-info">
+													<div class="info"><span>Đã ghép: <span class="text-green">1</span></span> | <span>Còn thiếu: <span class="text-green">1</span></span></div>
+													<div class="time text-red">09:12:59</div>
+												</div>
+
+												<ul class="status">
+													<li class="pairing"><span>Pairing</span></li>
+												</ul>
+											</div>
+											<!-- BEGIN BODY -->
+											<div class="body">
+												<!-- BEGIN PRODUCT ITEM -->
+												<div class="p-item">
+													<div class="row">
+														<div class="col-md-6">
+															<img class="pull-left p-image" src="assets/images/img28.png">
+															<div class="p-info pull-left">
+																<div class="name margin-b3">Korean Style Coat - High Quality Product </div>
+																<div class="size-color margin-b3">Size : M <span class="sep">|</span> Color: Green</div>
+																<div class="method">Buy method: <span class="text-green">Group</span> <span class="sep">|</span> Status: <span class="text-green">Waiting grafted</span></div>
+															</div>
+														</div>
+
+														<div class="col-md-6">
+															<div class="price pull-right">
+																<span>$146,99</span>
+																<span class="sale">$180,00</span>
+															</div>
+
+															<div class="p-quality pull-right">
+																<span>X1</span>
+															</div>
+															<div class="clearfix"></div>
+														</div>
+													</div>
+												</div>
+												<!-- /END PRODUCT ITEM -->
+											</div>
+
+											<div class="total-items">
+												<div class="row">
+													<div class="col-md-4">
+														<div class="total">Total items: <span>1</span></div>
+													</div>
+													<div class="col-md-4">
+														<div class="total">Order time: <span>23-09-2019  17: 30</span></div>
+													</div>
+													<div class="col-md-4">
+														<div class="total pull-right">Total Price: <span class="text-red">$2345</span></div>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+											</div>
+
+											<!-- BEGIN FOOT -->
+											<div class="foot">
+												<div class="warning pull-left">
+													<img src="assets/images/svg/warning.svg" class="pull-left margin-r-5">
+													<p>If there is no suitable order to combine the order by 21-09-2019  17:00, the shipping method will automatically switch to Standard Delivery.</p>
+												</div>
+												<div class="pull-right">
+													<span>Grafting List: </span>
+													<a href="seller-order-grafting-list.html" class="btn btn-danger">View detail</a>
+												</div>
+												<div class="clearfix"></div>
+											</div>
+										</div>
+										<!-- /END SHOP ITEM -->
+									</div>
+									<!-- /END CART LIST -->
+								</div>
+							</section>
+							<!-- /END CONTENT -->
 						</div>
 						<!-- /END BOX BODY -->
 					</form>
@@ -676,6 +697,22 @@
 			$(function(){
 				$('.input-daterange').datepicker({
 					format: "dd/mm/yyyy"
+				});
+
+
+				$('.search-block-default i').click(function(){
+					if( ! $(this).hasClass('active') ) {
+						$('.search-block-item').addClass('active');
+					} else {
+						$('.search-block-item').removeClass('active');
+					}
+				});
+				
+				$(document).mouseup(function(e) {
+					var container = $('.search-block-wrap');
+					if (!container.is(e.target) && container.has(e.target).length === 0){
+						$('.search-block-item').removeClass('active');
+					}
 				});
 			});
 		})(jQuery);

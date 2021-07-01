@@ -286,7 +286,7 @@
 						<img class="icons-svg" src="assets/images/svg/order.svg"> <span>Quản lý hóa đơn</span>
 						<ul class="sub-menu">
 							<li>
-								<a href="#"><span>Tất cả</span></a>
+								<a href="admin-order-list.html"><span>Tất cả</span></a>
 							</li>
 							<li>
 								<a href="#"><span>Xem theo Store</span></a>
@@ -376,7 +376,7 @@
 			<section class="content-header">
 				<ol class="breadcrumb">
 					<li><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-					<li class="active">Quản lý Shop</li>
+					<li class="active">Quản lý hóa đơn</li>
 				</ol>
 			</section>
 			<!-- /END CONTENT HEADER -->
@@ -388,94 +388,248 @@
 					<form action="#" role="form">
 						<div class="box-header">
 							<h3 class="box-title">
-								Quản lý Shop
+								Quản lý hóa đơn
 							</h3>
 						</div>
 						<!-- BEGIN BOX BODY -->
 						<div class="box-body advertising">
-							<div class="row search-block">
-								<div class="col-md-6">
-									<div class="search-block-wrap">
-										<div class="search-block-default">
-											<input type="text" name="order-code" class="form-control" placeholder="Tìm theo tên, username, số điện thoại cửa hàng">
-											<span><i class="fa fa-caret-down"></i></span>
+							<div class="row">
+								<div class="col-md-5">
+									<h4>Thời gian</h4>
+									<div class="form-group time-period">
+										<div class="opt1 pull-left margin-b">
+											<label class="radio-button pull-left no-margin pad6">
+												<input type="radio" name="opt_timeperiod" id="optionsRadios3" data-target-none="timeperiod" checked> 
+												<span class="helping-el"></span>
+												<span class="label-text"></span>
+											</label>
+											<div class="pull-left">
+												<select class="form-control">
+													<option selected="selected">Tháng này</option>
+													<option>Hôm nay</option>
+													<option>Hôm qua</option>
+													<option>Tuần này</option>
+													<option>Tháng trước</option>
+												</select>
+											</div>
 										</div>
-										<div class="search-block-item">
-											<input type="text" id="shop-name" name="product-name" class="form-control" placeholder="Tìm theo tên sản phẩm">
+										<div class="clearfix"></div>
+										<div class="opt2">
+											<label class="radio-button">
+												<input type="radio" name="opt_timeperiod" id="optionsRadios4" data-target="timeperiod"> 
+												<span class="helping-el"></span>
+												<span class="label-text">Thiết lập ngày bắt đầu / kết thúc</span>
+											</label>
+											<div class="targetbox target_timeperiod">
+
+												<div class="input-daterange">
+													<div class="col-md-6">
+														<div class="form-group">
+															<div class="input-group small">
+																<span class="input-group-btn">
+																	<span class="btn">Từ</span>
+																</span>
+																<input type="text" class="input-sm form-control" name="start" />
+															</div>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<div class="input-group small">
+																<span class="input-group-btn">
+																	<span class="btn">đến</span>
+																</span>
+																<input type="text" class="input-sm form-control" name="end" />
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
 										</div>
 									</div>
-								</div>
 
-								<div class="col-md-2">
-									<a href="#" class="btn btn-flat btn-danger">Tìm kiếm</a>
+								</div>
+								<div class="col-md-7">
+									<div class="row search-block">
+										<div class="col-md-10">
+											<div class="search-block-wrap">
+												<div class="search-block-default">
+													<input type="text" name="order-code" class="form-control" placeholder="Tìm theo mã đơn hàng">
+													<span><i class="fa fa-caret-down"></i></span>
+												</div>
+												<div class="search-block-item">
+													<input type="text" id="shop-name" name="product-name" class="form-control" placeholder="Theo tên shop">
+													<input type="text" id="product-name" name="product-name" class="form-control" placeholder="Theo tên sản phẩm">
+													<input type="text" id="shipping-code" name="product-name" class="form-control" placeholder="Theo mã vận đơn">
+													<input type="text" id="buyer-name" name="product-name" class="form-control" placeholder="Theo tên người mua">
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-2">
+											<a href="#" class="btn btn-flat btn-danger">Tìm kiếm</a>
+										</div>
+									</div>
 								</div>
 								<div class="clearfix"></div>
+								
 							</div>
 
-							<div class="table-responsive">
-								<!-- BEGIN TABLE PRODUCTS -->
-								<table class="table table-hover">
-									<thead>
-										<tr>
-											<th width="35%">Shop</th>
-											<th>Số sản phẩm đang bán</th>
-											<th>Số đơn hàng</th>
-											<th class="action">Thao tác</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<div class="custom-wrap-line"><a href="admin-seller-profile.html" target="_blank">Lorem isum dolor set amit deportible alquada mit Lorem isum dolor set amit deportible alquada mit</a></div>
-											</td>
-											<td><a href="admin-product-list.html" target="_blank">123</a></td>
-											<td><a href="seller-order-pairing.html">455</a></td>
-											<td>
-												<div class="btn-group">
-													<button type="button" class="btn btn-success btn-xs">Dừng hoạt động</button>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="custom-wrap-line"><a href="admin-seller-profile.html" target="_blank">Lorem isum dolor set amit</a></div>
-											</td>
-											<td><a href="admin-product-list.html" target="_blank">123</a></td>
-											<td>455</td>
-											<td>
-												<div class="btn-group">
-													<button type="button" class="btn btn-success btn-xs">Mở hoạt động</button>
-												</div>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-								<!-- /END TABLE PRODUCTS -->
-							</div>
-
-							<!-- BEGIN PAGINATION -->
-							<div class="pagi pull-right">
-								<div class="row">
-									<div class="col-md-10">
-										<ul class="pagination no-margin pull-right">
-											<li><a href="#">«</a></li>
-											<li><a href="#">1</a></li>
-											<li><a href="#">2</a></li>
-											<li><a href="#">3</a></li>
-											<li><a href="#">»</a></li>
+							<!-- CONTENT -->
+							<section class="content order-detail-block">
+								<div class="buyer-order">
+									<div class="filter">
+										<ul>
+											<li><a href="admin-order-list.html">Pairing</a></li>
+											<li><a href="admin-order-list-waiting.html">Waiting confirm</a></li>
+											<li><a href="admin-order-list-waiting-ship.html">Wait ship</a></li>
+											<li><a href="admin-order-list-shipping.html">Shipping</a></li>
+											<li class="active"><a href="admin-order-list-delivered.html">Delivered</a></li>
+											<li><a href="admin-order-list-canceled.html">Canceled</a></li>
+											<li><a href="admin-order-list-return.html">Return / Refund</a></li>
 										</ul>
 									</div>
-									<div class="col-md-2">
-										<div class="input-group small">
-											<span class="input-group-btn">
-												<button type="button" class="btn btn-green btn-flat">Đi tới trang</button>
-											</span>
-											<input type="text" class="form-control">
-										</div>
-									</div>
 								</div>
-							</div>
-							<!-- /END PAGINATION -->
+
+								<div class="cart-block">
+									<!-- BEGIN CART LIST -->
+									<div class="cart-list">
+										<!-- BEGIN SHOP ITEM -->
+										<div class="cart-shop-item">
+											<!-- BEGIN HEAD -->
+											<div class="head">
+												<h3><img class="logo" src="assets/images/store-logo-sm.png">Shop name with long text</h3>
+												
+												<ul class="status">
+													<li class="recieve"><span>Completed</span></li>
+												</ul>
+											</div>
+											<!-- BEGIN BODY -->
+											<div class="body">
+												<!-- BEGIN PRODUCT ITEM -->
+												<div class="p-item">
+													<a href="admin-order-detail.html">
+														<div class="row">
+															<div class="col-md-6">
+																<img class="pull-left p-image" src="assets/images/img28.png">
+																<div class="p-info pull-left">
+																	<div class="name margin-b3">Korean Style Coat - High Quality Product </div>
+																	<div class="size-color margin-b3">Size : M <span class="sep">|</span> Color: Green</div>
+																	<div class="method">Buy method: <span class="text-green">Group</span></div>
+																</div>
+															</div>
+
+															<div class="col-md-6">
+																<div class="price pull-right">
+																	<span>$146,99</span>
+																	<span class="sale">$180,00</span>
+																</div>
+
+																<div class="p-quality pull-right">
+																	<span>X1</span>
+																</div>
+																<div class="clearfix"></div>
+															</div>
+														</div>
+													</a>
+												</div>
+												<!-- /END PRODUCT ITEM -->
+											</div>
+
+											<div class="total-items">
+												<div class="row">
+													<div class="col-md-5">
+														<div class="pull-left">
+															<p><img src="assets/images/svg/delivery-truck-2.svg"> Shop tự vận chuyển</p>
+														</div>									
+														<div class="pull-left">
+															<a href="javascript:;" class="shipping-info" data-toggle="modal" data-target="#modalShippingInfo">Bằng chứng giao hàng <img src="assets/images/svg/arrow-right.svg"></a>
+														</div>
+														<div class="clearfix"></div>
+													</div>
+													<div class="col-md-3">
+														<div class="total pull-right">Total Items: 5 Items</div>
+													</div>
+													<div class="col-md-4">
+														<div class="total pull-right">Total Price: <span class="text-red">$2345</span></div>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+											</div>
+
+											
+										</div>
+										<!-- /END SHOP ITEM -->
+
+										<!-- BEGIN SHOP ITEM -->
+										<div class="cart-shop-item">
+											<!-- BEGIN HEAD -->
+											<div class="head">
+												<h3><img class="logo" src="assets/images/store-logo-sm.png">Shop name with long text</h3>
+												
+												<ul class="status">
+													<li class="recieve"><span>Recieved</span></li>
+												</ul>
+											</div>
+											<!-- BEGIN BODY -->
+											<div class="body">
+												<!-- BEGIN PRODUCT ITEM -->
+												<a href="admin-order-detail.html">
+													<div class="p-item">
+														<div class="row">
+															<div class="col-md-6">
+																<img class="pull-left p-image" src="assets/images/img28.png">
+																<div class="p-info pull-left">
+																	<div class="name margin-b3">Korean Style Coat - High Quality Product </div>
+																	<div class="size-color margin-b3">Size : M <span class="sep">|</span> Color: Green</div>
+																	<div class="method">Buy method: <span class="text-green">Group</span></div>
+																</div>
+															</div>
+
+															<div class="col-md-6">
+																<div class="price pull-right">
+																	<span>$146,99</span>
+																	<span class="sale">$180,00</span>
+																</div>
+
+																<div class="p-quality pull-right">
+																	<span>X1</span>
+																</div>
+																<div class="clearfix"></div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<!-- /END PRODUCT ITEM -->
+											</div>
+
+											<div class="total-items order-block-item">
+												<div class="row">
+													<div class="col-md-5">
+														<div class="ship-info">
+															<img class="logo pull-left" src="assets/images/img3.jpg">
+															<h5 class="pull-left">Tên đơn vị vận chuyển <span class="mvd">MVĐ: <span class="text-green">3493XDFDG</span></span></h5>
+															<a href="#" class="pull-right" data-toggle="modal" data-target="#modalShippingInfo">Shipping infomation <img src="assets/images/svg/arrow-right.svg"></a>
+															<div class="clearfix"></div>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="total pull-right">Total Items: 5 Items</div>
+													</div>
+													<div class="col-md-4">
+														<div class="total pull-right">Total Price: <span class="text-red">$2345</span></div>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+										<!-- /END SHOP ITEM -->
+									</div>
+									<!-- /END CART LIST -->
+								</div>
+							</section>
+							<!-- /END CONTENT -->
 						</div>
 						<!-- /END BOX BODY -->
 					</form>
@@ -488,30 +642,111 @@
 	</div>
 	<!-- /END WRAPPER -->
 
-	<!-- BEGIN MODAL CONFIRM DELETE -->
-	<div class="modal fade" id="modal-deleteConfirm" data-backdrop="static">
+	<!-- BEGIN MODAL -->
+	<div class="modal" id="modalShippingInfo" data-backdrop="static">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title">Xóa khoảng giá này</h4>
-				</div>
 
 				<!-- BEGIN FORM -->
-				<div class="modal-body">
-					Bạn muốn xóa khoảng giá này?
-				</div>
-				<!-- /END FORM -->
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
 
-				<div class="modal-footer">
-					<button type="button" class="btn btn-flat btn-default pull-left btn-close" data-dismiss="modal">Đóng</button>
-					<button type="button" class="btn btn-flat btn-danger">Xóa</button>
+				<div class="order-detail-block">
+					<div class="order-block-item addr margin-b">
+						<h3 class="title">Shipping Info</h3>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="track">Shop tự vận chuyển</div>
+							</div>
+							<div class="col-md-12">
+								<div class="total"><b>Required Number:</b> #190013123MIGK50</div>
+								<div class="total"><b>Mã vận đơn:</b> ABCXYZ12</div>
+							</div>
+						</div>					
+					</div>
+
+					<div class="order-block-item addr margin-b">
+						<div class="row">
+							<div class="col-md-12">
+								<h3 class="title">Bằng chứng giao hàng</h3>
+								<ul class="list-images-reason">
+									<li>
+										<img class="icons-svg" src="assets/images/img1.jpg">
+									</li>
+									<li>
+										<img class="icons-svg" src="assets/images/img2.jpg">
+									</li>
+									<li>
+										<img class="icons-svg" src="assets/images/img3.jpg">
+									</li>
+								</ul>
+								<p>lorem isum dolor set amit de bourt ti vo lulu lander set bordoux</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
 				</div>
+
+				<!-- /END FORM -->
 			</div>
 		</div>
 	</div>
-	<!-- /END MODAL CONFIRM DELETE -->
+	<!-- /END MODAL -->
+
+	<!-- BEGIN MODAL SHIPPING INFOMATION -->
+	<div class="modal" id="modalShippingInfo" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- BEGIN FORM -->
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+
+				<div class="modal-tracking">
+					<div class="head">
+						<h4>Shipping Infomation</h4>
+					</div>
+					<div class="body">
+						<div class="track-info">
+							<div class="track-name"><img src="assets/images/svg/delivery-truck-4.svg"> Viettel Post</div>
+							<div class="track-code">
+								<span class="pull-left">Tracking Number: EHUAR4K5T</span>
+								<a href="#" class="pull-right"><img src="assets/images/svg/copy.svg"></a>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+
+						<div class="track">
+							<h3>Logistics Tracking</h3>
+							<ul>
+								<li class="current">
+									<div class="status">Successful Delivery</div>
+									<div class="time">25-09-2019  10:30</div>
+								</li>
+								<li>
+									<div class="status">Shipping to Buyer</div>
+									<div class="time">25-09-2019  10:30</div>
+								</li>
+								<li>
+									<div class="status">Warehousing</div>
+									<div class="time">25-09-2019  10:30</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="foot">
+						
+					</div>
+				</div>
+
+				<!-- /END FORM -->
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL SHIPPING INFOMATION -->
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
@@ -524,21 +759,10 @@
 	<script type="text/javascript">
 		(function($){
 			$(function(){
-				$('input[type="radio"]').click(function() {
-					var target_none = $(this).attr('data-target-none');
-					var target = $(this).attr('data-target');
-					if (typeof target !== typeof undefined && target !== false) {
-						var targetBox = $(".target_" + target);
-						$(targetBox).show();
-					} else {
-						var targetBox = $(".target_" + target_none);
-						$(targetBox).hide();
-					}
-				});
-
 				$('.input-daterange').datepicker({
 					format: "dd/mm/yyyy"
 				});
+
 
 				$('.search-block-default i').click(function(){
 					if( ! $(this).hasClass('active') ) {
