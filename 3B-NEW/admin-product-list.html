@@ -409,9 +409,24 @@
 								<div class="clearfix"></div>
 
 								<div class="col-md-6">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="fa fa-search"></i></span>
-										<input type="text" id="product-name" name="product-name" class="form-control" placeholder="Tìm sản phẩm">
+									<div class="row search-block">
+										<div class="col-md-10">
+											<div class="search-block-wrap">
+												<div class="search-block-default">
+													<input type="text" name="order-code" class="form-control" placeholder="Tìm sản phẩm">
+													<span><i class="fa fa-caret-down"></i></span>
+												</div>
+												<div class="search-block-item">
+													<input type="text" id="shop-name" name="product-name" class="form-control" placeholder="Tìm theo tên shop">
+													<input type="text" id="shop-name" name="product-name" class="form-control" placeholder="Theo username">
+													<input type="text" id="product-name" name="product-name" class="form-control" placeholder="Theo số điện thoại">
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-2">
+											<a href="#" class="btn btn-flat btn-danger">Tìm kiếm</a>
+										</div>
 									</div>
 								</div>
 								<div class="col-md-6">
@@ -591,5 +606,26 @@
 	<script src="assets/plugins/datepicker/bootstrap-datepicker.min.js"></script>
 	<script src="assets/plugins/select2/select2.full.min.js"></script>
 	<script src="assets/js/base.min.js"></script>
+
+	<script type="text/javascript">
+		(function($){
+			$(function(){
+				$('.search-block-default i').click(function(){
+					if( ! $(this).hasClass('active') ) {
+						$('.search-block-item').addClass('active');
+					} else {
+						$('.search-block-item').removeClass('active');
+					}
+				});
+				
+				$(document).mouseup(function(e) {
+					var container = $('.search-block-wrap');
+					if (!container.is(e.target) && container.has(e.target).length === 0){
+						$('.search-block-item').removeClass('active');
+					}
+				});
+			});
+		})(jQuery);
+	</script>
 </body>
 </html>
