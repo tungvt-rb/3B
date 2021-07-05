@@ -513,7 +513,9 @@
 .statistic-today .icon i {font-size: 32px;width: 64px;height: 64px;border-radius: 50%;text-align: center;line-height: 64px;color: #FFF;}
 .statistic-today .icon i.fa-usd {background: #3c8dbc;}
 .statistic-today .icon i.fa-reply-all {background: #f39c12;}
-.statistic-today .icon i.fa-level-down, .statistic-today .icon i.fa-level-up {background: #dd4b39;}
+.statistic-today .icon i.fa-level-down {background: #dd4b39;}
+.statistic-today .icon i.fa-level-up {background: #00a65a;}
+.statistic-today .icon i.fa-minus-circle {background: #BDBDBD;}
 .statistic-today .box-info {text-align: left;margin-left: 15px;}
 .statistic-today .box-info .first {font-size:14px;font-weight: 500;}
 .statistic-today .box-info .numb {font-size: 20px;font-weight: 500;}
