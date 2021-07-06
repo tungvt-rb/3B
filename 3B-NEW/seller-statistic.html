@@ -395,7 +395,10 @@
 			$(function(){
 				// Chart
 				var xValues = ["01","02","03","04","05","06","07"];
-				var yValues = [55000, 2000000, 202000, 100000, 600000, 350000, 230990];
+				// var yValues = [55000, 2000000, 202000, 100000, 600000, 350000, 10];
+				// var yValues = [0, 0, 2, 2, 99, 0, 1];
+				// var yValues = [0, 0, 2, 2, 8, 9, 1];
+				var yValues = [0, 0, 2, 2, 7, 0, 1];
 				
 				// Chart.defaults.scale.gridLines.display = false;
 				var chartReport = new Chart("chartReport", {
@@ -416,14 +419,26 @@
 						},
 						scales: {
 							xAxes: {
-								display: false,
+								grid: {
+									display: false,
+								}
 							},
 							yAxes: {
 								display: true,
 								ticks: {
 									// Include a dollar sign in the ticks
 									callback: function(value, index, values) {
-										return value/1000000+'m';
+										if( value >= 1000000 ) {
+											return value/1000000+'M';
+										} else if ( (value < 1000000) && (value > 1000) ) {
+											return value/1000+'K';
+										} else if ( (value <= 10) && (index % 2 === 0) ) {
+											return index % 2 === 0 ? this.getLabelForValue(value) : '';
+										} else if ( (value <= 10) && (index % 3 === 0) ) {
+											return index % 3 === 0 ? this.getLabelForValue(value) : '';
+										} else {
+											return value;
+										}
 									}
 								}
 							}
@@ -431,7 +446,6 @@
 					},
 				});
 			});
-			
 
 		})(jQuery);
 	</script>
