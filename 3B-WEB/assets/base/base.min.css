@@ -393,8 +393,8 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 .cart-list .body .p-item .p-info .name {font-size:var(--fontsize-default);line-height:24px;font-weight:500;color:var(--dark);max-width:300px;}
 .cart-list .body .p-item .p-info .size-color .sep {margin:0 12px;}
 .cart-list .body .p-item .p-info .method .sep {margin:0 25px;}
-.cart-list .body .p-item .p-del {line-height:68px;margin-left:50px;}
-.cart-list .body .p-item .price {padding:15px 0;margin-left:85px;}
+.cart-list .body .p-item .p-del {line-height:68px;margin-left:20px;}
+.cart-list .body .p-item .price {padding:15px 0;margin-left:20px;}
 .cart-list .body .p-item .price span {display:block;font-size:18px;line-height:20px;color:var(--dark);text-align:right;font-weight:500;}
 .cart-list .body .p-item .price span.sale {font-size:var(--fontsize-m);line-height:18px;color:var(--gray);font-weight:normal;}
 .cart-list .body .p-item .p-quality {margin:20px 0;text-align:center;display:table;border:1px solid var(--anti-flash-white);border-radius:3px;}
@@ -1579,3 +1579,10 @@ h4.custom-title img {margin-bottom: 5px;}
 .combo-product-image .p-image {object-fit: cover;max-height: 80px;}
 .control.disabled button {position: relative;}
 .control.disabled button::after {content: "";background: var(--dark-liver);width: 100%;height: 100%;position: absolute;top: 0;left: 0;opacity: .6;cursor: no-drop;}
+
+@media screen and (max-width:480px) {
+	.cart-list .body .p-item .p-info {padding: 10px 25px 0;width: 100%;}
+	.cart-list .body .p-item .p-info .name {position: absolute;top: 0;left: 120px;}
+	.cart-list .body .p-item .p-info .method {display: flex;flex-direction: column;}
+	.cart-list .body .p-item .p-info .method .sep {display: none;}
+}
