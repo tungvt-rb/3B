@@ -350,7 +350,8 @@
 			$(function(){
 				// Chart
 				var xValues = ["Hộp cơm","Keo dán tường","Dép lê","Tổ ong","Giấy vụn","Cái gì đó ai mà biết", "Số 7", "...", "Lá cây", "Cái cuối"];
-				var yValues = [55, 200, 250, 100, 609, 352, 7, 2, 1000, 333];
+				// var yValues = [55, 200, 250, 100, 609, 352, 7, 2, 1000, 333];
+				var yValues = [1, 1, 1, 1, 409, 227, 1, 1, 1, 102];
 				
 				// Chart.defaults.scale.gridLines.display = false;
 				var chartReport = new Chart("chartReport", {
@@ -374,6 +375,14 @@
 						scales: {
 							xAxes: {
 								display: true,
+								ticks: {
+									min: 0,
+									callback: function(value, index, values) {
+										if (Math.floor(value) === value) {
+											return value;
+										}
+									}
+								}
 							},
 							yAxes: {
 								grid: {
