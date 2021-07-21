@@ -1586,3 +1586,14 @@ h4.custom-title img {margin-bottom: 5px;}
 	.cart-list .body .p-item .p-info .method {display: flex;flex-direction: column;}
 	.cart-list .body .p-item .p-info .method .sep {display: none;}
 }
+
+/* TABLE */
+.table {border:1px solid #E0E0E0;}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {border-top:1px solid #E0E0E0;}
+.table > thead > tr > th {border-bottom:2px solid #E0E0E0;font-size:14;font-weight:500;background-color:#f7f7f7;}
+.table label {font-weight: 500;}
