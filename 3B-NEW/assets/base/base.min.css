@@ -529,6 +529,10 @@
 .search-block-item input {margin-bottom: 5px;}
 .search-block-item.active {visibility: visible;opacity: 1;}
 
+.time-period .opt2 {display: flex;justify-content: space-around;align-items: center;}
+.time-period .opt2 .input-daterange {display: flex;}
+.time-period .opt2 .input-daterange .form-group, .time-period .opt2 .input-daterange .form-group .input-group, .time-period .opt2 label {margin-bottom: 0;}
+
 @media screen and (max-width: 1024px) {
 	.buyer-order .filter {overflow-x: scroll;}
 	.buyer-order .filter ul {width: max-content;}
