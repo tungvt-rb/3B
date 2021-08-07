@@ -1693,11 +1693,12 @@ body.new-theme .list-product.homepage {display: flex;}
 body.new-theme .list-product.homepage .product-item {float: none;width: auto;}
 body.new-theme .product-item a {background: #F2F2F2;border-radius: 12px;}
 body.new-theme .hot-today .product-item .product-info .price {color: #FF0000;line-height: 30px;font-weight: normal;margin-bottom: 0;}
+body.new-theme .hot-today .product-item .product-info .btn-view {color: #EC5229;border: 1px solid #EC5229;background: none;font-size: 12px;margin: 0 16px;padding: 4px 8px;} 
 body.new-theme .hot-today .product-item .product-sold .icon-progress {top: -10px;}
 body.new-theme .product-item .product-sold {padding: 0;}
 body.new-theme .hot-today.first .product-item .sale-label {padding: 5px;left: 18px;background: #FFCF00;width: 40px;height: 28px;font-size: 13px;border-radius: 0;color: #FF2028;}
 body.new-theme .hot-today.first .product-item .sale-label::after {content: " ";position: absolute;display: block;width: 40px;height: 15px;border-bottom: 15px solid transparent;border-left: 20px solid #FFCF00;border-right: 20px solid #FFCF00;bottom: -15px;left: 0;}
-body.new-theme .hot-today .progress {height: 20px;background: rgba(255, 129, 78, 0.6);}
+body.new-theme .hot-today .progress {height: 20px;background: rgba(255, 129, 78, 0.6);margin: 4px 0;}
 body.new-theme .hot-today .progress .progress-bar {background: #EC5229;}
 
 body.new-theme .featured {padding: 16px 20px 12px;margin-top: 18px;border-radius: 5px;}
