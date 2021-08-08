@@ -1717,18 +1717,20 @@ body.new-theme .selected-stores .store {border: none;}
 body.new-theme .store .store-products {display: flex;justify-content: space-around;align-items: center;}
 body.new-theme .store .store-products li {float: none;margin-right: 10px;width: 95px;text-align: center;}
 body.new-theme .store .store-products li:last-child {margin-right: 0;}
-body.new-theme .store .store-products li img {object-fit: cover;width: 100%;height: 95px;border-radius: 6px;}
+body.new-theme .store .store-products li img {object-fit: cover;width: 100%;height: 75px;border-radius: 6px;}
 body.new-theme .store .store-products li .name {font-size: 12px;line-height: 24px;}
 body.new-theme .store .store-products li .price {background:#EC5229;font-size: 12px;line-height: 24px;border-radius: 12px;color: #FFFFFF;}
-body.new-theme .store .store-products li a span {font-size: 15px;padding: 40px 0;}
-body.new-theme .store .store-head img.store-img {max-width: 50px;max-height: 50px;object-fit: cover;border-radius: 50%;margin-right: 6px;}
-body.new-theme .store .store-head h3 {position: relative;}
-body.new-theme .store .store-head h3 span {width: 58%;float: left;}
-body.new-theme .store .store-head h3 a {font-size: 13px;color: #EC5229;line-height: 20px;position: absolute;right: 0;}
-body.new-theme .store .store-head h3::after {content:" ";display:block;height:0;clear:both;visibility:hidden;}
+body.new-theme .store .store-products li a span {font-size: 14px;padding: 30px 0;}
+body.new-theme .store .store-head img.store-img {max-width: 50px;max-height: 50px;object-fit: cover;border-radius: 50%;margin-right: 15px;}
+body.new-theme .store .store-head h3 {padding-top: 6px;font-size: 16px;}
+/*body.new-theme .store .store-head h3 span {width: 58%;float: left;}*/
+/*body.new-theme .store .store-head h3 a {font-size: 13px;color: #EC5229;line-height: 20px;position: absolute;right: 0;}*/
+/*body.new-theme .store .store-head h3::after {content:" ";display:block;height:0;clear:both;visibility:hidden;}*/
 
 body.new-theme .list-search .store .store-head {margin-bottom: 12px;}
 body.new-theme .list-search .store .store-head h3 {text-align: center;font-size: 15px;padding: 0;}
+body.new-theme .list-search .store .store-products li img {height: 95px;}
+body.new-theme .list-search .store .store-products li a span {font-size: 14px;padding: 40px 0;}
 
 body.new-theme .hot-today {}
 body.new-theme .hot-today.second .content-wrapper {background: rgba(32, 91, 243, 0.5);padding: 20px;border-radius: 20px;}
