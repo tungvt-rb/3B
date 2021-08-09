@@ -151,4 +151,5 @@ a {text-decoration: none;}
 
 @media screen and (max-width: 375px) {
 	.home-mobile header .cart span {font-size: 9px;}
+	.home-mobile .box-p .box-p-meta .p-name .p-price {font-style: 13px;}
 }
