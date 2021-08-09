@@ -1749,8 +1749,8 @@ body.new-theme .recommend-products .p-item .p-meta .store-info .store-name {disp
 body.new-theme .recommend-products .p-item .p-meta .store-info .store-name img {width: 24px;height: 24px;object-fit: cover;border-radius: 50%;margin-right: 4px;}
 body.new-theme .recommend-products .p-item .p-meta .store-info .store-name h5 {font-size: 14px;font-weight: 500;line-height: 15px;color: #828282;width: 80%;}
 body.new-theme .recommend-products .p-item .p-meta .store-info .rating-label {background: #FFCF00;color: #FFFFFF;font-size: 14px;padding: 4px 10px;border-radius: 9px 0;margin-right: -10px;}
-body.new-theme .recommend-products .p-item .p-meta .p-name {display: flex;justify-content: space-between;align-items: flex-end;margin-bottom: 5px;height: 36px;max-height: 36px;}
-body.new-theme .recommend-products .p-item .p-meta .p-name a {width: 50%;}
+body.new-theme .recommend-products .p-item .p-meta .p-name {display: flex;flex-direction: column;justify-content: space-between;align-items: flex-end;margin-bottom: 5px;height: 60px;max-height: 60px;}
+body.new-theme .recommend-products .p-item .p-meta .p-name a, body.new-theme .recommend-products .p-item .p-meta .p-name .p-price {width: 100%;margin-bottom: 4px;}
 body.new-theme .recommend-products .p-item .p-meta .p-name h4 {color: #3F241D;font-size: 15px;line-height: 18px;font-weight: 500;}
 body.new-theme .recommend-products .p-item .p-meta .p-name .p-price {color: #FF2028;font-size: 14px;line-height: 16px;font-weight: 500;}
 body.new-theme .recommend-products .p-item .p-meta .rating {font-size: 11px;line-height: 13px;color: #333333;display: flex;align-items: center;}
