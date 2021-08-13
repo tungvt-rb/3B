@@ -533,6 +533,8 @@
 .time-period .opt2 .input-daterange {display: flex;}
 .time-period .opt2 .input-daterange .form-group, .time-period .opt2 .input-daterange .form-group .input-group, .time-period .opt2 label {margin-bottom: 0;}
 
+.nav-stacked>li>.stack-block .badge {font-size: 13px;}
+
 @media screen and (max-width: 1024px) {
 	.buyer-order .filter {overflow-x: scroll;}
 	.buyer-order .filter ul {width: max-content;}
