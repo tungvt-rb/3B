@@ -189,12 +189,14 @@ a {text-decoration: none;}
 	.home-mobile .header-bot {background-image: url('../images/new-design/mobile/bg-head-mobile.png');padding: 0 0 20px;}
 }
 
-@media screen and (max-width: 375px) {
-	.home-mobile .box-p .box-p-meta .p-name .p-price {font-style: 13px;}
-	
+@media screen and (max-width: 400px) { /* for some x-screen */
 	.home-mobile header .cart span {display: none;}
 	.home-mobile header .cart span.total {display: block;right: -10px;}
-	
+}
+
+@media screen and (max-width: 375px) {
+	.home-mobile .box-p .box-p-meta .p-name .p-price {font-style: 13px;}
+
 	.home-mobile .header-content .featured ul li {padding: 0 5px;}
 	.home-mobile .header-content .featured ul li span {
 		overflow: hidden;
