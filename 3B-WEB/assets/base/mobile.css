@@ -74,6 +74,12 @@ a {text-decoration: none;}
 .home-mobile .breadcrumb ul li:last-child::after {content: "";}
 .home-mobile .breadcrumb ul li a {color: #979797;}
 
+.home-mobile .pagi {padding: 20px;display: flex;align-items: center;justify-content: center;}
+.home-mobile .pagi li {padding: 0 2px;}
+.home-mobile .pagi li a {color: #333333;}
+.home-mobile .pagi li a span {display: block;border: 1px solid #C4C4C4;font-size: 13px;line-height: 20px;width: 20px;height: 20px;text-align: center;border-radius: 2px;}
+.home-mobile .pagi li a i {width: 20px;height: 20px;text-align: center;line-height: 20px;}
+
 .home-mobile .states {display: flex;align-items: center;justify-content: space-evenly;}
 .home-mobile .states .item {text-align: center;}
 .home-mobile .states .item .total {font-size: 15px;line-height: 22px;font-weight: 500;}
