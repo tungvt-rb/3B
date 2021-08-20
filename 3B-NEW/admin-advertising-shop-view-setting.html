@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+
+	<title>3B | Dashboard</title>
+	
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+	<link rel="stylesheet" type="text/css" href="assets/base/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/base/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/plugins/datepicker/bootstrap-datepicker.css">
+	<link rel="stylesheet" type="text/css" href="assets/plugins/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/base/base.min.css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=vietnamese" rel="stylesheet">
+
+</head>
+<body class="hold-transition sidebar-mini">
+
+	<!-- BEGIN WRAPPER -->
+	<div class="wrapper">
+		<!-- BEGIN HEADER -->
+		<header class="main-header">
+
+			<a href="index.html" class="logo">
+				<span class="logo-mini"><b>3</b>B</span>
+				<span class="logo-lg"><b>Black</b>Best Buy</span>
+			</a>
+
+			<nav class="navbar navbar-static-top">
+				<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+					<span class="sr-only">Toggle navigation</span>
+				</a>
+				<div class="navbar-custom-menu">
+					<ul class="nav navbar-nav">
+						<li><a href="seller-profile.html">Kênh người bán</a></li>
+						<!-- BEGIN USER DROPDOWN -->
+						<li class="dropdown user user-menu">
+							<!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span class="hidden-xs">Frank Jr.</span>
+							</a> -->
+							<!-- BEGIN DROPDOWN -->
+							<ul class="dropdown-menu">
+								<li class="user-header">
+									<p>
+										Frank Jr. - Web Developer
+										<small>Member since Nov. 2012</small>
+									</p>
+								</li>
+								<li class="user-body">
+									<div class="row">
+										<div class="col-xs-4 text-center">
+											<a href="#">Followers</a>
+										</div>
+										<div class="col-xs-4 text-center">
+											<a href="#">Sales</a>
+										</div>
+										<div class="col-xs-4 text-center">
+											<a href="#">Friends</a>
+										</div>
+									</div>
+								</li>
+								<li class="user-footer">
+									<div class="pull-left">
+										<a href="#" class="btn btn-default btn-flat">Profile</a>
+									</div>
+									<div class="pull-right">
+										<a href="#" class="btn btn-default btn-flat">Sign out</a>
+									</div>
+								</li>
+							</ul>
+							<!-- /END DROPDOWN -->
+						</li>
+						<!-- /END USER DROPDOWN -->
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- /END HEADER -->
+
+		<!-- BEGIN MAIN NAVIGATION -->
+		<aside class="main-sidebar">
+			<!-- BEGIN SIDEBAR -->
+			<section class="sidebar">
+				<div class="user-panel">
+					<div class="pull-left image">
+						<img src="assets/images/test-ava-photo.jpg" class="img-circle" alt="User Image">
+					</div>
+					<div class="pull-left info">
+						<p>Frank Jr.</p>
+						<a href="#"><img class="icons-svg" src="assets/images/svg/edit.svg"> Edit Profile</a>
+					</div>
+				</div>
+
+				<ul class="sidebar-menu" data-widget="tree">
+					<!-- BEGIN MENU MY ACCOUNT -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/store.svg"> <span>Shop</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-profile.html"><span>Hồ sơ shop</span></a>
+							</li>
+							<li>
+								<a href="seller-vanchuyen.html"><span>Cài đặt vận chuyển</span></a>
+							</li>
+							<li>
+								<a href="profile-address-seller.html"><span>Địa chỉ</span></a>
+							</li>
+							<li>
+								<a href="seller-danhgia.html"><span>Đánh giá shop</span></a>
+							</li>
+							<li>
+								<a href="seller-hoidap.html"><span>Hỏi đáp khách hàng</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU MY ACCOUNT -->
+
+					<!-- BEGIN MENU ORDER -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/order.svg"> <span>Đơn bán</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-orderall.html"><span>Tất cả</span></a>
+							</li>
+							<li>
+								<a href="seller-muale.html"><span>Mua lẻ</span></a>
+							</li>
+							<li>
+								<a href="seller-muaghep.html"><span>Mua ghép</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU ORDER -->
+
+					<!-- BEGIN MENU PRODUCTS -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/product.svg"> <span>SẢN PHẨM</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-product-list.html"><span>Tất cả</span></a>
+							</li>
+							<li>
+								<a href="seller-productchoduyet.html"><span>Chờ duyệt</span></a>
+							</li>
+							<li>
+								<a href="seller-productdaduyet.html"><span>Đã duyệt</span></a>
+							</li>
+							<li>
+								<a href="seller-productdakhoa.html"><span>Đã khóa</span></a>
+							</li>
+							<li>
+								<a href="seller-productdaan.html"><span>Đã ẩn</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU PRODUCTS -->
+
+					<!-- BEGIN MENU CATEGORY -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/docs.svg">
+						<a href="seller-category-list.html"><span>QUẢN LÝ DANH MỤC</span></a>
+					</li>
+					<!-- /END MENU CATEGORY -->
+
+					<!-- BEGIN MENU MARKETING -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/megaphone.svg"> <span>QUẢN LÝ MARKETING</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-discount.html"><span>Discount của shop</span></a>
+							</li>
+							<li>
+								<a href="seller-voucher.html"><span>Voucher của shop</span></a>
+							</li>
+							<li>
+								<a href="seller-3b.html"><span>CT của Black Best Buy</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU MARKETING -->
+
+					<!-- BEGIN MENU SALE -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/tag.svg"> <span>SALE HÀNG LẺ SIZE</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-sizeall.html"><span>Tất cả</span></a>
+							</li>
+							<li>
+								<a href="seller-sizedangky.html"><span>Đăng ký</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU SALE -->
+
+					<!-- BEGIN MENU REPORT -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/statistics.svg"> <span>QUẢNG CÁO TRẢ PHÍ</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-advertising.html"><span>Ngân sách / Nạp tiền</span></a>
+							</li>
+							<li>
+								<a href="seller-advertising.html"><span>Lịch sử nạp tiền</span></a>
+							</li>
+							<li class="active">
+								<a href="seller-advertising.html"><span>Mua keywords cho sản phẩm</span></a>
+							</li>
+							<li>
+								<a href="seller-advertising-shop.html"><span>Quảng cáo shop</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU REPORT -->
+
+					<!-- BEGIN MENU REPORT -->
+					<li class="header">
+						<img class="icons-svg" src="assets/images/svg/user.svg"> <span>Account</span>
+						<ul class="sub-menu">
+							<li>
+								<a href="seller-wallet3b.html"><span>Ví 3B</span></a>
+							</li>
+							<li>
+								<a href="seller-banking-account.html"><span>Banking Account</span></a>
+							</li>
+							<li>
+								<a href="profile-changepass.html"><span>Đổi mật khẩu</span></a>
+							</li>
+							<li>
+								<a href="#"><span>Logout</span></a>
+							</li>
+						</ul>
+					</li>
+					<!-- /END MENU REPORT -->
+					
+
+				</ul>
+			</section>
+			<!-- /END SIDEBAR -->
+		</aside>
+		<!-- /END MAIN NAVIGATION -->
+
+		<!-- BEGIN CONTENT WRAPPER -->
+		<div class="content-wrapper">
+			<!-- CONTENT HEADER -->
+			<section class="content-header">
+				<ol class="breadcrumb">
+					<li><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+					<li class="active">Quảng cáo trả phí</li>
+				</ol>
+			</section>
+			<!-- /END CONTENT HEADER -->
+
+			<!-- BEGIN CONTENT -->
+			<section class="content advertising">
+				<!-- BEGIN BOX -->
+				<div class="box block disabled">
+					<form action="#" role="form">
+						<div class="box-header">
+							<h3 class="box-title">
+								Quảng cáo shop
+							</h3>
+						</div>
+
+						<!-- BEGIN BOX BODY -->
+						<div class="box-body">
+							<div class="row">
+								<div class="col-md-8">
+									<p>Việc này làm tăng vị trí hiển thị sản phẩm tại kết quả tìm kiếm sản phẩm.</p>
+								</div>
+								<div class="clearfix"></div>
+
+								<div class="col-md-6">
+									<h4>Ngân sách</h4>
+									<div class="account">
+										<label>Số dư tài khoản: <span class="text-red">190.000đ</span></label>
+										<div class="form-group col-md-12">
+											<label class="col-xs-4" style="padding:9px 0;">Số tiền / 1 click</label>
+											<div class="col-xs-4">
+												<div class="input-group">
+													<input type="text" class="form-control" placeholder="1000" disabled="disabled">
+													<span class="input-group-addon">đ</span>
+												</div>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+									<div class="form-group budget">
+										<div class="opt1">
+											<label class="radio-button">
+												<input type="radio" name="opt_budget" id="optionsRadios1" data-target-none="budget" checked disabled="disabled"> 
+												<span class="helping-el"></span>
+												<span class="label-text">Không giới hạn</span>
+											</label>
+										</div>
+										<div class="opt2">
+											<label class="radio-button">
+												<input type="radio" name="opt_budget" id="optionsRadios2" data-target="budget" disabled="disabled"> 
+												<span class="helping-el"></span>
+												<span class="label-text">Thiết lập giới hạn ngân sách</span>
+											</label>
+											<div class="targetbox target_budget" style="display: none;">
+												<div class="row">
+													<div class="col-md-5">
+														<div class="input-group">
+															<span class="input-group-addon">đ</span>
+															<input type="text" class="form-control" placeholder="1000" disabled="disabled">
+														</div>
+													</div>
+													<div class="col-md-5">
+														<div class="input-group">
+															<select class="form-control slb">
+																<option>Ngân sách hàng ngày</option>
+																<option selected>Tổng ngân sách</option>
+															</select>
+														</div>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<h4>Thời gian áp dụng</h4>
+									<div class="form-group time-period">
+										<div class="opt1">
+											<label class="radio-button">
+												<input type="radio" name="opt_timeperiod" id="optionsRadios3" data-target-none="timeperiod" disabled="disabled"> 
+												<span class="helping-el"></span>
+												<span class="label-text">Không giới hạn thời gian</span>
+											</label>
+										</div>
+										<div class="opt2">
+											<label class="radio-button">
+												<input type="radio" name="opt_timeperiod" id="optionsRadios4" data-target="timeperiod" checked disabled="disabled"> 
+												<span class="helping-el"></span>
+												<span class="label-text">Thiết lập ngày bắt đầu / kết thúc</span>
+											</label>
+											<div class="targetbox target_timeperiod">
+
+												<div class="input-daterange">
+													<div class="col-md-6">
+														<div class="form-group">
+															<div class="input-group small">
+																<span class="input-group-btn">
+																	<span class="btn">Từ</span>
+																</span>
+																<input type="text" class="input-sm form-control" name="start" disabled="disabled" />
+															</div>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<div class="input-group small">
+																<span class="input-group-btn">
+																	<span class="btn">đến</span>
+																</span>
+																<input type="text" class="input-sm form-control" name="end" disabled="disabled" />
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- /END BOX BODY -->
+					</form>
+				</div>
+				<!-- /END BOX -->
+			</section>
+			<!-- /END CONTENT -->
+		</div>
+		<!-- /END CONTENT WRAPPER -->
+
+	</div>
+	<!-- /END WRAPPER -->
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/fastclick.js"></script>
+	<script src="assets/js/jquery.slimscroll.min.js"></script>
+	<script src="assets/plugins/datepicker/bootstrap-datepicker.min.js"></script>
+	<script src="assets/plugins/select2/select2.full.min.js"></script>
+	<script src="assets/js/base.min.js"></script>
+
+	<script type="text/javascript">
+		(function($){
+			$(function(){
+				$('input[type="radio"]').click(function() {
+					var target_none = $(this).attr('data-target-none');
+					var target = $(this).attr('data-target');
+					if (typeof target !== typeof undefined && target !== false) {
+						var targetBox = $(".target_" + target);
+						$(targetBox).show();
+					} else {
+						var targetBox = $(".target_" + target_none);
+						$(targetBox).hide();
+					}
+				});
+
+				$('.input-daterange').datepicker({
+					format: "dd/mm/yyyy"
+				});
+			});
+		})(jQuery);
+	</script>
+</body>
+</html>
