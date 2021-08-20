@@ -195,6 +195,7 @@ a {text-decoration: none;}
 }
 
 @media screen and (max-width: 375px) {
+	.home-mobile .box-p .box-p-img img {height: 155px;}
 	.home-mobile .box-p .box-p-meta .p-name .p-price {font-style: 13px;}
 
 	.home-mobile .header-content .featured ul li {padding: 0 5px;}
@@ -207,4 +208,8 @@ a {text-decoration: none;}
 		-webkit-box-orient: vertical;
 	}
 	.home-mobile .header-bot {padding: 0 0 8px;}
+}
+
+@media screen and (max-width: 320px) {
+	.home-mobile .box-p .box-p-img img {height: 145px;}
 }
