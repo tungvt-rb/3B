@@ -123,6 +123,7 @@ a {text-decoration: none;}
 .home-mobile .states .item .total img {max-width: 20px;margin-right: 4px;float: left;}
 .home-mobile .states .item label {font-size: 14px;color: #BDBDBD;}
 
+.home-mobile .not-found {text-align: center;padding: 24px;}
 .home-mobile .search-result {}
 .home-mobile .search-result .title h3 {text-transform: initial;font-size: 16px;}
 .home-mobile .search-result .box {border: none;margin: 0;padding: 14px 9px;border-radius: 0;border-bottom: 4px solid #E0E0E0;}
