@@ -311,7 +311,7 @@ a {text-decoration: none;}
 	.home-mobile header .cart span.total {display: block;right: -10px;}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 385px) {
 	.home-mobile .box-p .box-p-img img {height: 155px;}
 	.home-mobile .box-p .box-p-meta .p-name .p-price {font-style: 13px;}
 
