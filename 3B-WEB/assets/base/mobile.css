@@ -138,6 +138,28 @@ a {text-decoration: none;}
 .home-mobile .search-result .box .box-head .details .meta label span {color: #333333;font-weight: 500;}
 .home-mobile .search-result .box .box-head .actions {display: flex;align-items: center;justify-content: flex-end;}
 
+.home-mobile .advance-search {display: none;position: absolute;top: 65px;left: 0;right: 0;background: #FFFFFF;width: 100%;padding: 20px;z-index: 99;box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 30%);
+	transition: all 280ms ease-in-out;
+	-moz-transition: all 280ms ease-in-out;
+	-webkit-transition: all 280ms ease-in-out;
+	-o-transition: all 280ms ease-in-out;
+}
+.home-mobile .advance-search.active {display: block;}
+.home-mobile .advance-search h4 {font-size: 14px;color: #979797;font-weight: normal;margin-bottom: 8px;}
+.home-mobile .advance-search .search-by {margin: 0 -20px 12px;padding: 0 20px 12px 20px;border-bottom: 1px solid #E0E0E0;}
+.home-mobile .advance-search .search-by .boxes {justify-content: space-evenly;}
+.home-mobile .advance-search .search-by .boxes span {font-size: 14px;font-weight: 500;color: #3F241D;}
+.home-mobile .advance-search .search-by .close {position: absolute;top: 8px;right: 10px;font-size: 15px;}
+.home-mobile .advance-search .search-by .boxes > div {display: flex;align-items: center;}
+.home-mobile .advance-search .search-by .icon {width: 24px;height: 24px;margin-right: 4px;}
+.home-mobile .advance-search .search-by .icon.ico-store {background: url('../images/new-design/icons/store-2.png') center no-repeat;}
+.home-mobile .advance-search .search-by .icon.ico-product {background: url('../images/new-design/icons/product-2.png') center no-repeat;}
+.home-mobile .advance-search .search-by .by-store.active .icon.ico-store {background: url('../images/new-design/icons/store-3.png') center no-repeat;}
+.home-mobile .advance-search .search-by .by-product.active .icon.ico-product {background: url('../images/new-design/icons/product-3.png') center no-repeat;}
+.home-mobile .advance-search .search-list {}
+.home-mobile .advance-search .search-list li {padding: 6px 0;border-bottom: 1px solid #F2F2F2;}
+.home-mobile .advance-search .search-list li a {color: #333333;font-size: 14px;display: block;}
+
 .home-mobile .search-by-cat {margin-bottom: 24px;}
 .home-mobile .search-by-cat .boxes {margin-left: -8px;margin-right: -8px;margin-top: -4px;}
 .home-mobile .search-by-cat .item {width: 33.333333%;padding: 8px;}
@@ -179,7 +201,7 @@ a {text-decoration: none;}
 .home-mobile .last-section .actions .btn:last-child {margin-right: 0;}
 
 .home-mobile header {background: linear-gradient(180deg, #6633B9 0%, #C563EA 100%);}
-.home-mobile header .header-top {padding-top: 8px;padding-bottom: 8px;}
+.home-mobile header .header-top {padding-top: 8px;padding-bottom: 8px;position: relative;}
 .home-mobile header .row {display: flex;align-items: center;}
 .home-mobile header .logo {padding: 5px 0;}
 .home-mobile header .logo img {width: 30px;}
@@ -297,6 +319,7 @@ a {text-decoration: none;}
 	.home-mobile .header-content .hotsale-today .list-item .item .p-image {width: 100px;height: 100px;}
 	.home-mobile .header-bot {background-image: url('../images/new-design/mobile/bg-head-mobile.png');padding: 0 0 20px;}
 
+	.home-mobile .advance-search .search-by .boxes {justify-content: space-between;}
 	.home-mobile .search-result .box .box-head a.btn {width: 90px;padding: 6px 14px;}
 
 	.home-mobile .list-cat-2 li {width: 50%;}
