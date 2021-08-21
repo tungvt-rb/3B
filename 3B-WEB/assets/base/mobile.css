@@ -302,7 +302,7 @@ a {text-decoration: none;}
 
 	.home-mobile .last-section .actions {justify-content: flex-end;}
 
-	.home-mobile .results .filter-bl .select2-container {width: 122px;}
+	.home-mobile .results .filter-bl .select2-container {width: 118px;}
 	.home-mobile .results .title {margin-bottom: 12px;}
 }
 
@@ -333,6 +333,11 @@ a {text-decoration: none;}
 	.home-mobile .filter.boxes > div {width: 100%;}
 	.home-mobile .filter.boxes .price {margin-bottom: 12px;}
 
+	.home-mobile .last-section {flex-wrap: wrap;}
+	.home-mobile .last-section > div {width: 100%;}
+	.home-mobile .last-section .actions {justify-content: center;}
+	.home-mobile .rating {margin-bottom: 12px;}
+
 	.home-mobile .results .filter {margin-bottom: 12px;}
 }
 
@@ -342,11 +347,6 @@ a {text-decoration: none;}
 	.home-mobile .states .item .total {font-size: 13px;}
 
 	.home-mobile .list-cat-2 li {width: 100%;}
-
-	.home-mobile .last-section {flex-wrap: wrap;}
-	.home-mobile .last-section > div {width: 100%;}
-	.home-mobile .last-section .actions {justify-content: center;}
-	.home-mobile .rating {margin-bottom: 12px;}
 
 	.home-mobile .shop-by-cat .item img {height: 90px;}
 
