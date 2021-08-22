@@ -1763,7 +1763,7 @@ body.new-theme .menu-mobile .menu-container.for-new-theme li:first-child {paddin
 body.new-theme .menu-mobile h3 {font-size: 15px;color: #E33806;text-transform: uppercase;margin-bottom: 12px;}
 
 /* svg icons */
-body.new-theme .featured ul li a {display: flex;flex-direction: column;justify-content: center;align-items: center;}
+/*body.new-theme .featured ul li a {display: flex;flex-direction: column;justify-content: center;align-items: center;}
 body.new-theme .featured ul li .icon {width: 44px;height: 44px;overflow: hidden;padding: 6px;border-radius: 15px;}
 body.new-theme .featured ul li .icon img {width: auto;height: 100%;}
 body.new-theme .featured ul li .icon.gio-vang {background: radial-gradient(54.09% 46.72% at 50% 50%, #FF814E 0%, #C31F28 100%);padding: 10px;}
@@ -1773,7 +1773,7 @@ body.new-theme .featured ul li .icon.from-1k {background: radial-gradient(50.01%
 body.new-theme .featured ul li .icon.cua-hang-tot {background: radial-gradient(50.01% 50.01% at 50% 49.99%, #FF8CFF 0%, #D64383 100%);}
 body.new-theme .featured ul li .icon.thuc-pham {background: radial-gradient(54.09% 46.73% at 49.99% 49.99%, #00EFFF 0%, #0067AC 100%);}
 body.new-theme .featured ul li .icon.trai-cay {background: radial-gradient(54.09% 46.73% at 49.99% 49.99%, #FFA800 0%, #FF7C00 100%);}
-body.new-theme .featured ul li .icon.phu-kien-oto {background: radial-gradient(54.09% 46.73% at 49.98% 49.99%, #EC9229 26.08%, #E65E14 100%);}
+body.new-theme .featured ul li .icon.phu-kien-oto {background: radial-gradient(54.09% 46.73% at 49.98% 49.99%, #EC9229 26.08%, #E65E14 100%);}*/
 
 @media screen and (max-width: 769px) and (min-width: 481px) {
 	body.new-theme .col-5 {width: 33.333333%;}
