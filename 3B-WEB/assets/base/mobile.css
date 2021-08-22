@@ -374,6 +374,10 @@ a {text-decoration: none;}
 	.home-mobile .results .filter-bl .select2-container {width: 112px;}
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+	select, textarea, input {font-size: 16px;}
+}
+
 /***** DO NOT ADD THIS STYLE - JUST FOR TEST ****/
 /*.home-mobile .content-wrapper {max-width: 768px;margin: 0 auto;}
 .home-mobile .container {max-width: 768px;}*/
