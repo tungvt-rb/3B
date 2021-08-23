@@ -535,6 +535,8 @@
 
 .nav-stacked>li>.stack-block .badge {font-size: 13px;}
 
+.adv-hist h4 small {font-size: 15px;font-weight: 500;}
+
 @media screen and (max-width: 1024px) {
 	.buyer-order .filter {overflow-x: scroll;}
 	.buyer-order .filter ul {width: max-content;}
