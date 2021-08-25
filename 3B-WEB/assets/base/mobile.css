@@ -15,10 +15,16 @@ a {text-decoration: none;}
 .home-mobile label {font-weight: normal;}
 .home-mobile .txt-center {text-align: center;}
 .home-mobile .margin-b20 {margin-bottom: 20px;}
+.home-mobile .pad-t65 {padding-top: 65px !important;}
 .home-mobile .title {position: relative;margin-bottom: 8px;}
 .home-mobile .title h3 {font-size: 15px;font-weight: 500;line-height: 22px;text-transform: uppercase;}
 .home-mobile .title h3 img {max-height: 18px;vertical-align: top;}
 .home-mobile .title a {position: absolute;top: 0;right: 0;color: #E33806;font-size: 14px;font-weight: 500;line-height: 22px;}
+
+.home-mobile .title-page {position: fixed;top: 0;left: 0;right: 0;z-index: 99;background: #FFFFFF;padding: 12px 12px 0;box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2)}
+.home-mobile .title-page h3 {font-size: 15px;font-weight: 500;line-height: 22px;text-transform: uppercase;color: #EC5229;text-align: center;margin-bottom: 12px;padding: 0 3px;}
+.home-mobile .title-page a {display: block;float: left;}
+.home-mobile .title-page a img {vertical-align: baseline;}
 
 .home-mobile .btn {padding: 6px 30px;border-radius: 30px;color: #FFFFFF;font-size: 15px;line-height: 16px;}
 .home-mobile .btn.btn-loadmore, .home-mobile .btn.btn-normal {background: #EC5229;}
@@ -100,8 +106,12 @@ a {text-decoration: none;}
 .home-mobile .box-p .box-p-meta .p-name a, .home-mobile .box-p .box-p-meta .p-name .p-price {width: 100%;margin-bottom: 4px;}
 .home-mobile .box-p .box-p-meta .p-name h4 {color: #3F241D;font-size: 15px;line-height: 18px;font-weight: 500;height: 36px;max-height: 36px;}
 .home-mobile .box-p .box-p-meta .p-name .p-price {color: #FF2028;font-size: 14px;line-height: 16px;font-weight: 500;}
+.home-mobile .box-p .box-p-meta .p-name .p-price.with-sale {height:32px;max-height: 32px;}
+.home-mobile .box-p .box-p-meta .p-name .p-price.with-sale .p-sale {margin-right: 4px;}
+.home-mobile .box-p .box-p-meta .p-name .p-price.with-sale .p-old {font-size: 11px;text-decoration: line-through;color: #BDBDBD;}
 .home-mobile .box-p .box-p-meta .p-rating {font-size: 11px;line-height: 13px;color: #333333;display: flex;align-items: center;}
 .home-mobile .box-p .box-p-meta .p-rating img, .home-mobile .box-p .box-p-meta .p-rating span {margin-right: 3px;}
+.home-mobile .box-p .box-p-meta .p-rating .marker {font-size: 13px;color: #BDBDBD;}
 
 .home-mobile .breadcrumb {margin: 0;padding: 8px 9px;background: #FFFFFF;}
 .home-mobile .breadcrumb ul {display: flex;align-items: center;justify-content: flex-start;}
@@ -345,7 +355,7 @@ a {text-decoration: none;}
 
 @media screen and (max-width: 385px) {
 	.home-mobile .box-p .box-p-img img {height: 155px;}
-	.home-mobile .box-p .box-p-meta .p-name .p-price {font-style: 13px;}
+	.home-mobile .box-p .box-p-meta .p-name .p-price {font-size: 13px;}
 
 	.home-mobile .header-content .featured ul li {padding: 0 5px;}
 	.home-mobile .header-content .featured ul li span {
