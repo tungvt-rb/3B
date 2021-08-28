@@ -23,12 +23,5 @@
 			$('.search-store').removeClass('active');
 			$('.search-product').addClass('active');
 		});
-
-		var slb = $('.slb');
-		if (slb.length) {
-			$(".slb").select2({
-				width: null
-			});
-		}
 	});
 })(jQuery);
