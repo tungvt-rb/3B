@@ -401,6 +401,12 @@ a {text-decoration: none;}
 .home-mobile .featured-store-page .search-result .box .box-items li a span {padding: 36px 0;}
 .home-mobile .featured-store-page .search-result .states {justify-content: space-between;}
 
+.home-mobile .list-category .title {padding: 9px 24px;background: #F2F2F2;margin-bottom: 36px;}
+.home-mobile .list-category .item {text-align: center;margin-bottom: 16px;}
+.home-mobile .list-category .item a {color: #333333;}
+.home-mobile .list-category .item .icon {width: 64px;height: 64px;background: #F2F2F2;margin: 0 auto 12px;border-radius: 16px;overflow: hidden;}
+.home-mobile .list-category .item .icon img {width: 32px;height: 32px;margin: 16px auto;}
+.home-mobile .list-category .item h4 {line-height: 18px;font-size: 14px;color: #333333;font-weight: normal;height: 36px;}
 
 .home-mobile .product-details {}
 .home-mobile .product-details .title h3 {text-transform: capitalize;}
