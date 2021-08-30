@@ -14,6 +14,7 @@ a {text-decoration: none;}
 .home-mobile img.ads {width: 100%;margin: 12px 3px;}
 .home-mobile label {font-weight: normal;}
 .home-mobile .txt-center {text-align: center;}
+.home-mobile .margin-b10 {margin-bottom: 10px;}
 .home-mobile .margin-b20 {margin-bottom: 20px;}
 .home-mobile .pad-t65 {padding-top: 65px !important;}
 .home-mobile .pad-b8 {padding-bottom: 8px !important;}
@@ -21,6 +22,7 @@ a {text-decoration: none;}
 .home-mobile .no-boder {border: none !important;}
 .home-mobile .no-pad {padding: 0 !important;}
 .home-mobile .no-pad-bot {padding-bottom: 0 !important;}
+.home-mobile .no-mag-bot {margin-bottom: 0 !important;}
 
 .home-mobile .title {position: relative;margin-bottom: 8px;}
 .home-mobile .title h3 {font-size: 15px;font-weight: 500;line-height: 22px;text-transform: uppercase;}
@@ -346,8 +348,8 @@ a {text-decoration: none;}
 .home-mobile .menu-container li:first-child a {padding-left: 0;}
 .home-mobile .menu-container li:last-child a {padding-right: 0;}
 .home-mobile .menu-container .frame-icon {width: 20px;height: 20px;display: inline-block;}
-.home-mobile .menu-mobile.page {padding: 12px;}
-.home-mobile .menu-mobile.page .menu-container {padding: 0;}
+.home-mobile .menu-mobile.page {padding: 12px;background: #F2F2F2;}
+.home-mobile .menu-mobile.page .menu-container {padding: 0;background: transparent;}
 .home-mobile .menu-mobile.page .menu-container li a {line-height: 20px;padding-top: 0;padding-bottom: 0;}
 
 .home-mobile .featured-store {padding: 14px 12px;background: #F2F2F2;}
@@ -386,8 +388,6 @@ a {text-decoration: none;}
 .home-mobile .brands ul li img {width: auto;height: 50px;margin: 0 auto;}
 
 .home-mobile .featured-store-page {}
-.home-mobile .featured-store-page .menu-mobile {padding: 11px 16px;background: #F2F2F2;}
-.home-mobile .featured-store-page .menu-container {background: transparent;padding: 0;}
 .home-mobile .featured-store-page .search-result {padding: 15px 9px;justify-content: space-between;}
 .home-mobile .featured-store-page .search-result .box {border: 2px solid #E0E0E0;border-radius: 8px;padding: 18px;width: 49%;margin-bottom: 8px;}
 .home-mobile .featured-store-page .search-result .box:last-child {margin-bottom: 0;}
@@ -407,6 +407,14 @@ a {text-decoration: none;}
 .home-mobile .list-category .item .icon {width: 64px;height: 64px;background: #F2F2F2;margin: 0 auto 12px;border-radius: 16px;overflow: hidden;}
 .home-mobile .list-category .item .icon img {width: 32px;height: 32px;margin: 16px auto;}
 .home-mobile .list-category .item h4 {line-height: 18px;font-size: 14px;color: #333333;font-weight: normal;height: 36px;}
+
+.home-mobile .brand-page {}
+.home-mobile .brand-page .banner img {height: 155px;max-height: 155px;width: 100%;}
+.home-mobile .brand-page .box-control.slb {padding: 3px 20px 3px 8px;height: 30px;width: 100px;}
+.home-mobile .brand-page .filter-nav {display: table;margin-bottom: 12px;}
+.home-mobile .brand-page .filter-nav li {display: inline-block;padding: 0 4px;}
+.home-mobile .brand-page .filter-nav li a {color: #BDBDBD;font-size: 14px;}
+.home-mobile .brand-page .filter-nav li.active a {color: #3F241D;font-weight: 500;}
 
 .home-mobile .product-details {}
 .home-mobile .product-details .title h3 {text-transform: capitalize;}
@@ -487,6 +495,7 @@ a {text-decoration: none;}
 
 	.home-mobile .results .filter-bl .box-control.slb {width: 118px;}
 	.home-mobile .results .title {margin-bottom: 12px;}
+	.home-mobile .brand-page .results .title {margin-bottom: 0;}
 
 	.home-mobile .featured-store-page .search-result .box {width: 100%;}
 }
@@ -519,6 +528,7 @@ a {text-decoration: none;}
 	.home-mobile .filter.boxes .price {margin-bottom: 12px;}
 
 	.home-mobile .results .filter {margin-bottom: 12px;}
+	.home-mobile .brand-page .results .filter {margin-bottom: 0;}
 
 	.home-mobile .product-details .p-box-shop .box-head a.btn {font-size: 12px;padding: 3px 10px;width: auto;margin-left: 0;}
 }
@@ -546,6 +556,8 @@ a {text-decoration: none;}
 	.home-mobile .product-details .p-hot-sale .p-price {font-size: 15px;}
 
 	.home-mobile .promote.boxes {justify-content: space-around;width: max-content;}
+
+	.home-mobile .brand-page .results .title {margin-bottom: 12px;}
 }
 
 @media only screen and (max-device-width: 480px) { 
