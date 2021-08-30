@@ -14,8 +14,10 @@ a {text-decoration: none;}
 .home-mobile img.ads {width: 100%;margin: 12px 3px;}
 .home-mobile label {font-weight: normal;}
 .home-mobile .txt-center {text-align: center;}
-.home-mobile .margin-b10 {margin-bottom: 10px;}
-.home-mobile .margin-b20 {margin-bottom: 20px;}
+.home-mobile .txt-cap {text-transform: capitalize !important;}
+.home-mobile .margin-b10 {margin-bottom: 10px !important;}
+.home-mobile .margin-b20 {margin-bottom: 20px !important;}
+.home-mobile .fix-both-side {margin-left: -3px !important;margin-right: -3px !important;}
 .home-mobile .pad-t65 {padding-top: 65px !important;}
 .home-mobile .pad-b8 {padding-bottom: 8px !important;}
 
@@ -415,6 +417,9 @@ a {text-decoration: none;}
 .home-mobile .brand-page .filter-nav li {display: inline-block;padding: 0 4px;}
 .home-mobile .brand-page .filter-nav li a {color: #BDBDBD;font-size: 14px;}
 .home-mobile .brand-page .filter-nav li.active a {color: #3F241D;font-weight: 500;}
+.home-mobile .brand-page .filter-nav li:first-child {padding-left: 0;}
+.home-mobile .brand-page .list-cat li {border-radius: 6px;background: #F2F2F2;}
+.home-mobile .brand-page .list-cat li.active a {color: #EC5229;}
 
 .home-mobile .product-details {}
 .home-mobile .product-details .title h3 {text-transform: capitalize;}
