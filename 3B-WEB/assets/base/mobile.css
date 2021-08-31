@@ -539,7 +539,7 @@ a {text-decoration: none;}
 .home-mobile .modal .modal-content .head {}
 .home-mobile .modal .modal-content .head img {width: 72px;height: 72px;}
 .home-mobile .modal .modal-content .head .p-info {}
-.home-mobile .modal .modal-content .head .p-info h4 {}
+.home-mobile .modal .modal-content .head .p-info h4 {font-size: 15px;font-weight: normal;}
 .home-mobile .modal .modal-content .head .p-info .p-price {}
 .home-mobile .modal .modal-content .head .p-info .p-quanlity {}
 
