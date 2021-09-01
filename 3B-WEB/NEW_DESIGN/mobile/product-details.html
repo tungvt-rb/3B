@@ -200,7 +200,7 @@
 						<span class="p-sale wrap-line w-break">100,989,000đ - 290,195,000đ</span>
 						<span class="p-old wrap-line w-break">100,989,000đ - 290,195,000đ</span>
 					</div>
-					<span class="p-quanlity">670 Items</span>
+					<span class="p-quantity">670 Items</span>
 				</div>
 
 				<div class="boxes pad-b8">
@@ -1098,51 +1098,164 @@
 		</footer>
 		<!-- /END FOOTER -->
 
-		<div class="menu-bot fixed container">
-			<ul>
-				<li>
-					<a href="../../index.html">
-						<span class="frame-icon"><img src="../../assets/images/new-design/icons-svg/home.svg"></span>
-						<span>Trang Chủ</span>
-					</a>
-				</li>
-				<li>
-					<a href="../../index.html">
-						<span class="frame-icon"><img src="../../assets/images/new-design/icons-svg/shop.svg"></span>
-						<span>Danh mục</span>
-					</a>
-				</li>
-				<li>
-					<a href="../../index.html">
-						<span class="frame-icon"><img src="../../assets/images/new-design/icons-svg/chat.svg"><span>99</span></span>
-						<span>Chat</span>
-					</a>
-				</li>
-				<li>
-					<a href="../../index.html">
-						<span class="frame-icon"><img src="../../assets/images/new-design/icons-svg/user.svg"></span>
-						<span>Tài khoản</span>
-					</a>
-				</li>
-			</ul>
+		<div class="menu-bot fixed buy-product scroll-x">
+			<div class="items boxes">
+				<a href="#" class="item retail">
+					<div class="price">100.002.000 đ</div>
+					<div class="wrap-line twoline">Retail</div>
+				</a>
+
+				<a href="#" class="item combo">
+					<div class="price">90.002.000 đ</div>
+					<div class="wrap-line twoline">Buy in combo min 5 products thêm tý xem thế nào</div>
+				</a>
+
+				<a href="#" class="item group" data-toggle="modal" data-target="#buyingroupModal">
+					<div class="price">60.002.000 đ</div>
+					<div class="wrap-line twoline">Buy in group</div>
+				</a>
+			</div>
 		</div>
 	</div>
 	<!-- /END CONTENT WRAPPER -->
 
-	<div id="jointobuyModal" class="modal" data-backdrop="static">
+	<div id="jointobuyModal" class="modal custom-modal" data-backdrop="static">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<span class="close" data-dismiss="modal"><img src="../../assets/images/svg/x-circle.svg"></span>
 				
 				<div class="head boxes">
-					<img src="../../assets/images/img30.jpg">
+					<div class="ava">
+						<img src="../../assets/images/img30.jpg">
+					</div>
 					<div class="p-info">
-						<h4 class="wrap-line">Korean Style Coat - High Quality Product (many colors and sizes)</h4>
+						<h4 class="wrap-line twoline">Korean Style Coat - High Quality Product (many colors and sizes)</h4>
 						<div class="boxes">
-							<div class="p-price">1,989,000 đ - 2,195,000 đ</div>
-							<div class="p-quanlity">670 items</div>
+							<div class="p-price wrap-line w-break">1,989,000 đ - 2,195,000 đ</div>
+							<div class="p-quantity">670 items</div>
 						</div>
 					</div>
+				</div>
+
+				<div class="item colors">
+					<div class="title"><h3>Màu sắc</h3></div>
+
+					<ul class="list-cat wrap">
+						<li><a href="#">Đỏ</a></li>
+						<li><a href="#" class="active">Xanh lá</a></li>
+						<li><a href="#">Xanh da trời</a></li>
+						<li><a href="#">Vàng</a></li>
+						<li><a href="#">Đen</a></li>
+						<li><a href="#" class="unable">Xanh da trời</a></li>
+					</ul>
+				</div>
+
+				<div class="item sizes">
+					<div class="title"><h3>Kích thước</h3></div>
+
+					<ul class="list-cat">
+						<li><a href="#">S</a></li>
+						<li><a href="#" class="active">M</a></li>
+						<li><a href="#">L</a></li>
+						<li><a href="#" class="unable">XL</a></li>
+						<li><a href="#">XXL</a></li>
+					</ul>
+				</div>
+
+				<div class="quantity">
+					<div class="boxes">
+						<label>Số lượng</label>
+						<div class="control boxes">
+							<button class="btn unable">-</button>
+							<span class="number">1</span>
+							<button class="btn">+</button>
+						</div>
+					</div>
+					<label class="msg error"><img src="../../assets/images/new-design/icons/error.png"> Số lượng chọn mua vượt quá số lượng trong kho</label>
+				</div>
+
+				<div class="total-price">
+					<div class="boxes margin-b20">
+						<label>Tổng giá</label>
+						<label class="t-price">119.920.000 đ</label>
+					</div>
+					<div class="boxes">
+						<div class="join-with">
+							<label>Mua cùng</label>
+							<div class="boxes">
+								<div class="ava"><img src="../../assets/images/img30.jpg"></div>
+								<label class="wrap-line">Tên thích đặt dài ngoằng</label>
+							</div>
+						</div>
+
+						<a href="#" class="btn btn-gradient">Mua ngay</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="buyingroupModal" class="modal custom-modal" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<span class="close" data-dismiss="modal"><img src="../../assets/images/svg/x-circle.svg"></span>
+				
+				<div class="head boxes">
+					<div class="ava">
+						<img src="../../assets/images/img30.jpg">
+					</div>
+					<div class="p-info">
+						<h4 class="wrap-line twoline">Korean Style Coat - High Quality Product (many colors and sizes)</h4>
+						<div class="boxes">
+							<div class="p-price wrap-line w-break">1,989,000 đ - 2,195,000 đ</div>
+							<div class="p-quantity">670 items</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item colors">
+					<div class="title"><h3>Màu sắc</h3></div>
+
+					<ul class="list-cat wrap">
+						<li><a href="#">Đỏ</a></li>
+						<li><a href="#" class="active">Xanh lá</a></li>
+						<li><a href="#">Xanh da trời</a></li>
+						<li><a href="#">Vàng</a></li>
+						<li><a href="#">Đen</a></li>
+						<li><a href="#" class="unable">Xanh da trời</a></li>
+					</ul>
+				</div>
+
+				<div class="item sizes">
+					<div class="title"><h3>Kích thước</h3></div>
+
+					<div class="success-box boxes">
+						<label class="msg success"><img src="../../assets/images/new-design/icons/success.png"> Thêm vào giỏ hàng thành công</label>
+						<a href="#">Xem giỏ hàng</a>
+					</div>
+				</div>
+
+				<div class="control boxes">
+					<a href="#" class="btn btn-addtocart" data-toggle="modal" data-target="#addsuccessModal" data-dismiss="modal">Thêm giỏ hàng</a>
+
+					<a href="#" class="btn btn-gradient">Mua ngay</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="addsuccessModal" class="modal custom-modal-success" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<span class="close" data-dismiss="modal"><img src="../../assets/images/svg/x-circle.svg"></span>
+				
+				<h4>Thêm vào giỏ hàng thành công!</h4>
+				<p>bạn có thể mua thêm <span class="txt-red">4</span> sản phẩm để được giá <span class="txt-red">120,000</span> vnđ/ 1 sản phẩm</p>
+
+				<div class="control boxes">
+					<a href="#" class="btn btn-addtocart">Tiếp tục mua</a>
+
+					<a href="#" class="btn btn-gradient">Xem giỏ hàng</a>
 				</div>
 			</div>
 		</div>
