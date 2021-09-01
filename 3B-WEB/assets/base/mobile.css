@@ -544,8 +544,8 @@ a {text-decoration: none;}
 .home-mobile .product-details .p-similar .box-p .box-p-meta .p-name {margin-bottom: 0;}
 .home-mobile .product-details .p-similar .box-p .box-p-meta .p-name h4 {font-size: 14px;color: #333333;}
 .home-mobile .menu-bot.buy-product {padding: 0;}
-.home-mobile .menu-bot.buy-product .items {width: max-content;}
-.home-mobile .menu-bot.buy-product .items .item {padding: 8px 20px;border-radius: 0;width: 132px;max-width: 132px;color: #FFFFFF;font-size: 12px;line-height: 12px;text-align: center;height: 68px;justify-content: center;flex-direction: column;}
+.home-mobile .menu-bot.buy-product .items {width: 100%;}
+.home-mobile .menu-bot.buy-product .items .item {padding: 8px 20px;border-radius: 0;width: 100%;color: #FFFFFF;font-size: 12px;line-height: 12px;text-align: center;height: 68px;justify-content: center;flex-direction: column;display: flex;}
 .home-mobile .menu-bot.buy-product .items .item .price {font-size: 14px;line-height: 24px;}
 .home-mobile .menu-bot.buy-product .items .item.retail {background: rgba(255, 129, 78, 0.8);}
 .home-mobile .menu-bot.buy-product .items .item.combo {background: #FF814E;}
@@ -629,6 +629,9 @@ a {text-decoration: none;}
 @media screen and (max-width: 400px) { /* for some x-screen */
 	.home-mobile header .cart span {display: none;}
 	.home-mobile header .cart span.total {display: block;right: -10px;}
+
+	.home-mobile .menu-bot.buy-product .items {width: max-content;}
+	.home-mobile .menu-bot.buy-product .items .item {max-width: 132px;width: max-content;}
 }
 
 @media screen and (max-width: 385px) {
