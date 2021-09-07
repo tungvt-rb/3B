@@ -23,5 +23,16 @@
 			$('.search-store').removeClass('active');
 			$('.search-product').addClass('active');
 		});
+
+		$('.filter-control li a').each(function(index) {
+			var t = $(this);
+			t.click(function(e) {
+				var tab = t.data('tab');
+				$('.filter').removeClass('active');
+				console.log(tab);
+				$('.'+tab).addClass('active');
+			});
+		});
+
 	});
 })(jQuery);
