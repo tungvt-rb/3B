@@ -15,7 +15,8 @@ a {text-decoration: none;}
 .home-mobile label {font-weight: normal;}
 .home-mobile .txt-center {text-align: center;}
 .home-mobile .txt-cap {text-transform: capitalize !important;}
-.home-mobile .txt-red {color: #E02E24;}
+.home-mobile .txt-red {color: #E02E24 !important;}
+.home-mobile .txt-green {color: #219653 !important;}
 .home-mobile .margin-b10 {margin-bottom: 10px !important;}
 .home-mobile .margin-b20 {margin-bottom: 20px !important;}
 .home-mobile .fix-both-side {margin-left: -3px !important;margin-right: -3px !important;}
@@ -727,6 +728,38 @@ a {text-decoration: none;}
 .home-mobile .outlet-page .filter-bl-2 .filter.size .list-size ul li {width: 70px;margin-bottom: 8px;}
 .home-mobile .outlet-page .filter-bl-2 .filter.size .list-size ul li a {display: block;background: #F2F2F2;text-align: center;padding: 8px;font-size: 14px;line-height: 22px;border-radius: 4px;color: #333333;}
 .home-mobile .outlet-page .filter-bl-2 .filter.size .list-size ul li a.active {background: #FFFFFF;border: 1px solid #E02E24;}
+
+.home-mobile .shopping-cart-page {}
+.home-mobile .shopping-cart-page .list-cart {}
+.home-mobile .shopping-cart-page .list-cart .cart-bl {padding: 0 9px 20px 9px;margin-bottom: 20px;border-bottom: 5px solid #F2F2F2;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .head {line-height: 14px;justify-content: space-between;margin-bottom: 22px;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .head > .boxes {width: 90%;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .head .ava img {width: 16px;height: 16px;border-radius: 50%;margin-right: 8px;margin-left: 4px;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .head h4 {font-size: 15px;font-weight: normal;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body {}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p {align-items: flex-start;padding-bottom: 12px;margin-bottom: 12px;border-bottom: 1px solid #F2F2F2;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-image {margin-right: 15px;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-image img {width: 60px;height: 60px;border-radius: 4px;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-image .chk {margin-right: 4px;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info {}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-title {align-items: flex-start;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-title h4 {font-size: 15px;line-height: 20px;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-title label {font-size: 14px;color: #BDBDBD;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-price {color: #FF2028;font-size: 14px;line-height: 16px;font-weight: 500;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-price.with-sale .p-sale {margin-right: 8px;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-price.with-sale .p-old {font-size: 11px;text-decoration: line-through;color: #BDBDBD;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-meta {color: #828282;font-size: 12px;line-height: 20px;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-extra {font-size: 12px;line-height: 20px;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-extra li {position: relative;padding-left: 10px;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-extra li:before {content: "";width: 6px;height: 6px;background: #BDBDBD;border-radius: 50%;position: absolute;left: 0;top: 50%;margin-top: -3px;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .foot {justify-content: flex-end;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .foot label {font-size: 14px;line-height: 20px;font-weight: 500;margin-left: 8px;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .foot .p-total {font-size: 16px;}
+.home-mobile .shopping-cart-page .cart-total {text-align: right;margin-bottom: 32px;}
+.home-mobile .shopping-cart-page .cart-total > .boxes {justify-content: space-between;margin-bottom: 8px;}
+.home-mobile .shopping-cart-page .cart-total label {font-size: 14px;line-height: 22px;font-weight: 500;}
+.home-mobile .shopping-cart-page .cart-total .numb {font-size: 15px;}
+.home-mobile .shopping-cart-page .cart-total .btn {border-radius: 4px;font-size: 14px;}
 
 
 @media screen and (max-width: 640px) {
