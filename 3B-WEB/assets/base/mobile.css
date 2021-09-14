@@ -946,6 +946,18 @@ table {border-collapse: collapse;border-spacing: 0;}
 .home-mobile .notices p {font-size: 14px;color: #828282;}
 .home-mobile .notices .confirm {display: block;padding: 13px 30px;font-size: 16px;border-radius: 4px;}
 
+.home-mobile .pin-code {width: 90%;margin: 0 auto 12px;padding: 20px 14px;text-align: center;background: #F2F2F2;border-radius: 8px;}
+.home-mobile .pin-code h4 {font-size: 18px;line-height: 24px;margin-bottom: 24px;}
+.home-mobile .pin-code .code {margin-bottom: 24px;}
+.home-mobile .pin-code .boxes {justify-content: space-between;}
+.home-mobile .pin-code .form-control {width: 34px;box-shadow: none;padding: 4px;text-align: center;border-color: transparent;}
+.home-mobile .pin-code .code p {font-size: 13px;line-height: 20px;text-align: left;}
+.home-mobile .pin-code .code.error p {color: #FF2028;}
+.home-mobile .pin-code .code.success p {color: #A022FE;}
+.home-mobile .pin-code .code.error .form-control {border-color: #FF2028;}
+.home-mobile .pin-code .code.success .form-control {border-color: #A022FE;}
+.home-mobile .pin-code .confirm {display: block;padding: 11px 30px;font-size: 14px;border-radius: 4px;}
+
 @media screen and (max-width: 640px) {
 	.home-mobile .header-content .featured ul li {width: 25%;}
 }
