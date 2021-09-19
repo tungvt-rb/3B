@@ -785,6 +785,11 @@ table {border-collapse: collapse;border-spacing: 0;}
 .home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-price.with-sale .p-sale {margin-right: 8px;}
 .home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-price.with-sale .p-old {font-size: 11px;text-decoration: line-through;color: #BDBDBD;}
 .home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-meta {color: #828282;font-size: 12px;line-height: 20px;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-quantity {border-radius: 3px;color: #333333;text-align: center;font-size: 14px;line-height: 24px;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-quantity button {width: 24px;height: 24px;border: 1px solid #F2F2F2;background: transparent;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-quantity .plus {border-radius: 0 3px 3px 0;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-quantity .minus {border-radius: 3px 0 0 3px;}
+.home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-quantity span {width: 24px;height: 24px;border-top:  1px solid #F2F2F2;border-bottom:  1px solid #F2F2F2;}
 .home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-extra {font-size: 12px;line-height: 20px;}
 .home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-extra li {position: relative;padding-left: 10px;}
 .home-mobile .shopping-cart-page .list-cart .cart-bl .body .cart-p .p-info .p-extra li:before {content: "";width: 6px;height: 6px;background: #BDBDBD;border-radius: 50%;position: absolute;left: 0;top: 50%;margin-top: -3px;}
@@ -863,7 +868,6 @@ table {border-collapse: collapse;border-spacing: 0;}
 .policy-detail table th {padding: 8px 14px;vertical-align: top;}
 .policy-detail table tr {border-bottom: 1px solid #ED792A;}
 .policy-detail table tbody td.kg {color: #4F4F4F;}
-
 
 .home-mobile .select-voucher .nav-tabs-custom > .nav-tabs > li {border-bottom: 3px solid transparent;margin-bottom: -2px;width: 50%;text-align: center;}
 .home-mobile .select-voucher .nav-tabs-custom > .nav-tabs > li.active {border-bottom-color: #E02E24;}
