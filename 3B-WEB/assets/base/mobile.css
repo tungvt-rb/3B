@@ -116,6 +116,13 @@ table {border-collapse: collapse;border-spacing: 0;}
 .home-mobile .btn-toggle.btn-sm.active:before {opacity: .5}
 .home-mobile .btn-toggle.btn-sm.active:after {opacity: 1}
 
+.home-mobile .tag-lbl {position: absolute;top: 0;left: 30px;background: #FFCF00;padding: 6px;width: 72px;text-align: center;font-size: 13px;color: #FFFFFF;}
+.home-mobile .tag-lbl:after {content: "";height: 12px;position: absolute;bottom: -10px;left: 0;
+	border-left: 36px solid #FFCF00;
+	border-right: 36px solid #FFCF00;
+	border-bottom: 10px solid transparent;
+}
+
 .home-mobile .wrap-line {
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -156,6 +163,8 @@ table {border-collapse: collapse;border-spacing: 0;}
 .home-mobile .box-p .box-p-img {position: relative;}
 .home-mobile .box-p .box-p-img img {width: 100%;height: 188px;object-fit: cover;border-radius: 8px;}
 .home-mobile .box-p .box-p-img .rating-label {background: #FFCF00;color: #FFFFFF;font-size: 14px;padding: 4px 10px;border-radius: 9px 0;position: absolute;top: 0;right: 12px;}
+.home-mobile .box-p .box-p-img .tag-lbl {left: 12px;width: 60px;padding: 4px;}
+.home-mobile .box-p .box-p-img .tag-lbl:after {border-left-width: 30px;border-right-width: 30px;}
 .home-mobile .box-p .box-p-meta {padding: 10px;}
 .home-mobile .box-p .box-p-meta .store-info {display: flex;justify-content: space-between;align-items: center;margin-bottom: 10px;}
 .home-mobile .box-p .box-p-meta .store-info .store-name {display: flex;justify-content: flex-start;align-items: center;}
@@ -480,9 +489,12 @@ table {border-collapse: collapse;border-spacing: 0;}
 
 .home-mobile .product-details {}
 .home-mobile .product-details .title h3 {text-transform: capitalize;}
-.home-mobile .product-details .p-galleries {position: relative;}
+.home-mobile .product-details .p-galleries {position: relative;text-align: center;}
 .home-mobile .product-details .p-galleries img {width: 100%;max-height: 330px;}
 .home-mobile .product-details .p-galleries .g-bullets-numb {position: absolute;bottom: 12px;right: 9px;padding: 0 12px;text-align: center;color: #FFFFFF;background: #C563EA;font-size: 12px;border-radius: 30px;}
+.home-mobile .product-details .p-galleries .out-of-stock {position: absolute;top: 0;left: 0%;right: 0;bottom: 32px;font-size: 13px;line-height: 20px;flex-direction: column;justify-content: center;}
+.home-mobile .product-details .p-galleries .out-of-stock span {line-height: 25px;width: 75px;height: 75px;background: rgba(0, 0, 0, .5);text-align: center;padding: 25px 10px;color: #FFFFFF;border-radius: 50%;}
+.home-mobile .product-details .p-galleries .out-of-stock a {display: block;background: #F2F2F2;border-radius: 15px;padding: 4px 12px;color: #4F4F4F;margin-top: -15px;}
 .home-mobile .product-details .p-hot-sale {background: #C563EA;padding: 8px 9px;}
 .home-mobile .product-details .p-hot-sale .title h3 {color: #FFFFFF;text-transform: capitalize;font-weight: 900;font-style: italic;line-height: 26px;}
 .home-mobile .product-details .p-hot-sale .title h3 img {vertical-align: middle;margin-left: 2px;margin-right: -2px;}
@@ -514,6 +526,9 @@ table {border-collapse: collapse;border-spacing: 0;}
 .home-mobile .p-share .socials ul li.twitter a {background: #55ACEE;}
 .home-mobile .p-share .socials ul li.copy a {background: none;width: auto;border-radius: 3px;color: #219653;padding: 0 12px;}
 .home-mobile .p-share .socials ul li.gplus a {background: #EB5757;}
+.home-mobile .p-share .liked {}
+.home-mobile .p-share .liked img {margin-right: 4px;}
+.home-mobile .p-share .liked label {font-size: 12px;}
 .home-mobile .product-details .p-properties {padding: 12px 9px 16px;border-bottom: 3px solid #F2F2F2;}
 .home-mobile .product-details .p-properties label {display: block;font-size: 14px;}
 .home-mobile .product-details .p-properties label span {display: inline-block;width: 30%;color: #828282;}
@@ -623,10 +638,10 @@ table {border-collapse: collapse;border-spacing: 0;}
 .home-mobile .modal .modal-content .quantity {border-bottom: 1px solid #F2F2F2;}
 .home-mobile .modal .modal-content .quantity > .boxes {background: #F2F2F2;padding: 16px 20px;justify-content: space-between;}
 .home-mobile .modal .modal-content .quantity label {font-weight: 500;}
-.home-mobile .modal .modal-content .quantity .control {font-size: 15px;}
-.home-mobile .modal .modal-content .quantity .control .btn {width: 24px;height: 24px;color: #3F241D;text-align: center;padding: 3px;border-radius: 4px;border: 1px solid #3F241D;}
+.home-mobile .modal .modal-content .quantity .control {font-size: 15px;background: #FFFFFF;border-radius: 4px;}
+.home-mobile .modal .modal-content .quantity .control .btn {width: 24px;height: 24px;color: #3F241D;text-align: center;padding: 3px;background: #FFFFFF;}
 .home-mobile .modal .modal-content .quantity .control .btn.unable {border: none;cursor: not-allowed;}
-.home-mobile .modal .modal-content .quantity .control span {font-weight: 500;line-height: 24px;padding: 0 12px;}
+.home-mobile .modal .modal-content .quantity .control span {font-weight: 500;line-height: 24px;padding: 0 12px;border-left: 1px solid #F2F2F2;border-right: 1px solid #F2F2F2;}
 .home-mobile .modal .modal-content .quantity .error {font-weight: normal;padding: 8px 20px}
 .home-mobile .modal .modal-content .total-price {padding: 20px;}
 .home-mobile .modal .modal-content .total-price .boxes {justify-content: space-between;}
@@ -1104,6 +1119,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 	.home-mobile .product-details .p-hot-sale .p-price {font-size: 15px;}
 	.home-mobile .product-details .list-review .review-img li img {width: 65px;height: 65px;}
 	.home-mobile .product-details .list-review .review-img li a span {line-height: 20px;}
+	.home-mobile .p-share .socials ul li.copy a {font-size: 12px;padding: 0 10px;}
 
 	.home-mobile .promote.boxes {justify-content: space-around;width: max-content;}
 
@@ -1112,6 +1128,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 	.home-mobile .modal .modal-content .head .p-info > .boxes {flex-wrap: wrap;}
 
 	.home-mobile .store-home-page .s-voucher .promote {width: auto;}
+	.home-mobile .store-home .states label {font-size: 11px;}
 
 	.home-mobile .outlet-page .filter-bl-2 .filter.size .list-size ul li {width: 50px;}
 
