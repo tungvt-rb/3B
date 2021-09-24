@@ -1607,6 +1607,7 @@ h4.custom-title img {margin-bottom: 5px;}
 .pad-20 {padding: 20px;}
 .br-8 {border-radius: 8px;}
 .width-24 {width: 24px;}
+.no-margin {margin: 0 !important;}
 .show-on-mobile {display: none;}
 .wrap-line {
 	overflow: hidden;
@@ -1618,6 +1619,7 @@ h4.custom-title img {margin-bottom: 5px;}
 .wrap-line.twoline {
 	-webkit-line-clamp: 2;
 }
+.wrap-line.w-break {word-break: break-all;}
 .margin-r8 {margin-right: 8px;}
 .space-between-4 {margin: 0 4px;}
 body.new-theme {background: #F2F2F2;}
@@ -1762,6 +1764,22 @@ body.new-theme .menu-mobile .menu-container.for-new-theme {display: flex;width: 
 body.new-theme .menu-mobile .menu-container.for-new-theme li:first-child {padding-left: 0;}
 body.new-theme .menu-mobile h3 {font-size: 15px;color: #E33806;text-transform: uppercase;margin-bottom: 12px;}
 
+body.new-theme .product-item {}
+body.new-theme .product-item .p-img {width: 100%;height: 168px;object-fit: cover;border-radius: 8px;}
+body.new-theme .product-item .store-name {padding: 6px 0;}
+body.new-theme .product-item .store-name img {width: 24px;height: 24px;object-fit: cover;}
+body.new-theme .product-item .store-name h5 {line-height: 24px;}
+body.new-theme .product-item .product-info h4 {height: 36px;}
+body.new-theme .product-item .product-meta {}
+body.new-theme .product-item .p-marker {}
+body.new-theme .product-item .p-marker span {font-size: 13px;color: #BDBDBD;}
+
+body.new-theme .list-store .store-products {justify-content: flex-start;padding: 0;}
+body.new-theme .list-store .store-products li {width: auto;}
+body.new-theme .list-store .store-products li img {width: 75px;max-width: 75px;}
+body.new-theme .list-store .store-info .store-meta .ratings {display: flex;align-items: center;font-size: 13px;}
+body.new-theme .list-store .store-info .store-meta .ratings span {color: #BDBDBD;padding-left: 6px;}
+body.new-theme .list-store .store-info .store-meta .ratings img {margin-right: 6px;}
 
 .product-gal {position: relative;}
 .tag-lbl {position: absolute;top: 0;left: 30px;background: #E52836;padding: 6px;width: 72px;text-align: center;font-size: 13px;z-index: 2;color: #FFFFFF;}

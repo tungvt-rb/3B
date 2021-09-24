@@ -978,6 +978,14 @@ table {border-collapse: collapse;border-spacing: 0;}
 .home-mobile .pin-code .code.success .form-control {border-color: #A022FE;}
 .home-mobile .pin-code .confirm {display: block;padding: 11px 30px;font-size: 14px;border-radius: 4px;}
 
+.home-mobile .p-favorite .box-p .box-p-img .rating-label {background: #E02E24;color: #F2C94C;left: 0;right: auto;}
+
+.home-mobile .store-follower {}
+.home-mobile .store-follower .box .box-items li a img {width: 52px;height: 52px;}
+.home-mobile .store-follower .box .box-items li a span {line-height: 16px;}
+.home-mobile .store-follower .box .meta img {vertical-align: text-top;}
+.home-mobile .store-follower .box .box-head a.btn {width: auto !important;}
+
 .login-page {}
 .login-page .head img {width: 100%;}
 .login-page .body {padding: 0 24px;margin-bottom: 24px;}
