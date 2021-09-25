@@ -986,6 +986,28 @@ table {border-collapse: collapse;border-spacing: 0;}
 .home-mobile .store-follower .box .meta img {vertical-align: text-top;}
 .home-mobile .store-follower .box .box-head a.btn {width: auto !important;}
 
+.home-mobile .search-top {}
+.home-mobile .search-top .item {align-items: stretch;width: 100%;padding: 0 9px 12px 9px;margin-bottom: 12px;border-bottom: 4px solid #E5E5E5;}
+.home-mobile .search-top .item .img {border: 2px solid #A022FE;margin-right: 10px;position: relative;}
+.home-mobile .search-top .item .img .tag-lbl {left: 6px;width: 34px;padding: 4px 4px 0;font-size: 12px;line-height: 15px;}
+.home-mobile .search-top .item .img .tag-lbl span {font-weight: 500;font-size: 15px;}
+.home-mobile .search-top .item .img .tag-lbl:after {bottom: -20px;
+	border-top: 10px solid #FFCF00;
+	border-left: 17px solid transparent;
+	border-right: 17px solid transparent;
+}
+.home-mobile .search-top .item .img img {width: 115px;height: 115px;}
+.home-mobile .search-top .item .info {display: flex;flex-direction: column;justify-content: space-between;}
+.home-mobile .search-top .item h4 {font-size: 14px;color: #3F241D;margin-bottom: 16px;line-height: 20px;}
+.home-mobile .search-top .item .p-sold {font-size: 12px;color: #FFFFFF;background: #A022FE;border-radius: 30px;text-align: center;width: 50%;}
+.home-mobile .search-top .item .p-price {font-size: 13px;color: #FF2028;font-weight: 500;}
+.home-mobile .search-top-cat {margin-bottom: 12px;width: max-content; }
+.home-mobile .search-top-cat li {width: 80px;background: #FFFFFF;padding: 1px;text-align: center;border-width: 2px 2px 4px 2px;border-style: solid;border-color: #E5E5E5;}
+.home-mobile .search-top-cat li a {display: block;display: flex;flex-direction: column;color: #828282;border: 1px solid transparent;}
+.home-mobile .search-top-cat li a.active {border-color: #E02E24;}
+.home-mobile .search-top-cat li a img {width: 100%;height: 45px;margin-bottom: 4px;}
+.home-mobile .search-top-cat li a h4 {font-size: 12px;font-weight: 400;line-height: 20px;margin-bottom: 4px;padding: 0 2px;}
+
 .login-page {}
 .login-page .head img {width: 100%;}
 .login-page .body {padding: 0 24px;margin-bottom: 24px;}
