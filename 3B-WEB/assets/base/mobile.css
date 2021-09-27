@@ -1008,6 +1008,23 @@ table {border-collapse: collapse;border-spacing: 0;}
 .home-mobile .search-top-cat li a img {width: 100%;height: 45px;margin-bottom: 4px;}
 .home-mobile .search-top-cat li a h4 {font-size: 12px;font-weight: 400;line-height: 20px;margin-bottom: 4px;padding: 0 2px;}
 
+.home-mobile .download-page {}
+.home-mobile .download-page .banner {position: relative;margin-bottom: 32px;}
+.home-mobile .download-page .banner > img {width: 100%;height: 150px;}
+.home-mobile .download-page .banner .shop-info {justify-content: space-between;align-items: flex-start;position: absolute;bottom: 20px;left: 0;}
+.home-mobile .download-page .banner .shop-info .ava {align-items: flex-start;color: #FFFFFF;}
+.home-mobile .download-page .banner .shop-info .ava img {width: 60px;height: 60px;border-radius: 50%;border: 1px solid #FFFFFF;margin-right: 4px;}
+.home-mobile .download-page .banner .shop-info .ava h4 {font-size: 14px;font-weight: normal;line-height: 30px;}
+.home-mobile .download-page .banner .shop-info a.btn {color: #FFFFFF;border-color: #FFFFFF;background: rgba(0, 0, 0, .2);padding: 6px 20px;}
+.home-mobile .download-page .content {flex-direction: column;align-items: center;justify-content: center;}
+.home-mobile .download-page .content p {font-size: 13px;margin-bottom: 16px;}
+.home-mobile .download-page .content img {margin-bottom: 16px;}
+.home-mobile .download-page .content a {}
+.home-mobile .download-page .menu {background: #F2F2F2;}
+.home-mobile .download-page .menu ul {font-size: 13px;padding: 8px;margin-left: 69px;width: max-content;}
+.home-mobile .download-page .menu ul li {padding: 4px}
+.home-mobile .download-page .menu ul li a {color: #4F4F4F;}
+
 .login-page {}
 .login-page .head img {width: 100%;}
 .login-page .body {padding: 0 24px;margin-bottom: 24px;}
