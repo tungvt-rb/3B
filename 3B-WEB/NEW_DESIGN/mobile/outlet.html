@@ -158,14 +158,15 @@
 			<div class="filter-bl-2">
 				<div class="scroll-x">
 					<ul class="boxes filter-control">
-						<li><a href="#" data-tab="size">Size <i class="fa fa-caret-down"></i></a></li>
-						<li><a href="#" data-tab="brands">Thương hiệu <i class="fa fa-caret-down"></i></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#filterSizeModal">Size <i class="fa fa-caret-down"></i></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#filterBrandModal">Thương hiệu <i class="fa fa-caret-down"></i></a></li>
 						<li><a href="#">Price &#8593; <i class="fa fa-caret-down"></i></a></li>
-						<li><a href="#" data-tab="saleup">Sale up <i class="fa fa-caret-down"></i></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#filterSaleupModal">Sale up <i class="fa fa-caret-down"></i></a></li>
+						<!-- <li><a href="#" data-tab="saleup">Sale up <i class="fa fa-caret-down"></i></a></li> -->
 					</ul>
 				</div>
 
-				<div class="filter size">
+				<!-- <div class="filter size">
 					<div class="size-bl boxes">
 						<ul class="size-nav">
 							<li>
@@ -222,9 +223,9 @@
 						<a href="#" class="btn btn-border-r">Chọn lại</a>
 						<a href="#" class="btn btn-gradient">Áp dụng</a>
 					</div>
-				</div><!-- /end tab size -->
+				</div> --><!-- /end tab size -->
 
-				<div class="filter brands">
+				<!-- <div class="filter brands">
 					<ul>
 						<li>
 							<a href="#" class="active"><img src="../../assets/images/brands/canon.png"></a>
@@ -256,9 +257,9 @@
 						<a href="#" class="btn btn-border-r">Chọn lại</a>
 						<a href="#" class="btn btn-gradient">Áp dụng</a>
 					</div>
-				</div><!-- /end tab brands -->
+				</div> --><!-- /end tab brands -->
 
-				<div class="filter saleup">
+				<!-- <div class="filter saleup">
 					<div class="list-cat-2">
 						<ul>
 							<li>
@@ -304,7 +305,7 @@
 						<a href="#" class="btn btn-border-r">Chọn lại</a>
 						<a href="#" class="btn btn-gradient">Áp dụng</a>
 					</div>
-				</div><!-- /end tab saleup -->
+				</div> --><!-- /end tab saleup -->
 			</div>
 			<!-- /END CONTROL RESULT -->
 
@@ -450,7 +451,7 @@
 					<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
 				</ul>
 				<!-- /END PAGINATION -->
-			</div>				
+			</div>
 		</div>
 
 		<!-- BEGIN FOOTER -->
@@ -517,6 +518,177 @@
 		</div>
 	</div>
 	<!-- /END CONTENT WRAPPER -->
+
+	<div id="filterSizeModal" class="modal custom-modal-outlet" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="title-page">
+					<h3><a data-dismiss="modal"><img src="../../assets/images/new-design/icons/back-arrow.png"></a> Kích thước</h3>
+				</div>
+				
+				<div class="filter-content size-bl">
+					<div class="boxes">
+						<ul class="size-nav">
+							<li>
+								<a href="#" class="active">
+									<img src="../../assets/images/img29.jpg">
+									<label class="wrap-line">Thời trang nam</label>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="../../assets/images/img30.jpg">
+									<label class="wrap-line">Thời trang nữ</label>
+								</a>
+							</li>
+						</ul>
+						<div class="list-size">
+							<h4>Thời trang nam</h4>
+							<ul class="list-size-1">
+								<li><a href="#" class="active">S</a></li>
+								<li><a href="#">M</a></li>
+								<li><a href="#">L</a></li>
+								<li><a href="#">XL</a></li>
+								<li><a href="#">2XL</a></li>
+								<li><a href="#">3XL</a></li>
+								<li><a href="#">4XL</a></li>
+								<li><a href="#">5XL</a></li>
+								<li><a href="#">XS</a></li>
+								<li><a href="#">2XS</a></li>
+								<li><a href="#">3XS</a></li>
+							</ul>
+
+							<h4>Thời trang nữ</h4>
+							<ul class="list-size-1">
+								<li><a href="#" class="active">S</a></li>
+								<li><a href="#">36</a></li>
+								<li><a href="#">37</a></li>
+								<li><a href="#">38</a></li>
+								<li><a href="#">39</a></li>
+								<li><a href="#">40</a></li>
+								<li><a href="#">41</a></li>
+							</ul>
+
+							<h4>Thời trang trẻ em</h4>
+							<ul class="list-size-1 no-mag-bot">
+								<li><a href="#" class="active">S</a></li>
+								<li><a href="#">36</a></li>
+								<li><a href="#">37</a></li>
+								<li><a href="#">38</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="boxes filter-btn">
+					<a href="#" class="btn btn-border-r">Chọn lại</a>
+					<a href="#" class="btn btn-gradient">Áp dụng</a>
+				</div>
+			</div>
+		</div>
+	</div><!-- /end size filter -->
+
+	<div id="filterBrandModal" class="modal custom-modal-outlet" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="title-page">
+					<h3><a data-dismiss="modal"><img src="../../assets/images/new-design/icons/back-arrow.png"></a> Thương hiệu</h3>
+				</div>
+				
+				<div class="filter-content brands">
+					<ul>
+						<li>
+							<a href="#" class="active"><img src="../../assets/images/brands/canon.png"></a>
+							<label>Canon</label>
+						</li>
+						<li>
+							<a href="#"><img src="../../assets/images/brands/samsung.png"></a>
+							<label>Samsung</label>
+						</li>
+						<li>
+							<a href="#"><img src="../../assets/images/brands/adidas.png"></a>
+							<label>Adidas</label>
+						</li>
+						<li>
+							<a href="#"><img src="../../assets/images/brands/nike.png"></a>
+							<label>Nike</label>
+						</li>
+						<li>
+							<a href="#"><img src="../../assets/images/brands/puma.png"></a>
+							<label>Puma</label>
+						</li>
+						<li>
+							<a href="#"><img src="../../assets/images/brands/loreal.png"></a>
+							<label>Loreal</label>
+						</li>
+					</ul>
+				</div>
+
+				<div class="boxes filter-btn">
+					<a href="#" class="btn btn-border-r">Chọn lại</a>
+					<a href="#" class="btn btn-gradient">Áp dụng</a>
+				</div>
+			</div>
+		</div>
+	</div><!-- /end brands filter -->
+
+	<div id="filterSaleupModal" class="modal custom-modal-outlet" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="title-page">
+					<h3><a data-dismiss="modal"><img src="../../assets/images/new-design/icons/back-arrow.png"></a> Giảm giá</h3>
+				</div>
+				
+				<div class="filter-content saleup">
+					<div class="list-cat-2">
+						<ul>
+							<li>
+								<div class="chk">
+									<input type="checkbox" name="chk7" id="chk7" class="chk-custom">
+									<label for="chk7" class="chk-custom-label">Giảm 10%</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk">
+									<input type="checkbox" name="chk8" id="chk8" class="chk-custom">
+									<label for="chk8" class="chk-custom-label">Giảm 30%</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk">
+									<input type="checkbox" name="chk9" id="chk9" class="chk-custom">
+									<label for="chk9" class="chk-custom-label">Giảm 50%</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk">
+									<input type="checkbox" name="chk10" id="chk10" class="chk-custom">
+									<label for="chk10" class="chk-custom-label">Giảm 60%</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk">
+									<input type="checkbox" name="chk11" id="chk11" class="chk-custom">
+									<label for="chk11" class="chk-custom-label">Giảm 80%</label>
+								</div>
+							</li>
+							<li>
+								<div class="chk">
+									<input type="checkbox" name="chk12" id="chk12" class="chk-custom">
+									<label for="chk12" class="chk-custom-label">Giảm 100%</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="boxes filter-btn">
+					<a href="#" class="btn btn-border-r">Chọn lại</a>
+					<a href="#" class="btn btn-gradient">Áp dụng</a>
+				</div>
+			</div>
+		</div>
+	</div><!-- /end saleup filter -->
 
 	<script src="../../assets/js/jquery.min.js"></script>
 	<script src="../../assets/js/bootstrap.min.js"></script>
