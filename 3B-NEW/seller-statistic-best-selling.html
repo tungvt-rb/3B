@@ -303,7 +303,7 @@
 						<div class="row">
 							<div class="col-md-8">
 								<h3 class="box-title">Top 10 hàng hóa bán chạy tháng này</h3>
-								<div class="pull-right">
+								<div class="pull-right margin-b">
 									<select class="form-control">
 										<option selected="selected">Tháng này</option>
 										<option>Hôm nay</option>
@@ -312,7 +312,30 @@
 										<option>Tháng trước</option>
 									</select>
 								</div>
-								<div class="clearfix"></div>	
+								<div class="clearfix"></div>
+
+								<ul class="adv-hist-control">
+									<li>
+										<span class="input-daterange">
+											<div class="form-group">
+												<div class="input-group small">
+													<span class="input-group-btn">
+														<span class="btn">Từ</span>
+													</span>
+													<input type="text" class="input-sm form-control" name="start">
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group small">
+													<span class="input-group-btn">
+														<span class="btn">đến</span>
+													</span>
+													<input type="text" class="input-sm form-control" name="end">
+												</div>
+											</div>
+										</span>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -348,6 +371,11 @@
 	<script type="text/javascript">
 		(function($){
 			$(function(){
+				$('.input-daterange').datepicker({
+					format: "dd/mm/yyyy",
+					todayHighlight: true,
+				});
+				
 				// Chart
 				var xValues = ["Hộp cơm","Keo dán tường","Dép lê","Tổ ong","Giấy vụn","Cái gì đó ai mà biết", "Số 7", "...", "Lá cây", "Cái cuối"];
 				// var yValues = [55, 200, 250, 100, 609, 352, 7, 2, 1000, 333];
