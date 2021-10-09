@@ -1009,6 +1009,10 @@ table {border-collapse: collapse;border-spacing: 0;}
 .home-mobile .search-top-cat li a h4 {font-size: 12px;font-weight: 400;line-height: 20px;margin-bottom: 4px;padding: 0 2px;}
 
 .home-mobile .download-page {}
+.home-mobile .download-page .title-page h3 {position: relative;}
+.home-mobile .download-page .title-page .sign-out {color: #EC5229;position: absolute;right: 0;top: -7px;}
+.home-mobile .download-page .title-page .sign-out i {font-size: 22px;}
+.home-mobile .download-page .title-page .sign-out span {display: block;font-size: 9px;color: #4F4F4F;line-height: 10px;text-transform: capitalize;}
 .home-mobile .download-page .banner {position: relative;margin-bottom: 32px;}
 .home-mobile .download-page .banner > img {width: 100%;height: 150px;}
 .home-mobile .download-page .banner .shop-info {justify-content: space-between;align-items: flex-start;position: absolute;bottom: 20px;left: 0;}
@@ -1096,15 +1100,24 @@ table {border-collapse: collapse;border-spacing: 0;}
 .home-mobile .modal.custom-modal-outlet .modal-content .size-bl .list-size ul li a {display: block;background: #F2F2F2;text-align: center;padding: 8px;font-size: 14px;line-height: 22px;border-radius: 4px;color: #333333;}
 .home-mobile .modal.custom-modal-outlet .modal-content .size-bl .list-size ul li a.active {background: #FFFFFF;border: 1px solid #E02E24;}
 
-.home-mobile .modal.custom-modal-outlet .modal-content .brands ul {flex-wrap: wrap;}
-.home-mobile .modal.custom-modal-outlet .modal-content .brands ul li {margin-right: 0;margin-bottom: 8px;border: none;padding: 0;width: 110px;}
-.home-mobile .modal.custom-modal-outlet .modal-content .brands ul li label {font-weight: 300;font-size: 16px;line-height: 30px;text-transform: uppercase;}
-.home-mobile .modal.custom-modal-outlet .modal-content .brands ul li a {display: block;padding: 8px 20px;border: 1px solid #E0E0E0;border-radius: 8px;}
+.home-mobile .modal.custom-modal-outlet .modal-content .brands ul,
+.all-brand .brands ul {flex-wrap: wrap;}
+.home-mobile .modal.custom-modal-outlet .modal-content .brands ul li,
+.all-brand .brands ul li {margin-right: 0;margin-bottom: 8px;border: none;padding: 0;width: 110px;}
+.home-mobile .modal.custom-modal-outlet .modal-content .brands ul li label,
+.all-brand .brands ul li label {font-weight: 300;font-size: 16px;line-height: 30px;text-transform: uppercase;}
+.home-mobile .modal.custom-modal-outlet .modal-content .brands ul li a,
+.all-brand .brands ul li a {display: block;padding: 8px 20px;border: 1px solid #E0E0E0;border-radius: 8px;}
 .home-mobile .modal.custom-modal-outlet .modal-content .brands ul li a.active {border-color: #E02E24;}
 
 .home-mobile .modal.custom-modal-outlet .modal-content .saleup .list-cat-2 {border-bottom: none;padding: 20px;}
 .home-mobile .modal.custom-modal-outlet .modal-content .saleup .list-cat-2 ul {justify-content: space-between;}
 .home-mobile .modal.custom-modal-outlet .modal-content .saleup .list-cat-2 li {width: 49%;margin-right: 0;}
+
+.home-mobile .all-brand {padding: 0 9px;}
+.home-mobile .all-brand .brands {padding: 20px 0;}
+.home-mobile .all-brand .filter-btn {justify-content: space-between;}
+.home-mobile .all-brand .filter-btn .btn {padding: 12px 30px;border-radius: 4px;}
 
 @media screen and (max-width: 640px) {
 	.home-mobile .header-content .featured ul li {width: 25%;}
