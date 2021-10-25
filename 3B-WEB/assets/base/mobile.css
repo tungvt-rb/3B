@@ -394,7 +394,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 .home-mobile .flash-sale .list-all .item .p-sold .progress-icon {position: absolute;top: -6px;left: 0;width: 16px;z-index: 9;}
 
 .home-mobile .header-content .featured {padding: 14px 10px;border-radius: 8px;background: #FFFFFF;}
-.home-mobile .header-content .featured ul {display: flex;flex-wrap: wrap;align-items: center;justify-content: space-around;}
+.home-mobile .header-content .featured ul {display: flex;/*flex-wrap: wrap;*/align-items: center;justify-content: space-around;}
 .home-mobile .header-content .featured ul li {margin: 0;padding: 0;background: transparent;text-align: center;width: 12.5%;}
 .home-mobile .header-content .featured ul li span {display: block;font-weight: normal;color: #3F241D;font-size: 13px;line-height: 24px;}
 .home-mobile .header-content .featured ul li img {width: auto;margin-right: 0;}
@@ -1122,7 +1122,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 .home-mobile .all-brand .filter-btn .btn {padding: 12px 30px;border-radius: 4px;}
 
 @media screen and (max-width: 640px) {
-	.home-mobile .header-content .featured ul li {width: 25%;}
+	.home-mobile .header-content .featured ul li {width: 20%;}
 }
 
 @media screen and (max-width: 480px) {
@@ -1152,6 +1152,11 @@ table {border-collapse: collapse;border-spacing: 0;}
 	.home-mobile .flash-sale .list-all .item .details .btn {width: 90px;}
 
 	.home-mobile .select-voucher .list-voucher .voucher {width: 100%;}
+}
+
+@media screen and (max-width: 425px) {
+	.home-mobile .header-content .featured ul {width: max-content;}
+	.home-mobile .header-content .featured ul li {width: 82px;}
 }
 
 @media screen and (max-width: 400px) { /* for some x-screen */
@@ -1197,6 +1202,8 @@ table {border-collapse: collapse;border-spacing: 0;}
 }
 
 @media screen and (max-width: 320px) {
+	.home-mobile .header-content .featured ul li {width: 88px;}
+
 	.home-mobile .box-p .box-p-img img {height: 145px;}
 
 	.home-mobile .states .item .total {font-size: 13px;}
