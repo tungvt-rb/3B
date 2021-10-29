@@ -1121,6 +1121,11 @@ table {border-collapse: collapse;border-spacing: 0;}
 .home-mobile .all-brand .filter-btn {justify-content: space-between;}
 .home-mobile .all-brand .filter-btn .btn {padding: 12px 30px;border-radius: 4px;}
 
+.home-mobile .indicators {display: flex;align-items: center;justify-content: center;position: relative;bottom: 8px;}
+.home-mobile .indicators .indi-item {display: block;width: 15px;height: 3px;background: #828282;border-radius: 3px;margin-left: -2px;}
+.home-mobile .indicators .indi-item.active {background: #C4C4C4;z-index: 10;}
+
+
 @media screen and (max-width: 640px) {
 	.home-mobile .header-content .featured ul li {width: 20%;}
 }
