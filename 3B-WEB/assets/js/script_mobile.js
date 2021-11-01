@@ -34,5 +34,23 @@
 			});
 		});
 
+		var customSlb2 = $('.custom-slb-2');
+		if (customSlb2.length) {
+			$('.custom-slb-2').each(function(index) {
+				var t = $(this);
+				t.click(function(e) {
+					t.children('.options').toggleClass('shown');
+					t.toggleClass('open');
+				});
+
+				var opt = $(this).children('.options').children('.option');
+				opt.click(function() {
+					t.children('#selected').html($(this).html());
+					opt.removeClass('same-active');
+					$(this).addClass('same-active');
+				});
+			});
+		}
+
 	});
 })(jQuery);

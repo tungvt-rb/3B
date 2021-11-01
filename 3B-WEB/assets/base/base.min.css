@@ -1790,12 +1790,19 @@ body.new-theme .store-top-product .tag-lbl:after {bottom: -20px;
 }
 body.new-theme .store-top-product .p-sold {font-size: 12px;color: #FFFFFF;background: #A022FE;border-radius: 30px;text-align: center;margin-bottom: 12px;}
 
-body.new-theme .search-top-cat {margin-bottom: 12px;display: flex;align-items: center;}
-body.new-theme .search-top-cat li {width: 80px;background: #FFFFFF;padding: 1px;text-align: center;border-width: 2px 2px 4px 2px;border-style: solid;border-color: #F2F2F2;}
-body.new-theme .search-top-cat li a {display: block;display: flex;flex-direction: column;color: #828282;border: 1px solid transparent;}
-body.new-theme .search-top-cat li a.active {border-color: #E02E24;}
-body.new-theme .search-top-cat li a img {width: 100%;height: 45px;margin-bottom: 4px;object-fit: cover;}
-body.new-theme .search-top-cat li a h4 {font-size: 12px;font-weight: 400;line-height: 20px;margin-bottom: 4px;padding: 0 2px;}
+body.new-theme .search-top-cat {position: relative;}
+body.new-theme .search-top-cat ul {margin-bottom: 12px;display: flex;align-items: center;}
+body.new-theme .search-top-cat ul li {width: 80px;background: #FFFFFF;padding: 1px;text-align: center;border-width: 2px 2px 4px 2px;border-style: solid;border-color: #F2F2F2;}
+body.new-theme .search-top-cat ul li a {display: block;display: flex;flex-direction: column;color: #828282;border: 1px solid transparent;}
+body.new-theme .search-top-cat ul li a.active {border-color: #E02E24;}
+body.new-theme .search-top-cat ul li a img {width: 100%;height: 45px;margin-bottom: 4px;object-fit: cover;}
+body.new-theme .search-top-cat ul li a h4 {font-size: 12px;font-weight: 400;line-height: 20px;margin-bottom: 4px;padding: 0 2px;}
+body.new-theme .search-top-cat a.prev, body.new-theme .search-top-cat a.next {
+	font-size: 20px;position: absolute;top: 50%;margin-top: -15px;color: #FFFFFF;padding: 0 10px;
+	width: 30px;height: 30px;background: rgba(0,0,0,.3);text-align: center;line-height: 30px;border-radius: 50%;
+}
+body.new-theme .search-top-cat a.prev {left: 5px;}
+body.new-theme .search-top-cat a.next {right: 5px;text-align: right;}
 
 .product-rating h4 {position: relative;}
 .product-rating h4 a {font-size: 14px;color: #e02e24;position: absolute;right: 0;top: 0;}

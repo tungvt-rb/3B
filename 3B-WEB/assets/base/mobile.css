@@ -1125,6 +1125,18 @@ table {border-collapse: collapse;border-spacing: 0;}
 .home-mobile .indicators .indi-item {display: block;width: 15px;height: 3px;background: #828282;border-radius: 3px;margin-left: -2px;}
 .home-mobile .indicators .indi-item.active {background: #C4C4C4;z-index: 10;}
 
+.home-mobile .delivery-by {justify-content: space-between;}
+.home-mobile .delivery-by .shipping-method {width: 55%;}
+.home-mobile .delivery-by .shipping-method a {font-size: 12px;}
+.home-mobile .delivery-by .custom-slb-2 {border: 1px solid #E0E0E0;cursor: pointer;background: #FFFFFF;position: relative;padding: 6px 25px 6px 10px;border-radius: 6px;}
+.home-mobile .delivery-by .custom-slb-2 .icon {position: absolute;right: 9px;top: 50%;margin-top: -9px;}
+.home-mobile .delivery-by .custom-slb-2 span {font-size: 14px;line-height: 16px;font-weight: normal;}
+.home-mobile .delivery-by .custom-slb-2 span.time {font-size: 11px;line-height: 13px;color: #828282;}
+.home-mobile .delivery-by .custom-slb-2 .options {display: none;position: absolute;top: 50px;left: 0;width: 100%;border: 1px solid #E0E0E0;background: #FFFFFF;z-index: 99;}
+.home-mobile .delivery-by .custom-slb-2 .shown {display: block;}
+.home-mobile .delivery-by .custom-slb-2 .option {padding: 8px 10px;}
+.home-mobile .delivery-by .custom-slb-2 .option:hover, .custom-slb-2 .option.same-active {}
+.home-mobile .delivery-by label {font-size: 14px;}
 
 @media screen and (max-width: 640px) {
 	.home-mobile .header-content .featured ul li {width: 20%;}
