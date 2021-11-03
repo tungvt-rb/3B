@@ -498,6 +498,11 @@
     text-align: center;
     justify-content: center;
 }
+.display-flex.inline {
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
 .combo-product-add-block {border: 1px solid var(--color-formcontrol-border);padding: 15px;}
 .combo-product-add-block .p-image {height: 64px;width: 64px;object-fit: cover;border-radius: 3px;margin:0 15px 15px 0;}
 .combo-product-add-block .badge {font-weight: 400;width: 20px;height: 20px;padding: 4px 4px 0px 3px;font-size: 12px;cursor: pointer;}
@@ -536,6 +541,8 @@
 .nav-stacked>li>.stack-block .badge {font-size: 13px;}
 
 .adv-hist h4 small {font-size: 15px;font-weight: 500;}
+
+.socials-connect .btn-toggle.btn-sm {margin: 0;}
 
 @media screen and (max-width: 1024px) {
 	.buyer-order .filter {overflow-x: scroll;}
