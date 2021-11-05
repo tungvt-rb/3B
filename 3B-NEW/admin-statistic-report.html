@@ -751,8 +751,10 @@
 		(function($){
 			$(function(){
 				$('.input-daterange').datepicker({
+					autoclose: true,
 					format: "dd/mm/yyyy",
 					todayHighlight: true,
+					endDate: new Date(new Date().setDate(new Date().getDate() + 365)),
 				});
 
 				// Chart Order
