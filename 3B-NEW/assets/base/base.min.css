@@ -544,6 +544,22 @@
 
 .socials-connect .btn-toggle.btn-sm {margin: 0;}
 
+@media screen and (max-width: 960px) {
+	.box {padding: 15px;}
+
+	.scroll-x {overflow-x: scroll;}
+	.scroll-x .btn-group {width: max-content;}
+
+	.table-responsive .table {width: max-content;max-width: initial;}
+	.filter.btn-group {margin-bottom: 10px;}
+	.menu-block {display: none;}
+
+	.cart-list .cart-shop-item .total-items .total {margin-left: 0;}
+	.cart-list .cart-shop-item .total-items .total.pull-right {float: none !important;}
+
+	.seller-fixed-width {width: 1200px;}
+}
+
 @media screen and (max-width: 1024px) {
 	.buyer-order .filter {overflow-x: scroll;}
 	.buyer-order .filter ul {width: max-content;}
