@@ -695,6 +695,15 @@ table {border-collapse: collapse;border-spacing: 0;}
 .home-mobile .flash-sale .list-all .item .p-price .p-old {font-size: 12px;color: #BDBDBD;text-decoration: line-through;}
 .home-mobile .flash-sale .list-all .item .p-price .p-sale {font-size: 13px;color: #FF2028;font-weight: 500;}
 
+.home-mobile .flash-sale .details.bl-1 .p-price {width: 58%;}
+.home-mobile .flash-sale .bl-1 {align-items: flex-end;}
+.home-mobile .flash-sale .bl-1 .sold {font-size: 11px;}
+.home-mobile .flash-sale .bl-2 {align-items: flex-end;justify-content: space-between;}
+.home-mobile .flash-sale .bl-2 .p-sold {width: 68%;margin-right: 8px;}
+/*.home-mobile .flash-sale .cus-1 .sec-1 {margin-right: 8px;}*/
+
+
+
 /*.home-mobile .flash-sale .list-all .item .info {flex-direction: column;align-items: flex-start;}
 .home-mobile .flash-sale .list-all .p-price {}
 .home-mobile .flash-sale .list-all .p-price .p-old {font-size: 12px;color: #BDBDBD;}
