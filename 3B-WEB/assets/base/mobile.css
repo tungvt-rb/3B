@@ -393,7 +393,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 .home-mobile .header-content .hotsale-today .progress-icon,
 .home-mobile .flash-sale .list-all .item .p-sold .progress-icon {position: absolute;top: -6px;left: 0;width: 16px;z-index: 9;}
 
-.home-mobile .header-content .featured {padding: 14px 10px;border-radius: 8px;background: #FFFFFF;}
+.home-mobile .header-content .featured {padding: 14px 10px;border-radius: 8px;background: #FFFFFF;display: flex;flex-direction: column;align-items: center;justify-content: center;}
 .home-mobile .header-content .featured ul {display: flex;/*flex-wrap: wrap;*/align-items: center;justify-content: space-around;}
 .home-mobile .header-content .featured ul li {margin: 0;padding: 0;background: transparent;text-align: center;width: 12.5%;}
 .home-mobile .header-content .featured ul li span {display: block;font-weight: normal;color: #3F241D;font-size: 13px;line-height: 24px;}
