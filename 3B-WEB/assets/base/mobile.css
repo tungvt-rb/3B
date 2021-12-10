@@ -1228,6 +1228,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 }
 
 @media screen and (max-width: 320px) {
+	.home-mobile .header-content .featured {align-items: flex-start;}
 	.home-mobile .header-content .featured ul li {width: 88px;}
 
 	.home-mobile .box-p .box-p-img img {height: 145px;}
