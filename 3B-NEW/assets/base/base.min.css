@@ -548,6 +548,7 @@
 	.box {padding: 15px;}
 
 	.scroll-x {overflow-x: scroll;}
+	/*.scroll-x .max-content {width: max-content;}*/
 	.scroll-x .btn-group {width: max-content;}
 
 	.table-responsive .table {width: max-content;max-width: initial;}
@@ -558,6 +559,8 @@
 	.cart-list .cart-shop-item .total-items .total.pull-right {float: none !important;}
 
 	.seller-fixed-width {width: 1200px;}
+
+	.statistic-today .col-md-3 {justify-content: flex-start;margin-bottom: 10px;}
 }
 
 @media screen and (max-width: 1024px) {
