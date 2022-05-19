@@ -574,3 +574,12 @@
 .buyer-cancel-account ul {margin-bottom: 16px;}
 .buyer-cancel-account ul li b {color: #d9534f;}
 .confirmDelAcc p.error-msg {color: #d9534f;}
+.breadcrumb-cat ul li .badge {
+  white-space: normal;
+  line-height: 14px;
+  background: none;
+  color: #FFFFFF;
+  font-weight: normal;
+  font-size: 13px;
+  max-width: 200px;
+}
