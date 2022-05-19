@@ -567,3 +567,10 @@
 	.buyer-order .filter {overflow-x: scroll;}
 	.buyer-order .filter ul {width: max-content;}
 }
+
+/* phase 10 */
+.buyer-cancel-account h3 {margin: 0 0 12px;}
+.buyer-cancel-account p {font-size: 15px;font-style: italic;}
+.buyer-cancel-account ul {margin-bottom: 16px;}
+.buyer-cancel-account ul li b {color: #d9534f;}
+.confirmDelAcc p.error-msg {color: #d9534f;}

@@ -107,7 +107,7 @@
 					<li class="header">
 						<img class="icons-svg" src="assets/images/svg/profile.svg"> <span>Tài khoản của tôi</span>
 						<ul class="sub-menu">
-							<li class="active">
+							<li>
 								<a href="buyer-profile.html"><span>Hồ sơ</span></a>
 							</li>
 							<li>
@@ -145,7 +145,7 @@
 					<!-- /END MENU VOUCHER -->
 
 					<!-- BEGIN MENU COIN -->
-					<li class="header">
+					<li class="header active">
 						<img class="icons-svg" src="assets/images/svg/coin.svg">
 						<a href="buyer-3b-coin.html"><span>3B Xu</span></a>
 					</li>
@@ -177,7 +177,7 @@
 			<section class="content-header">
 				<ol class="breadcrumb">
 					<li><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-					<li class="active">Hồ sơ của tôi</li>
+					<li class="active">3B Coin</li>
 				</ol>
 			</section>
 			<!-- /END CONTENT HEADER -->
@@ -188,121 +188,31 @@
 					<form action="#" role="form">
 						<div class="box-header">
 							<h3 class="box-title">
-								Hồ sơ của tôi
-								<small>Cập nhật hồ thông tin hồ sơ của bạn</small>
+								Hủy tài khoản
 							</h3>
 						</div>
 
-						<div class="box-body buyer-profile">
+						<div class="box-body buyer-cancel-account">
 							<div class="row">
 								<!-- BEGIN FORM PROFILE -->
-								<div class="col-md-6 border-right">
-									<div class="form-group">
-										<label for="txtEmail">Email</label>
-										<div class="input-group">
-											<input type="email" class="form-control" id="txtEmail" placeholder="Email">
-											<span class="input-group-addon error"><img class="icons-svg" src="assets/images/svg/error.svg"></span>
-										</div>
-										<label class="error-msg">Please enter email</label>
-									</div>
-									<div class="form-group">
-										<label for="txtMobile">Số điện thoại</label>
-										<input type="text" class="form-control" id="txtMobile" placeholder="Số điện thoại">
-									</div>
-									<div class="form-group">
-										<label for="txtShopName">Tên shop</label>
-										<input type="text" class="form-control" id="txtShopName" placeholder="Tên Shop">
-									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-md-7"><label for="optGender">Giới tính</label></div>
-											<div class="col-md-5">
-												<label class="radio-button">
-													<input type="radio" name="optionsRadios" id="optionsRadios1" value="nam" /> 
-													<span class="helping-el"></span>
-													<span class="label-text">Nam</span>
-												</label>
-												<label class="radio-button">
-													<input type="radio" name="optionsRadios" id="optionsRadios1" value="nu" /> 
-													<span class="helping-el"></span>
-													<span class="label-text">Nữ</span>
-												</label>
-											</div>
-										</div>
-									</div>
-									<div class="form-group with-addon">
-										<label for="txtDob">Ngày sinh</label>
-										<div class="input-group">
-											<input type="text" class="form-control" id="txtDob" placeholder="Ngày sinh">
-											<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-										</div>
-										
-									</div>
-
-									<div class="socials-connect">
-
-										<div class="form-group display-flex inline">
-											<label><img src="assets/images/svg/btn-fb.svg"> Connect Facebook</label>
-											<button type="button" class="btn btn-sm btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
-												<div class="handle"></div>
-											</button>
-										</div>
-
-										<div class="form-group display-flex inline">
-											<label><img src="assets/images/svg/btn-gplus.svg"> Connect Google</label>
-											<button type="button" class="btn btn-sm btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
-												<div class="handle"></div>
-											</button>
-										</div>
-
-										<div class="form-group display-flex inline">
-											<label><img src="assets/images/svg/btn-zalo.svg"> Connect Zalo</label>
-											<button type="button" class="btn btn-sm btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
-												<div class="handle"></div>
-											</button>
-										</div>
-
-										<div class="form-group display-flex inline">
-											<label><img src="assets/images/svg/btn-apple.svg" class="btn-apple"> Connect Apple</label>
-											<button type="button" class="btn btn-sm btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
-												<div class="handle"></div>
-											</button>
-										</div>
-									</div>
+								<div class="col-md-3">
+									<a href="#" data-toggle="modal" data-target="#modalDeleteConfirm" class="btn btn-danger">Đồng ý hủy tài khoản</a>
+									<a href="buyer-profile.html" class="btn btn-transparent">Quay lại</a>
 								</div>
-								<!-- /END FORM PROFILE -->
-								
-								<!-- BEGIN AVATAR BUYER -->
-								<div class="col-md-6 text-center">
-
-									<div class="ava-wrapper">
-										<img src="assets/images/test-ava-photo.jpg" class="profile-user-img img-responsive img-circle" alt="User profile picture">
-
-										<div class="upload-wrapper">
-											<input type="file" name="file" class="upload-input" id="buyer-avata">
-											<div class="edit-ava">Sửa</div>
-										</div>
-										<a class="btn btn-edit-ava" href="javascript:;">
-											<span><img class="icons-svg" src="assets/images/svg/capture.svg"></span>
-										</a>
-									</div>
-									
-									<h3 class="profile-username">Frank Jr.</h3>
-									<p class="text-muted">Dung lượng tối đa 1MB / Định dạng .JPEG .PNG</p>
-
-									<ul class="links">
-										<li><a href="../3B-WEB/store-follower.html">Danh sách cửa hàng theo dõi</a></li>
-										<li><a href="../3B-WEB/favorite-product.html">Sản phẩm yêu thích</a></li>
+								<div class="col-md-6">
+									<h3>Hướng dẫn xoá tài khoản trên ứng dụng người mua</h3>
+									<p>Các lưu ý trước khi xóa tài khoản trên ứng dụng người mua</p>
+									<ul>
+										<li><b>1.</b> Người dùng không thể đăng nhập hoặc xem lại các thông báo trong ứng dụng sau khi tài khoản đã bị xóa.</li>
+										<li><b>2.</b> Người dùng phải đăng nhập vào tài khoản người mua trước khi thực hiện thao tác xoá/ huỷ tài khoản.</li>
+										<li><b>3.</b> Người dùng không thể khôi phục tài khoản đã bị xóa và Chúng tôi sẽ đưa ra quyết định cuối cùng trong việc Người dùng có được tạo tài khoản mới hay không.</li>
+										<li><b>4.</b> Chúng tôi sẽ không giải quyết bất kỳ yêu cầu nào liên quan đến việc mua bán cho tài khoản đã bị xóa.  Người dùng cần phải hoàn tất việc mua bán trước khi xóa tài khoản. </li>
+										<li><b>5.</b> Người dùng phải hoàn thành tất cả đơn hàng trước khi yêu cầu xóa tài khoản. Trong trường hợp tài khoản có đơn hàng chưa hoàn tất, người dùng sẽ không thể xoá tài khoản. </li>
 									</ul>
+									<p>Nếu bạn không thể xóa được tài khoản, bạn có thể rơi vào những trường hợp sau. Vui lòng xem thêm thông tin chi tiết nhé!</p>
 								</div>
-								<!-- /END AVATAR BUYER -->
-							</div>
-						</div>
-						<div class="box-footer">
-							<div class="row">
-								<div class="col-sm-12">
-									<button type="submit" class="btn btn-danger">Lưu</button>
-								</div>
+								<div class="col-md-3"></div>
+								<!-- /END FORM PROFILE -->
 							</div>
 						</div>
 					</form>
@@ -315,6 +225,32 @@
 
 	</div>
 	<!-- /END WRAPPER -->
+
+	<!-- BEGIN MODAL CONFIRM -->
+	<div class="modal fade confirmDelAcc" id="modalDeleteConfirm" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Cảnh báo</h4>
+				</div>
+
+				<!-- BEGIN FORM -->
+				<div class="modal-body">
+					Bạn có chắc chắn muốn xóa tài khoản không?
+					<p class="error-msg">Bạn không thể xóa do còn ít nhất 1 đơn hàng đang chờ xử lý</p>
+				</div>
+				<!-- /END FORM -->
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-flat btn-default pull-left btn-close" data-dismiss="modal">Đóng</button>
+					<button type="button" class="btn btn-flat btn-danger">Xóa tài khoản</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL CONFIRM -->
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
