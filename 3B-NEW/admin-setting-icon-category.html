@@ -425,7 +425,7 @@
 													</td>
 													<td>
 														<span class="label label-danger">Thời trang Nam/Nữ <i class="fa fa-angle-double-right"></i> Áo <i class="fa fa-angle-double-right"></i> Áo sơ mi</span>
-														<a href="admin-setting-icon-choose-category.html"><span class="badge bg-blue"><i class="fa fa-edit"></i></span></a>
+														<a href="#" data-toggle="modal" data-target="#modal-listcategory"><span class="badge bg-blue"><i class="fa fa-edit"></i></span></a>
 													</td>
 													<td>
 														<button type="button" class="btn btn-sm btn-toggle pull-right" data-toggle="button" aria-pressed="false" autocomplete="off">
@@ -445,7 +445,7 @@
 														<input type="text" class="form-control input-sm" placeholder="1" value="1">
 													</td>
 													<td>
-														<a href="admin-setting-icon-choose-category.html">Chọn danh mục</a>
+														<a href="#" data-toggle="modal" data-target="#modal-listcategory">Chọn danh mục</a>
 													</td>
 													<td>
 														<button type="button" class="btn btn-sm btn-toggle pull-right" data-toggle="button" aria-pressed="false" autocomplete="off">
@@ -498,6 +498,157 @@
 		</div>
 	</div>
 	<!-- /END MODAL CONFIRM DELETE -->
+
+	<!-- BEGIN MODAL LIST CATEGORY -->
+	<div class="modal fade" id="modal-listcategory" data-backdrop="static">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Lựa chọn danh mục</h4>
+				</div>
+
+				<!-- BEGIN FORM -->
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="input-group breadcrumb-cat">
+								<ul>
+									<!-- DISPLAY BREADCRUMB CATEGORIES DO NOT ADD ANYTHING HERE -->
+								</ul>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+
+						<div class="col-md-4">
+							<!-- BEGIN BOX TABLE CAT 1 -->
+							<div class="table-responsive">
+								<table class="table table-hover">
+									<thead>
+										<tr>
+											<th>Category 1</th>
+											<th class="action">Action</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td data-parent="parent" data-id="1" class="item-cat parent"><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span></td>
+											<td>
+												<a href="#"><span class="badge bg-green"><i class="fa fa-plus"></i></span></a><!-- /END ADD BUTTON -->
+											</td>
+										</tr>
+										<tr>
+											<td data-parent="parent" data-id="2" class="item-cat parent">Phụ kiện thời trang</td>
+											<td>
+												<a href="#"><span class="badge bg-green"><i class="fa fa-plus"></i></span></a><!-- /END ADD BUTTON -->
+											</td>
+										</tr>
+										<tr>
+											<td data-parent="parent" data-id="3" class="item-cat parent">Thời trang nam</td>
+											<td>
+												<a href="#"><span class="badge bg-green"><i class="fa fa-plus"></i></span></a><!-- /END ADD BUTTON -->
+											</td>
+										</tr>
+										<tr>
+											<td data-parent="parent" data-id="4" class="item-cat parent">Giày Dép</td>
+											<td>
+												<a href="#"><span class="badge bg-green"><i class="fa fa-plus"></i></span></a><!-- /END ADD BUTTON -->
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- /END BOX TABLE CAT 1 -->
+						</div>
+						<div class="col-md-4">
+							<!-- BEGIN BOX TABLE CAT 2 -->
+							<div class="table-responsive">
+								<table class="table table-hover">
+									<thead>
+										<tr>
+											<th>Category 2</th>
+											<th class="action">Action</th>
+										</tr>
+									</thead>
+									<!-- LIST CATEGORY BY PARENT ID -->
+									<tbody class="list-cat-child1" data-parent-id="1">
+										<tr>
+											<td data-parent="child1" data-id="5" class="item-cat child1"><span>Áo</span></td>
+											<td>
+												<a href="#"><span class="badge bg-green"><i class="fa fa-plus"></i></span></a><!-- /END ADD BUTTON -->
+											</td>
+										</tr>
+										<tr>
+											<td data-parent="child1" data-id="6" class="item-cat child1">Đầm</td>
+											<td>
+												<a href="#"><span class="badge bg-green"><i class="fa fa-plus"></i></span></a><!-- /END ADD BUTTON -->
+											</td>
+										</tr>
+									</tbody>
+									<!-- /END LIST CATEGORY BY PARENT ID -->
+
+									<!-- LIST CATEGORY BY PARENT ID -->
+									<tbody class="list-cat-child1" data-parent-id="2">
+										<tr>
+											<td data-parent="child1" data-id="7" class="item-cat child1"><span>Quần</span></td>
+											<td>
+												<a href="#"><span class="badge bg-green"><i class="fa fa-plus"></i></span></a><!-- /END ADD BUTTON -->
+											</td>
+										</tr>
+									</tbody>
+									<!-- /END LIST CATEGORY BY PARENT ID -->
+								</table>
+							</div>
+							<!-- /END BOX TABLE CAT 2 -->
+						</div>
+						<div class="col-md-4">
+							<!-- BEGIN BOX TABLE CAT 3 -->
+							<div class="table-responsive">
+								<table class="table table-hover">
+									<thead>
+										<tr>
+											<th>Category 3</th>
+											<th class="action">Action</th>
+										</tr>
+									</thead>
+									<!-- LIST CATEGORY BY PARENT ID -->
+									<tbody class="list-cat-child2" data-parent-id="7">
+										<tr>
+											<td data-parent="child2" class="item-cat child2"><span>Đồng phục</span></td>
+											<td>
+												<a href="#"><span class="badge bg-green"><i class="fa fa-plus"></i></span></a><!-- /END ADD BUTTON -->
+											</td>
+										</tr>
+									</tbody>
+									<!-- /END LIST CATEGORY BY PARENT ID -->
+
+									<!-- LIST CATEGORY BY PARENT ID -->
+									<tbody class="list-cat-child2" data-parent-id="6">
+										<tr>
+											<td data-parent="child2" class="item-cat child2"><span>Cái gì đó</span></td>
+											<td>
+												<a href="#"><span class="badge bg-green"><i class="fa fa-plus"></i></span></a><!-- /END ADD BUTTON -->
+											</td>
+										</tr>
+									</tbody>
+									<!-- /END LIST CATEGORY BY PARENT ID -->
+								</table>
+							</div>
+							<!-- /END BOX TABLE CAT 3 -->
+						</div>
+					</div>
+
+				</div>
+				<!-- /END FORM -->
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-flat btn-default pull-left btn-close" data-dismiss="modal">Đóng</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /END MODAL LIST CATEGORY -->
 
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
