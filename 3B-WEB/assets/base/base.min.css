@@ -91,7 +91,7 @@ p {line-height:24px;margin-bottom:15px;}
 .brd-b {border-bottom:1px solid var(--platium);}
 .txt-center {text-align:center;}
 .txt-right {text-align:right;}
-.txt-red {color:var(--permanent-geranium) !important;}
+.txt-red {color:var(--price) !important;}
 .txt-green {color:var(--sea-green) !important;}
 .txt-gray {color:var(--old-silver) !important;}
 .transition {
@@ -362,7 +362,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 .product-item .rating-sold .sold span {line-height:24px;}
 
 .product-details-wrap {margin:20px 0 15px;padding:20px 0;background:#FFFFFF;}
-.product-details-wrap .product-item {padding:5px 0;}
+.product-details-wrap .product-item {padding:5px 0;margin-bottom: 15px;}
 .product-details-wrap .product-item h3 {font-size:20px;line-height:28px;margin-bottom:12px;}
 .product-details-wrap .product-item .product-meta {margin-bottom:10px;border-right:1px solid var(--platium);padding-right:20px;}
 .product-details-wrap .product-item .product-meta span {font-size:24px;line-height:22px;margin-left:12px;}
@@ -734,7 +734,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 .more-info .quality .btn {width:36px;height:36px;font-size:20px;line-height:20px;}
 .more-info .quality span {margin:0 8px;}
 .more-info .control {display:flex;}
-.more-info .control button {border:none;text-align:center;font-size:18px;color:var(--anti-flash-white);height:68px;}
+.more-info .control button {border:none;text-align:center;font-size:18px;color:var(--anti-flash-white);height:68px;width: 50%;}
 .more-info .control button span {display:block;font-size:11px;line-height:13px;}
 .more-info .control .retail {background:var(--tulip);padding:15px 30px;}
 .more-info .control .combo {background:var(--sunset-orange);padding:15px 38px;}
@@ -1849,6 +1849,15 @@ body.new-theme .search-top-cat a.next {right: 5px;text-align: right;}
 
 .border-none {border: none;}
 .custom-w75 {width: 75%;}
+
+.nav-list {position: absolute;top: 32%;left: 0;right: 0;}
+.nav-list a {display: block;width: 20px;height: 20px;background: #FFFFFF;font-size: 18px;
+	line-height: 20px;text-align: center;border-radius: 50%;color: #EC5229;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.nav-list .prev {float: left;}
+.nav-list .next {float: right;}
+
 /* svg icons */
 /*body.new-theme .featured ul li a {display: flex;flex-direction: column;justify-content: center;align-items: center;}
 body.new-theme .featured ul li .icon {width: 44px;height: 44px;overflow: hidden;padding: 6px;border-radius: 15px;}
