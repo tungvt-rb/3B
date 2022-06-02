@@ -1631,6 +1631,7 @@ body.new-theme .view-all i {font-size: 22px;vertical-align: bottom;}
 body.new-theme .btn-loadmore {background: #EC5229;padding: 6px 30px;border-radius: 30px;color: #FFFFFF;font-size: 15px;line-height: 16px;}
 
 body.new-theme header {background: linear-gradient(180deg, #6632B9 0%, #926AD3 100%);}
+body.new-theme header .logo img {width: 100px;}
 body.new-theme header .topbar {display: flex;flex-direction: row;justify-content: space-between;background: none;}
 body.new-theme header .header {padding: 14px 0;background: none;}
 body.new-theme header .header .cart span {display: block;color: #F2F2F2;font-size: 14px;font-style: normal;font-weight: normal;text-transform: capitalize;line-height: 24px;}
