@@ -83,7 +83,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 	width: 16px;height: 16px;border-radius: 4px;margin-right: 4px;
 }
 .home-mobile .chk-custom:checked + .chk-custom-label:before {content: "\f00c";font-family: 'FontAwesome';
-	background: #EC5229;color: #FFFFFF;border: none;font-size: 11px;font-weight: normal;text-align: center;
+	background: #6D11DB;color: #FFFFFF;border: none;font-size: 11px;font-weight: normal;text-align: center;
 }
 
 .home-mobile .radio-button:hover {cursor: pointer;}
@@ -1059,9 +1059,12 @@ table {border-collapse: collapse;border-spacing: 0;}
 
 .login-page {}
 .login-page .head img {width: 100%;}
+.login-page .title-page h3 {color: #333333;}
 .login-page .body {padding: 0 24px;margin-bottom: 24px;}
-.login-page .body h3 {font-size: 34px;line-height: 56px;margin-bottom: 24px;}
-.login-page .body h3 img {margin-right: 16px;}
+.login-page .body.special {margin-top: -60px;}
+.login-page .body h3 {font-size: 34px;line-height: 56px;margin-bottom: 24px;display: flex;color: #333333;}
+.login-page .body h3 .logo {display: block;background-color: #5D06C5;border-radius: 8px;width: 56px;height: 56px;margin-right: 16px;padding: 16px 6px;}
+.login-page .body h3 .logo img {display: block;width: 100%;}
 .login-page .body .form-group {margin-bottom: 23px;position: relative;}
 .login-page .body .form-group.error .form-control {border-color: #FF2028;}
 .login-page .body .form-group.error label.msg {color: #FF2028;font-size: 11px;margin-bottom: 0;}
@@ -1070,7 +1073,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 .login-page .body .form-group .eyes {position: absolute;right: 15px;top: 42px;}
 .login-page .body .forgot-pass {text-align: right;margin-bottom: 24px;}
 .login-page .body .forgot-pass a {color: #219653;font-size: 16px;line-height: 20px;}
-.login-page .body .btn.login {display: block;border-radius: 6px;padding: 13px 20px;background: linear-gradient(87.62deg, #E02E24 16.73%, #EB5757 83.07%);}
+.login-page .body .btn.login {display: block;border-radius: 6px;padding: 13px 20px;background: linear-gradient(90deg, #9D6AFA 0%, #4A059E 100%);border: none;}
 .login-page .foot {padding: 0 24px;justify-content: flex-end;margin-bottom: 24px;}
 .login-page .foot label {font-size: 16px;color: #BDBDBD;}
 .login-page .foot .socials ul {display: flex;}
