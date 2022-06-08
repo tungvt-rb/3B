@@ -2,7 +2,7 @@
 .text-center {text-align:center;}
 .login-page {background:#4F4F4F;font-family:'Roboto', sans-serif;font-size:16px;font-weight:400;}
 .login-box {width:920px;margin:7% auto;position:relative;}
-.login-box-body {background:#FFFFFF;border-radius:10px;display:flex;}
+.login-box-body {background:#FFFFFF;border-radius:10px;display:flex;overflow: hidden;}
 
 .box-left {width:480px;position:relative;display:inline-block;padding:50px;}
 .box-left .social-auth-links {padding-top:25px;}
@@ -18,13 +18,14 @@
 .secure-code {border:1px solid #E0E0E0;padding:2px;border-radius:6px;}
 a.pass-forgot {color:#219653;font-size:16px;line-height:24px;margin-bottom:20px;}
 .btn {font-size:16px;line-height:26px;color:#F9FBFC;padding:10px 12px;}
+.btn-danger {background: linear-gradient(90deg, #9D6AFA 0%, #4A059E 100%);border: none;}
 .no-border-right {border-right:none;}
 
 .form-group.error .form-control, .form-group.error .input-group-addon {border-color:#E02E24;}
 .error-icon {position:absolute;right:10px;top:50%;margin-top:-12px;}
 .error-msg {color:#E02E24 !important;font-size:13px;}
 
-.box-right {width:440px;position:relative;display:inline-block;background-color:#e5403a;}
+.box-right {width:440px;position:relative;display:inline-block;background: linear-gradient(90deg, #9D6AFA 0%, #4A059E 100%);}
 .box-right .content {position:absolute;bottom:80px;padding:0 50px;}
 .box-right .content h1 {font-weight:500;font-size:34px;line-height:41px;color:#F2F2F2;margin:0 0 20px;}
 .box-right .content p {font-weight:400;font-size:16px;line-height:24px;color:#F2F2F2;}
