@@ -1657,8 +1657,8 @@ body.new-theme .bg-head-mobile {display: none;background: url('../../assets/imag
 body.new-theme .bg-head-mobile .btn-view {background: linear-gradient(180deg, #6633B9 0%, #A022FE 100%);color: #FFFFFF;border-radius: 16px;border: 1px solid #FFFFFF;padding: 8px 11px;font-size: 10px;font-weight: 500;}
 
 body.new-theme .menu-container.for-new-theme, body.new-theme .menu-container.for-new-theme li {display: block;width: auto;}
-body.new-theme .menu-container.for-new-theme {padding: 12px 0;background: #FFFFFF;border-radius: 5px;}
-body.new-theme .menu-container.for-new-theme > li {padding: 3px 18px 3px;}
+body.new-theme .menu-container.for-new-theme {padding: 10px 0;background: #FFFFFF;border-radius: 5px;}
+body.new-theme .menu-container.for-new-theme > li {padding: 4px 18px;}
 body.new-theme .menu-container.for-new-theme li:first-child a {font-weight: 500;}
 body.new-theme .menu-container.for-new-theme li:last-child {padding-bottom: 0;}
 body.new-theme .menu-container.for-new-theme li a {padding: 0;line-height: 20px;text-transform: capitalize;font-weight: normal;}
