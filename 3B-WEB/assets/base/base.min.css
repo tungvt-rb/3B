@@ -1708,11 +1708,14 @@ body.new-theme .hot-today.first .product-item .sale-label::after {content: " ";p
 body.new-theme .hot-today .progress {height: 20px;background: rgba(102, 51, 185, 0.5);margin: 4px 0;}
 body.new-theme .hot-today .progress .progress-bar {background: #6633B9;}
 
-body.new-theme .featured {padding: 16px 20px 12px;margin-top: 18px;border-radius: 5px;}
-body.new-theme .featured ul {align-items: center;justify-content: space-around;}
+body.new-theme .featured {padding: 16px 20px 12px;margin-top: 18px;border-radius: 5px;position: relative;}
+body.new-theme .featured ul {align-items: flex-end;justify-content: space-around;}
 body.new-theme .featured ul li {margin: 0;padding: 0;background: transparent;width: auto;text-align: center;}
 body.new-theme .featured ul li span {display: block;font-weight: normal;color: #3F241D;font-size: 13px;line-height: 24px;}
 body.new-theme .featured ul li img {width: auto;margin-right: 0;}
+body.new-theme .featured .prev, body.new-theme .featured .next {position: absolute;top: 50%;color: #979797;font-size: 20px;margin-top: -10px;}
+body.new-theme .featured .prev {left: 10px;}
+body.new-theme .featured .next {right: 10px;}
 
 body.new-theme .content-wrap {padding: 24px 0 0;}
 body.new-theme .head-title {border-bottom: 0;padding-bottom: 0;margin-bottom: 10px;}
