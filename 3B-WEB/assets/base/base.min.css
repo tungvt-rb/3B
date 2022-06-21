@@ -1652,8 +1652,8 @@ body.new-theme header .header .search-box .input-group-btn .btn {background: #67
 body.new-theme .main-header {background: transparent;padding: 20px 0;box-shadow: none;}
 body.new-theme .main-header .col-md-3.custom-col {width: 20%;}
 body.new-theme .main-header .col-md-9.custom-col {width: 80%;}
-body.new-theme .main-header .ads {max-height: 321px;overflow: hidden;}
-body.new-theme .main-header .ads img {object-fit: cover;}
+body.new-theme .main-header .ads {max-height: 427px;overflow: hidden;}
+body.new-theme .main-header .ads img {object-fit: cover;height: 427px;}
 body.new-theme .main-header .banner img {height: 300px;object-fit: cover;}
 body.new-theme .bg-head-mobile {display: none;background: url('../../assets/images/new-design/mobile/bg-head-mobile.png') center top no-repeat;text-align: center;padding: 0 0 20px;background-size: cover;}
 body.new-theme .bg-head-mobile .btn-view {background: linear-gradient(180deg, #6633B9 0%, #A022FE 100%);color: #FFFFFF;border-radius: 16px;border: 1px solid #FFFFFF;padding: 8px 11px;font-size: 10px;font-weight: 500;}
