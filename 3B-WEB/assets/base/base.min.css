@@ -968,6 +968,7 @@ label.error-msg i {width: 20px;height: 20px;border-radius: 50%;background: var(-
 
 .main-header {padding:0;background:#FFFFFF;box-shadow: 0px 0px 2px 0px var(--gray);}
 .main-header .menu {padding-right:1px;}
+.main-header {}
 .menu ul {border:1px solid var(--platium);border-radius:8px;padding:12px 15px;}
 .menu ul li {font-size:var(--fontsize-m);line-height:20px;margin-bottom:20px;}
 .menu ul li:last-child {margin-bottom:0;}
@@ -1653,18 +1654,19 @@ body.new-theme .main-header .col-md-3.custom-col {width: 20%;}
 body.new-theme .main-header .col-md-9.custom-col {width: 80%;}
 body.new-theme .main-header .ads {max-height: 321px;overflow: hidden;}
 body.new-theme .main-header .ads img {object-fit: cover;}
+body.new-theme .main-header .banner img {height: 300px;object-fit: cover;}
 body.new-theme .bg-head-mobile {display: none;background: url('../../assets/images/new-design/mobile/bg-head-mobile.png') center top no-repeat;text-align: center;padding: 0 0 20px;background-size: cover;}
 body.new-theme .bg-head-mobile .btn-view {background: linear-gradient(180deg, #6633B9 0%, #A022FE 100%);color: #FFFFFF;border-radius: 16px;border: 1px solid #FFFFFF;padding: 8px 11px;font-size: 10px;font-weight: 500;}
 
 body.new-theme .menu-container.for-new-theme, body.new-theme .menu-container.for-new-theme li {display: block;width: auto;}
 body.new-theme .menu-container.for-new-theme {padding: 10px 0;background: #FFFFFF;border-radius: 5px;}
-body.new-theme .menu-container.for-new-theme > li {padding: 4px 18px;}
+body.new-theme .menu-container.for-new-theme > li {padding: 2px 18px;}
 body.new-theme .menu-container.for-new-theme li:first-child a {font-weight: 500;}
 body.new-theme .menu-container.for-new-theme li:last-child {padding-bottom: 0;}
-body.new-theme .menu-container.for-new-theme li a {padding: 0;line-height: 20px;text-transform: capitalize;font-weight: normal;}
+body.new-theme .menu-container.for-new-theme li a {padding: 0;line-height: 32px;text-transform: capitalize;font-weight: normal;}
 body.new-theme .menu-container.for-new-theme > li:hover {background: rgba(255, 129, 78, 0.2);}
 body.new-theme .menu-container.for-new-theme > li:hover > a {color: #E33806;font-weight: 500;}
-body.new-theme .menu-container.for-new-theme .frame-icon {width: 20px;margin-right: 8px;text-align: center;display: inline-block;}
+body.new-theme .menu-container.for-new-theme .frame-icon {width: 32px;margin-right: 8px;text-align: center;display: inline-block;}
 
 body.new-theme .sub-menu {position: absolute;top: 0px;left: 100%;height: auto;width: calc(1100px - 100%);background: #FFFFFF;padding: 14px;border: 1px solid #EC5229;border-radius: 12px;display: none;justify-content: flex-start;flex-wrap: wrap;overflow: hidden;z-index: 999;}
 body.new-theme .sub-menu .item {width: 20%;padding: 6px;}
