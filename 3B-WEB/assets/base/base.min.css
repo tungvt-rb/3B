@@ -1714,7 +1714,7 @@ body.new-theme .featured {padding: 16px 20px 12px;margin-top: 18px;border-radius
 body.new-theme .featured ul {align-items: flex-end;justify-content: space-around;}
 body.new-theme .featured ul li {margin: 0;padding: 0;background: transparent;width: auto;text-align: center;}
 body.new-theme .featured ul li span {display: block;font-weight: normal;color: #3F241D;font-size: 13px;line-height: 24px;}
-body.new-theme .featured ul li img {width: auto;margin-right: 0;}
+body.new-theme .featured ul li img {width: 50px;margin-right: 0;}
 body.new-theme .featured .prev, body.new-theme .featured .next {position: absolute;top: 50%;color: #979797;font-size: 20px;margin-top: -10px;}
 body.new-theme .featured .prev {left: 10px;}
 body.new-theme .featured .next {right: 10px;}
