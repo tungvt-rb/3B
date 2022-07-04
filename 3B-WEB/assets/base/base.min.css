@@ -1749,7 +1749,7 @@ body.new-theme .hot-today.second .content-wrapper {background: #6633B9;/*#9273C6
 /* body.new-theme .hot-today .head-title {background: url('../images/new-design/icons/bg-title-3.png') center no-repeat;padding: 20px 0;top:-37px;margin-bottom: -15px;} */
 body.new-theme .hot-today .head-title h3 {float: none;text-align: center;margin-right: 0;color: #FFFFFF;}
 body.new-theme .hot-today .custom-head-title {display: flex;align-items: center;justify-content: center;}
-body.new-theme .hot-today .custom-head-title h3 {font-style: italic;background: url('../../assets/images/new-design/icons/bg-title-5.png') center no-repeat;justify-content: center;align-items: center;position: relative;background-size: 65%;padding: 12px 80px 12px 110px;}
+body.new-theme .hot-today .custom-head-title h3 {margin-top: -30px;font-style: italic;background: url('../../assets/images/new-design/icons/bg-title-5.png') center no-repeat;justify-content: center;align-items: center;position: relative;background-size: 65%;padding: 12px 80px 12px 110px;}
 body.new-theme .hot-today .custom-head-title h3 .icon {position: absolute;left: 45px;bottom: 8px;}
 
 body.new-theme .hot-today.second .product-item {margin-bottom: 15px;}
