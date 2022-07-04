@@ -1643,6 +1643,7 @@ body.new-theme header .topbar ul li {line-height: 14px;border-right: 1px solid #
 body.new-theme header .topbar ul li:last-child {border-right: none;}
 body.new-theme header .topbar ul li a > img {width: 21px;height: 21px;object-fit: cover;border-radius: 50%;margin-right: 4px;border: 1px solid #FFFFFF;}
 body.new-theme header .topbar ul li a > h5 {width: 80%;font-size: 11px;font-weight: normal;}
+body.new-theme header .topbar .topbar-social {margin-left: 4px;}
 body.new-theme header .header .search-box {padding-right: 0;}
 body.new-theme header .header .search-box .input-group {width: 100%;}
 body.new-theme header .header .search-box .form-control {height: 38px;box-shadow: none;-webkit-box-shadow: none;border: none;border-radius: 3px;padding: 6px 20px;}
