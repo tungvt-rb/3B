@@ -373,7 +373,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.home-mobile .header-content .hotsale-today .title h3 img {max-height: 100%;}
+.home-mobile .header-content .hotsale-today .title h3 img {max-height: 100%;max-width: 24px;margin-right: 0;margin-top: -12px;vertical-align: super;}
 .home-mobile .header-content .hotsale-today .flash-time,
 .home-mobile .flash-sale .flash-time {color: rgba(0, 0, 0, 0.2);display: flex;align-items: center;}
 .home-mobile .header-content .hotsale-today .flash-time span,
@@ -1298,13 +1298,12 @@ table {border-collapse: collapse;border-spacing: 0;}
 	select, textarea, input {font-size: 16px;}
 }
 
-.fireAnimation {
+/* .fireAnimation {
 	animation: 0.8s linear 0s infinite normal none running hOKweE;
 }
 @keyframes hOKweE {
     50% {
 		opacity: 0.3;
 		transform: scale(1.2);
-		/* transform-origin: center center; */
 	}
-}
+} */

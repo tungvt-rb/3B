@@ -1936,14 +1936,13 @@ body.new-theme .featured ul li .icon.phu-kien-oto {background: radial-gradient(5
 	body.new-theme .menu-mobile {display: block;}
 }
 
-.fireAnimation {
+/* .fireAnimation {
 	animation: 0.8s linear 0s infinite normal none running hOKweE;
 }
 @keyframes hOKweE {
     50% {
 		opacity: 0.3;
 		transform: scale(1.2);
-		/* transform-origin: center center; */
 	}
 }
 .fireAnimation-2 {
@@ -1953,4 +1952,4 @@ body.new-theme .featured ul li .icon.phu-kien-oto {background: radial-gradient(5
     50% {
 		transform: scale(1.2);
 	}
-}
+} */
