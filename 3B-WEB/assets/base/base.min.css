@@ -1694,7 +1694,7 @@ body.new-theme .hot-today {background: none;}
 body.new-theme .hot-today .content-wrapper {background: #FFFFFF;padding: 16px;}
 body.new-theme .hot-today .title {display: flex;flex-direction: row;align-items: center;padding: 0;margin-bottom: 8px;}
 body.new-theme .hot-today .title h3 {font-size: 20px;text-transform: uppercase;font-style: normal;margin-right: 22px;color: #E33806;display: flex;align-items: center;}
-body.new-theme .hot-today .title h3 img {display: inline-block;max-width: 24px;vertical-align: sub;}
+body.new-theme .hot-today .title h3 img {display: inline-block;max-width: 24px;vertical-align: sub;margin-top: -12px;}
 body.new-theme .hot-today .title .flash-time {color: #C1C1C1;display: flex;align-items: center;}
 body.new-theme .hot-today .title .flash-time span {background: #3F241D;line-height: 20px;margin:0 2px;}
 body.new-theme .flash-time span {font-size: 15px;padding: 3px 5px;}
