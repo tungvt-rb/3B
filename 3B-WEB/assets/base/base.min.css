@@ -1776,7 +1776,7 @@ body.new-theme .recommend-products.saleoff .p-item .p-meta .p-name {margin-botto
 body.new-theme .recommend-products .p-item .p-meta .p-name a, body.new-theme .recommend-products .p-item .p-meta .p-name .p-price {width: 100%;margin-bottom: 4px;}
 body.new-theme .recommend-products .p-item .p-meta .p-name h4 {color: #3F241D;font-size: 12px;line-height: 16px;font-weight: 500;}
 body.new-theme .recommend-products .p-item .p-meta .p-price {color: #FF2028;font-size: 14px;line-height: 16px;font-weight: 500;word-break: break-all;}
-body.new-theme .recommend-products .p-item .p-meta .p-price.sale {font-size: 12px;color: #3F241D;text-decoration: line-through;}
+body.new-theme .recommend-products .p-item .p-meta .p-price.sale {font-size: 12px;color: #868686;text-decoration: line-through;}
 body.new-theme .recommend-products .p-item .p-meta .rating {font-size: 11px;line-height: 13px;color: #333333;display: flex;align-items: center;}
 body.new-theme .recommend-products .p-item .p-meta .rating img, body.new-theme .recommend-products .p-item .p-meta .rating span {margin-right: 3px;}
 body.new-theme .menu-mobile {display: none;background: #FFFFFF;padding: 20px 20px 10px;}
