@@ -40,16 +40,19 @@
 			orientation: "bottom left",
 		});
 
-		// $('#start_date').datetimepicker();
-		// $('#end_date').datetimepicker({
-		// 	useCurrent: false
-		// });
-		// $("#start_date").on("dp.change", function (e) {
-		// 	$('#end_date').data("DateTimePicker").minDate(e.date);
-		// });
-		// $("#end_date").on("dp.change", function (e) {
-		// 	$('#start_date').data("DateTimePicker").maxDate(e.date);
-		// });
+		$('#start_date').datetimepicker({
+			sideBySide: true
+		});
+		$('#end_date').datetimepicker({
+			useCurrent: false,
+			sideBySide: true
+		});
+		$("#start_date").on("dp.change", function (e) {
+			$('#end_date').data("DateTimePicker").minDate(e.date);
+		});
+		$("#end_date").on("dp.change", function (e) {
+			$('#start_date').data("DateTimePicker").maxDate(e.date);
+		});
 
 		$('.item-cat').each(function(index) {
 			$(this).on('click', function() {
