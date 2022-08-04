@@ -393,7 +393,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 	-webkit-line-clamp: 1;
 	-webkit-box-orient: vertical;
 }
-.home-mobile .header-content .hotsale-today .list-item .item .btn-view {color: #FFFFFF;background-color: #6633B9;font-size: 12px;padding: 1px 8px;height: 24px;line-height: 22px;}
+.home-mobile .header-content .hotsale-today .list-item .item .btn-view {color: #FFFFFF;background-color: #6633B9;font-size: 12px;padding: 1px 8px;height: 25px;line-height: 22px;}
 .home-mobile .header-content .hotsale-today .p-sold,
 .home-mobile .flash-sale .list-all .item .p-sold {position: relative;}
 .home-mobile .header-content .hotsale-today .progress,
