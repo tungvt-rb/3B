@@ -366,7 +366,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 .home-mobile header .banner-ads img {width: 100%;}
 
 .home-mobile .header-content {padding: 12px;}
-.home-mobile .header-content .hotsale-today {background: #FFFFFF;border-radius: 8px;padding: 14px 10px;margin-bottom: 12px;}
+.home-mobile .header-content .hotsale-today {background: #FFFFFF;border-radius: 8px;padding: 14px 10px 0;margin-bottom: 12px;}
 .home-mobile .header-content .hotsale-today .title h3 {color: #6633B9;text-transform: capitalize;font-weight: 900;font-style: italic;line-height: 10px;padding-right: 10px;
 	background: linear-gradient(87.62deg, #6633B9 16.73%, #926AD3 83.07%);
 	background-clip: text;
